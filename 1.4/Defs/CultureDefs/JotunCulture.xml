@@ -46,6 +46,10 @@
 				<priority>3</priority>
 			</li>
 		</thingStyleCategories>
+		<preferredWeaponClasses>
+			<noble>Ultratech</noble>
+			<despised>Neolithic</despised>
+		</preferredWeaponClasses>
 		<styleItemTags>
 			<li>
 				<tag>Tribal</tag>

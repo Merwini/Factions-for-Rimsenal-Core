@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-  <FactionDef Name="GD_GreydaleBase" ParentName="OutlanderFactionBase" Abstract="True">
+  <FactionDef Name="GD_GreydaleBase" ParentName="OutlanderRimsenalBase" Abstract="True">
     <pawnSingular>corporate</pawnSingular>
     <pawnsPlural>greydale units</pawnsPlural>
     <settlementGenerationWeight>3</settlementGenerationWeight>

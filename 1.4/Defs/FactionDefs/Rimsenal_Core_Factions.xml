@@ -1,24 +1,70 @@
 <Defs>
-	<FactionDef ParentName="FactionBase">
+	<FactionDef Name="RimsenalBase" ParentName="FactionBase" Abstract="True">
+		<autoFlee>false</autoFlee>
+		<permanentEnemy>false</permanentEnemy>
+		<canStageAttacks>true</canStageAttacks>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+		</disallowedMemes>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+		</requiredMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalVenerated</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NobleDespisedWeapons</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+		</disallowedPrecepts>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(200, 50)</li>
+				<li>(1200, 100)</li>
+				<li>(2000, 150)</li>
+				<li>(4000, 220)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Plasteel</li>
+				<li>Uranium</li>
+				<li>Synthread</li>
+				<li>Cloth</li>
+				<li>Hyperweave</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<allowedArrivalTemperatureRange>
+			<min>-40</min>
+			<max>45</max>
+		</allowedArrivalTemperatureRange>
+		<raidLootMaker>RimsenalRaidLootMaker</raidLootMaker>
+		<maxConfigurableAtWorldCreation>999</maxConfigurableAtWorldCreation>
+	</FactionDef>
+		
+	<FactionDef ParentName="RimsenalBase">
 		<defName>YeonHwa_Precision</defName>
 		<label>YeonHwa Precision</label>
 		<description>The YeonHwa Precision is a cold-blooded megacorp that exploits the surrounding systems with invasive and elusive methods.\n\nAgents of their Aggressive Marketing Division remove elements in advance that would be a discouragement to the corporation's complex plans via high mobility gears and fast-firing weapons.</description>
-		<pawnSingular>marketing agent</pawnSingular>
-		<pawnsPlural>marketing agents</pawnsPlural>
+		<pawnSingular>agent</pawnSingular>
+		<pawnsPlural>agents</pawnsPlural>
 		<listOrderPriority>39</listOrderPriority>
-		<autoFlee>false</autoFlee>
-		<settlementGenerationWeight>1</settlementGenerationWeight>
-		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<canMakeRandomly>true</canMakeRandomly>
 		<canSiege>false</canSiege>
-		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>marketing director</leaderTitle>
 		<factionIconPath>Things/YeonHwaIcon</factionIconPath>
 		<factionNameMaker>NamerYeonHwaFaction</factionNameMaker>
 		<settlementNameMaker>NamerYeonHwaBase</settlementNameMaker>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<techLevel>Spacer</techLevel>
-		<permanentEnemy>false</permanentEnemy>
 		<backstoryFilters>
 			<li>
 				<categories>
@@ -33,47 +79,31 @@
 				<commonality>0.25</commonality>
 			</li>
 		</backstoryFilters>
-		<allowedArrivalTemperatureRange>
-			<min>-40</min>
-			<max>45</max>
-		</allowedArrivalTemperatureRange>
-		<raidLootMaker>PirateRaidLootMaker</raidLootMaker>
 		<allowedCultures>
 			<li>Kleptocracism</li>
 		</allowedCultures>
-		<maxConfigurableAtWorldCreation>999</maxConfigurableAtWorldCreation>
-		<disallowedMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
-		</disallowedMemes>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
 		</requiredMemes>
 	</FactionDef>
 	
-	<FactionDef ParentName="FactionBase">
+	<FactionDef ParentName="RimsenalBase">
 		<defName>Jotun_Interstellar</defName>
 		<label>Jotun Interstellar</label>
 		<description>Facing countless mechanoid invasions, the fort world of Jotunheim Prime spent a thousand years fighting the merciless killing machines.\n\nSurviving in some of the harshest living conditions in the whole galaxy, the settlers of Jotunheim Prime developed equipment as ruthless as their opponents to survive. When you need absolute firepower, Jotun Interstellar is your company.</description>
-		<pawnSingular>skald</pawnSingular>
-		<pawnsPlural>skalds</pawnsPlural>
+		<pawnSingular>warrior</pawnSingular>
+		<pawnsPlural>warriors</pawnsPlural>
 		<listOrderPriority>40</listOrderPriority>
-		<autoFlee>false</autoFlee>
-		<settlementGenerationWeight>1</settlementGenerationWeight>
-		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<canMakeRandomly>true</canMakeRandomly>
 		<canSiege>true</canSiege>
-		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>skald-engineer</leaderTitle>
 		<factionIconPath>Things/JotunIcon</factionIconPath>
 		<factionNameMaker>NamerJotunFaction</factionNameMaker>
 		<settlementNameMaker>NamerJotunBase</settlementNameMaker>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<techLevel>Spacer</techLevel>
-		<permanentEnemy>false</permanentEnemy>
 		<backstoryFilters>
 			<li>
 				<categories>
@@ -88,47 +118,33 @@
 				<commonality>0.25</commonality>
 			</li>
 		</backstoryFilters>
-		<allowedArrivalTemperatureRange>
-			<min>-40</min>
-			<max>45</max>
-		</allowedArrivalTemperatureRange>
-		<raidLootMaker>PirateRaidLootMaker</raidLootMaker>
 		<allowedCultures>
 			<li>Bulwarkism</li>
 		</allowedCultures>
-		<maxConfigurableAtWorldCreation>999</maxConfigurableAtWorldCreation>
 		<disallowedMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
 		</disallowedMemes>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
 		</requiredMemes>
 	</FactionDef>
 	
-	<FactionDef ParentName="FactionBase">
+	<FactionDef ParentName="RimsenalBase">
 		<defName>Tisiphone_Enterprise</defName>
 		<label>Tisiphone Enterprise</label>
 		<description>Founded to track down and exterminate the Federation and its peacekeeper corps, the Tisiphone Hunting Contingent is the merciless embodiment of vengeance that can do anything to achieve their goals.\n\nUsing anti-federation kinetic impact weapons, Tisiphone hunters have a reputation for being the ones who will invade hell if there is a trace of the federation.</description>
 		<pawnSingular>hunter</pawnSingular>
 		<pawnsPlural>hunters</pawnsPlural>
 		<listOrderPriority>41</listOrderPriority>
-		<autoFlee>false</autoFlee>
-		<settlementGenerationWeight>1</settlementGenerationWeight>
-		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<canMakeRandomly>true</canMakeRandomly>
 		<canSiege>false</canSiege>
-		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>hunter commander</leaderTitle>
 		<factionIconPath>Things/TisiphoneIcon</factionIconPath>
 		<factionNameMaker>NamerTisiphoneFaction</factionNameMaker>
 		<settlementNameMaker>NamerTisiphoneBase</settlementNameMaker>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<techLevel>Spacer</techLevel>
-		<permanentEnemy>false</permanentEnemy>
 		<backstoryFilters>
 			<li>
 				<categories>
@@ -155,46 +171,32 @@
 				<commonality>0.10</commonality>
 			</li>
 		</backstoryFilters>
-		<allowedArrivalTemperatureRange>
-			<min>-40</min>
-			<max>45</max>
-		</allowedArrivalTemperatureRange>
-		<raidLootMaker>PirateRaidLootMaker</raidLootMaker>
 		<allowedCultures>
 			<li>Tantalism</li>
 		</allowedCultures>
-		<maxConfigurableAtWorldCreation>999</maxConfigurableAtWorldCreation>
 		<disallowedMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 		</disallowedMemes>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
 		</requiredMemes>
 	</FactionDef>
 	
-	<FactionDef ParentName="FactionBase">
+	<FactionDef ParentName="RimsenalBase">
 		<defName>Greydale_Defense</defName>
 		<label>Greydale Defense</label>
 		<description>The Greydale Foundation, the largest terraforming organization in the galaxy, is famous for producing robust and efficient equipment needed for initial colonization. It is common to produce Greydale equipment even on a planet that has been successfully colonized.\n\nThe foundation's modular equipment is easy to produce and easy to maintain. There are many cases in which militias in the lonely settlement of rimworlds are armed with equipment from the Greydale Foundation. And there are good reasons.</description>
 		<pawnSingular>security contractor</pawnSingular>
 		<pawnsPlural>security contractors</pawnsPlural>
 		<listOrderPriority>42</listOrderPriority>
-		<autoFlee>false</autoFlee>
-		<settlementGenerationWeight>1</settlementGenerationWeight>
-		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<canMakeRandomly>true</canMakeRandomly>
 		<canSiege>true</canSiege>
-		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>security manager</leaderTitle>
 		<factionIconPath>Things/GreydaleIcon</factionIconPath>
 		<factionNameMaker>NamerGreydaleFaction</factionNameMaker>
 		<settlementNameMaker>NamerGreydaleBase</settlementNameMaker>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<techLevel>Industrial</techLevel>
-		<permanentEnemy>false</permanentEnemy>
 		<backstoryFilters>
 			<li>
 				<categories>
@@ -209,24 +211,13 @@
 				<commonality>0.50</commonality>
 			</li>
 		</backstoryFilters>
-		<allowedArrivalTemperatureRange>
-			<min>-40</min>
-			<max>45</max>
-		</allowedArrivalTemperatureRange>
-		<raidLootMaker>PirateRaidLootMaker</raidLootMaker>
-		<maxConfigurableAtWorldCreation>999</maxConfigurableAtWorldCreation>
 		<allowedCultures>
 			<li>Anthropocentrism</li>
 		</allowedCultures>
-		<disallowedMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
-		</disallowedMemes>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
 		</requiredMemes>
 	</FactionDef>
 </Defs>
