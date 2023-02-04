@@ -1,0 +1,72 @@
+<Defs>
+	<RulePackDef>
+		<defName>NamerIdeoTisiphone</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_ideoName->Tantalism</li>
+				<li>r_ideoAdjective->Tantalic</li>
+				<li>r_memberName->Tantalite</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>NamerLeaderTisiphone</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_leaderTitle(p=6)->fury</li>
+				<li>r_leaderTitle(p=3)->erinye</li>
+				<li>r_leaderTitle(p=1)->punisher</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<CultureDef>
+		<defName>Tantalism</defName>
+		<label>tantalism</label>
+		<description>Sic semper tyrannis. Tyrants must be cast down; what they build, we will destroy, down to the last vestige.</description>
+		<ideoNameMaker>NamerIdeoTisiphone</ideoNameMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+		<leaderTitleMaker>NamerLeaderTisiphone</leaderTitleMaker>
+		<allowedPlaceTags>
+			<li MayRequire="Ludeon.RimWorld.Ideology">OriginSpacer</li>
+		</allowedPlaceTags>
+		<iconPath>Things/TisiphoneIcon</iconPath>
+		<thingStyleCategories>
+			<li MayRequire="VanillaExpanded.VMemesE">
+				<category>VME_Corporate</category>
+				<priority>2</priority>
+			</li>
+			<li MayRequire="VanillaExpanded.VMemesE">
+				<category>Spikecore</category>
+				<priority>1</priority>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Techist</category>
+				<priority>3</priority>
+			</li>
+		</thingStyleCategories>
+		<styleItemTags>
+			<li>
+				<tag>Punk</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Rural</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardPunk</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardUrban</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+</Defs>

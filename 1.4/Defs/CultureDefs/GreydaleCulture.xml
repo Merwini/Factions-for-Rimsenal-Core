@@ -1,0 +1,77 @@
+<Defs>
+	<RulePackDef>
+		<defName>NamerIdeoGreydale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_ideoName->Anthropocentrism</li>
+				<li>r_ideoAdjective->Anthropocentric</li>
+				<li>r_memberName->Anthropocentrist</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>NamerLeaderGreydale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_leaderTitle(p=6)->security manager</li>
+				<li>r_leaderTitle(p=3)->terraforming manager</li>
+				<li>r_leaderTitle(p=1)->training manager</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<CultureDef>
+		<defName>Anthropocentrism</defName>
+		<label>anthropocentrism</label>
+		<description>Man was meant to conquer the stars. Every world that can be made to support human life, will be. The flora and fauna of those worlds will adapt to serve humanity, or it will be replaced.</description>
+		<ideoNameMaker>NamerIdeoGreydale</ideoNameMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalRustican</festivalNameMaker>
+		<leaderTitleMaker>NamerLeaderGreydale</leaderTitleMaker>
+		<allowedPlaceTags>
+			<li MayRequire="Ludeon.RimWorld.Ideology">OriginSpacer</li>
+		</allowedPlaceTags>
+		<iconPath>Things/GreydaleIcon</iconPath>
+		<thingStyleCategories>
+			<li MayRequire="rimsenal.Urb">
+				<category>RSUrb</category>
+				<priority>1</priority>
+			</li>
+			<li MayRequire="VanillaExpanded.VMemesE">
+				<category>VME_Corporate</category>
+				<priority>2</priority>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Techist</category>
+				<priority>3</priority>
+			</li>
+		</thingStyleCategories>
+		<styleItemTags>
+			<li>
+				<tag>Urban</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Soldier</tag>
+				<baseWeight>2</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardUrban</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+</Defs>

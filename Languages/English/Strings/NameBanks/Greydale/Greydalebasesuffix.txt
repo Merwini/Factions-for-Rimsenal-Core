@@ -1,0 +1,7 @@
+MASH
+camp
+base
+encampment
+forward post
+outpost
+hill

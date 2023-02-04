@@ -1,0 +1,13 @@
+Badger
+Bulldog
+Mongoose
+Fox
+Wolf
+Eagle
+Turkey
+Hammerhead
+Bullfrog
+Grizzly
+Elk
+Buffalo
+Gazelle
