@@ -162,12 +162,17 @@
 					<JI_Artillerist>2</JI_Artillerist>
 					<JI_Sapper>1</JI_Sapper>
 					<JI_Officer>1</JI_Officer>
+					<JI_Leader>0.1</JI_Leader>
 				</options>
 			</li>
 			<li>
 				<!-- Swarm Raid -->
 				<commonality>25</commonality>
 				<kindDef>Combat</kindDef>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+				</disallowedStrategies>
 				<options>
 					<JI_Melee>5</JI_Melee>
 					<JI_Recruit>5</JI_Recruit>
@@ -219,6 +224,7 @@
 					<JI_Artillerist>3</JI_Artillerist>
 					<JI_Sapper>0</JI_Sapper>
 					<JI_Officer>2</JI_Officer>
+					<JI_Leader>0.5</JI_Leader>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">

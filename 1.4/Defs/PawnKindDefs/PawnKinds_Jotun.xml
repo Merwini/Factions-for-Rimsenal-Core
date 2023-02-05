@@ -17,6 +17,8 @@
 
 	<PawnKindDef ParentName="JI_BasePawn">
 		<defName>JI_Recruit</defName>
+		<label>recruit</label>
+		<labelPlural>recruits</labelPlural>
 		<combatPower>40</combatPower>
 		<weaponTags>
 			<li>JI_Pistol</li>
@@ -27,15 +29,17 @@
 			<li>Apparel_SimpleHelmet</li>
 		</apparelRequired>
 		<apparelMoney>
-			<min>400</min>
-			<max>800</max>
+			<min>600</min>
+			<max>1000</max>
 		</apparelMoney>
 		<apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="JI_BasePawn">
 		<defName>JI_Melee</defName>
-		<combatPower>75</combatPower>
+		<label>mechsmasher</label>
+		<labelPlural>mechsmashers</labelPlural>
+		<combatPower>150</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<apparelMoney>
@@ -54,7 +58,9 @@
 	
 	<PawnKindDef ParentName="JI_BasePawn">
 		<defName>JI_Soldier</defName>
-		<combatPower>75</combatPower>
+		<label>soldier</label>
+		<labelPlural>soldiers</labelPlural>
+		<combatPower>150</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<apparelMoney>
@@ -73,7 +79,9 @@
 
 	<PawnKindDef ParentName="JI_ElitePawn">
 		<defName>JI_Artillerist</defName>
-		<combatPower>85</combatPower>
+		<label>artillerist</label>
+		<labelPlural>artillerists</labelPlural>
+		<combatPower>200</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<apparelRequired>
@@ -92,7 +100,9 @@
 
 	<PawnKindDef ParentName="JI_ElitePawn">
 		<defName>JI_Sapper</defName>
-		<combatPower>85</combatPower>
+		<label>sapper</label>
+		<labelPlural>sappers</labelPlural>
+		<combatPower>150</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>true</canBeSapper>
 		<apparelRequired>
@@ -111,10 +121,12 @@
 
 	<PawnKindDef ParentName="JI_ElitePawn">
 		<defName>JI_Officer</defName>
-		<combatPower>100</combatPower>
+		<label>officer</label>
+		<labelPlural>officers</labelPlural>
+		<combatPower>275</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
-		<itemQuality Inherit="False" >Masterwork</itemQuality>
+		<itemQuality Inherit="False" >Excellent</itemQuality>
 		<apparelRequired>
 			<li>Apparel_AssaultArmor</li>
 			<li>Apparel_AssaultArmorH</li>
@@ -127,5 +139,29 @@
 			<max>6500</max>
 		</apparelMoney>
 		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="JI_ElitePawn">
+		<defName>JI_Leader</defName>
+		<label>skald-engineer</label>
+		<labelPlural>skald-engineers</labelPlural>
+		<combatPower>400</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<factionLeader>true</factionLeader>
+		<defaultFactionType>Jotun_Interstellar</defaultFactionType>
+		<itemQuality Inherit="False" >Masterwork</itemQuality>
+		<apparelRequired>
+			<li>Apparel_AssaultArmor</li>
+			<li>Apparel_AssaultArmorH</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>JI_Medium</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>7500</min>
+			<max>9500</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 	</PawnKindDef>
 </Defs>
