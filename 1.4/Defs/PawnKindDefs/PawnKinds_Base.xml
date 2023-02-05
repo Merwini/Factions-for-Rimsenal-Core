@@ -1,0 +1,41 @@
+<Defs>
+	<PawnKindDef Name="RCF_BasePawn" Abstract="True">
+		<race>Human</race>
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<invNutrition>1.2</invNutrition>
+		<itemQuality>Normal</itemQuality>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>75</maxGenerationAge>
+		<combatEnhancingDrugsChance>0.05</combatEnhancingDrugsChance>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<combatEnhancingDrugsCount>
+			<min>1</min>
+			<max>1</max>
+		</combatEnhancingDrugsCount>
+		<apparelRequired>
+		</apparelRequired>
+		<initialWillRange>9~12</initialWillRange>
+		<initialResistanceRange>12~20</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef Name="RCF_ElitePawn" Abstract="True">
+		<race>Human</race>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<invNutrition>2.2</invNutrition>
+		<itemQuality>Excellent</itemQuality>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>32</maxGenerationAge>
+		<combatEnhancingDrugsChance>0.45</combatEnhancingDrugsChance>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<combatEnhancingDrugsCount>
+			<min>1</min>
+			<max>1</max>
+		</combatEnhancingDrugsCount>
+		<apparelRequired>
+		</apparelRequired>
+		<initialWillRange>20~22</initialWillRange>
+		<initialResistanceRange>10~14</initialResistanceRange>
+	</PawnKindDef>
+</Defs>

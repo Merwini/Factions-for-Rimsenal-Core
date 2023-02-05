@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+		<Operation Class="PatchOperationSequence">
+			<operations>
+				<!-- Assault Hammer -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="JI_Ormbane"]</xpath>
+					<value>
+						<weaponTags>
+							<li>JI_Melee</li>
+						</weaponTags>
+					</value>
+				</li>
+				<!-- Molten Pistol -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/thingDef[defName="JI_Trollsverd"]/weaponTags</xpath>
+					<value>
+							<li>JI_Pistol</li>
+					</value>
+				</li>
+				<!-- Siege Shotgun -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/thingDef[defName="JI_Fafnir"]</xpath>
+					<value>
+						<weaponTags>
+							<li>JI_Medium</li>
+						</weaponTags>
+					</value>
+				</li>
+				<!-- Molten Rifle -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/thingDef[defName="JI_Hrunting"]/weaponTags</xpath>
+					<value>
+							<li>JI_Medium</li>
+					</value>
+				</li>
+				<!-- Siege Gun -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/thingDef[defName="JI_Grendel"]</xpath>
+					<value>
+						<weaponTags>
+							<li>JI_Medium</li>
+						</weaponTags>
+					</value>
+				</li>
+				<!-- Suppressor Cannon -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/thingDef[defName="JI_Muspell"]</xpath>
+					<value>
+						<weaponTags>
+							<li>JI_Heavy</li>
+						</weaponTags>
+					</value>
+				</li>
+				<!-- AMR -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/thingDef[defName="JI_Gramr"]</xpath>
+					<value>
+						<weaponTags>
+							<li>JI_Heavy</li>
+						</weaponTags>
+					</value>
+				</li>
+				<!-- Satchel Charge -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="JI_Dunder"]/weaponTags</xpath>
+					<value>
+							<li>JI_Sapper</li>
+					</value>
+				</li>
+			</operations>
+	</Operation>
+</Patch>

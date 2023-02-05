@@ -1,52 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
-	
-	<PawnKindDef Name="GD_GreydaleBasePawn" Abstract="True">
-      <race>Human</race>
-      <defaultFactionType>Greydale_Defense</defaultFactionType>
-      <chemicalAddictionChance>0.1</chemicalAddictionChance>
-      <invNutrition>1.2</invNutrition>
-      <itemQuality>Normal</itemQuality>
-      <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-	  <minGenerationAge>18</minGenerationAge>
-      <maxGenerationAge>75</maxGenerationAge>
-      <combatEnhancingDrugsChance>0.05</combatEnhancingDrugsChance>
-	  <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-      <combatEnhancingDrugsCount>
-        <min>1</min>
-        <max>1</max>
-      </combatEnhancingDrugsCount>
-	  <apparelRequired>
-      </apparelRequired>
-      <initialWillRange>9~12</initialWillRange>
-      <initialResistanceRange>12~20</initialResistanceRange>
+
+	<PawnKindDef Name="GD_BasePawn" ParentName="RCF_BasePawn" Abstract="True">
+		<defaultFactionType>Greydale_Defense</defaultFactionType>
+	</PawnKindDef>
+
+	<PawnKindDef Name="GD_ElitePawn" ParentName="RCF_ElitePawn" Abstract="True">
+		<defaultFactionType>Greydale_Defense</defaultFactionType>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="GD_GreydaleElitePawn" Abstract="True">
-      <race>Human</race>
-      <defaultFactionType>Greydale_Defense</defaultFactionType>
-      <chemicalAddictionChance>0</chemicalAddictionChance>
-      <invNutrition>2.2</invNutrition>
-      <itemQuality>Excellent</itemQuality>
-      <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-	  <minGenerationAge>18</minGenerationAge>
-      <maxGenerationAge>32</maxGenerationAge>
-      <combatEnhancingDrugsChance>0.45</combatEnhancingDrugsChance>
-	  <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-      <combatEnhancingDrugsCount>
-        <min>1</min>
-        <max>1</max>
-      </combatEnhancingDrugsCount>
-	  <apparelRequired>
-      </apparelRequired>
-      <initialWillRange>20~22</initialWillRange>
-      <initialResistanceRange>10~14</initialResistanceRange>
-	</PawnKindDef>
 	
 	<!--Grunts : Just Clothes-->
 	
-	<PawnKindDef Name="GD_GruntBase" ParentName="GD_GreydaleBasePawn" Abstract="True">
+	<PawnKindDef Name="GD_GruntBase" ParentName="GD_BasePawn" Abstract="True">
 		<combatPower>40</combatPower>
 		<itemQuality Inherit="False" >Normal</itemQuality>
 		<isFighter>true</isFighter>
@@ -99,7 +65,7 @@
 	
 	<!--Defenders : Security Armor-->
 	
-	<PawnKindDef Name="GD_DefenderBase" ParentName="GD_GreydaleBasePawn" Abstract="True">
+	<PawnKindDef Name="GD_DefenderBase" ParentName="GD_BasePawn" Abstract="True">
 		<combatPower>85</combatPower>
 		<itemQuality Inherit="False" >Poor</itemQuality>
 		<isFighter>true</isFighter>
@@ -221,7 +187,7 @@
 	
 	<!--Protectors : Security Armor + Extras-->
 	
-	<PawnKindDef Name="GD_ProtectorBase" ParentName="GD_GreydaleBasePawn" Abstract="True">
+	<PawnKindDef Name="GD_ProtectorBase" ParentName="GD_BasePawn" Abstract="True">
 		<combatPower>125</combatPower>
 		<itemQuality Inherit="False" >Good</itemQuality>
 		<isFighter>true</isFighter>
@@ -382,7 +348,7 @@
 	
 	<!--Elites : Full Elite Armor-->
 	
-	<PawnKindDef Name="GD_EliteBase" ParentName="GD_GreydaleBasePawn" Abstract="True">
+	<PawnKindDef Name="GD_EliteBase" ParentName="GD_ElitePawn" Abstract="True">
 		<combatPower>220</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
