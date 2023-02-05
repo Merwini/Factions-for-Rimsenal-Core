@@ -18,9 +18,25 @@
 					<match Class="PatchOperationAdd">
 						<xpath>/Defs/ThingDef[defName="Carbonsuit"]/apparel/tags</xpath>
 						<value>
-							<li>GD_Carbonsuit</li>
+							<li>CO_Carbonsuit</li>
 							<li>GD_Defender</li>
 							<li>GD_Protector</li>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName="Apparel_ShieldBelt"]/apparel/tags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName="Apparel_ShieldBelt"]</xpath>
+						<value>
+							<tags></tags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName="Apparel_ShieldBelt"]/apparel/tags</xpath>
+						<value>
+							<li>CO_Shieldbelt</li>
 						</value>
 					</match>
 				</li>

@@ -6,72 +6,6 @@
 		</mods>
         <match Class="PatchOperationSequence">
 			<operations>
-				
-				<li Class="PatchOperationConditional">
-					<xpath>/Defs/ThingDef[defName="Apparel_SecurityArmor"]/apparel/tags</xpath>
-					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName="Apparel_SecurityArmor"]</xpath>
-						<value>
-							<tags></tags>
-						</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName="Apparel_SecurityArmor"]/apparel/tags</xpath>
-						<value>
-							<li>GD_Defender</li>
-							<li>GD_Protector</li>
-						</value>
-					</match>
-				</li>
-				
-				<li Class="PatchOperationConditional">
-					<xpath>/Defs/ThingDef[defName="Apparel_SecurityHelmet"]/apparel/tags</xpath>
-					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName="Apparel_SecurityHelmet"]</xpath>
-						<value>
-							<tags></tags>
-						</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName="Apparel_SecurityHelmet"]/apparel/tags</xpath>
-						<value>
-							<li>GD_Defender</li>
-							<li>GD_Protector</li>
-						</value>
-					</match>
-				</li>
-				
-				<li Class="PatchOperationConditional">
-					<xpath>/Defs/ThingDef[defName="Apparel_PioneerArmor"]/apparel/tags</xpath>
-					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName="Apparel_PioneerArmor"]</xpath>
-						<value>
-							<tags></tags>
-						</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName="Apparel_PioneerArmor"]/apparel/tags</xpath>
-						<value>
-							<li>GD_ElitePioneer</li>
-						</value>
-					</match>
-				</li>
-				
-				<li Class="PatchOperationConditional">
-					<xpath>/Defs/ThingDef[defName="Apparel_PioneerH"]/apparel/tags</xpath>
-					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName="Apparel_PioneerH"]</xpath>
-						<value>
-							<tags></tags>
-						</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName="Apparel_PioneerH"]/apparel/tags</xpath>
-						<value>
-							<li>GD_ElitePioneer</li>
-						</value>
-					</match>
-				</li>
 
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="GD_TacticalPistol"]</xpath>
@@ -146,10 +80,37 @@
 				</li>
 
 				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="GD_MSSF"]</xpath>
+					<value>
+						<weaponTags>
+							<li>GD_Flakker</li>
+						</weaponTags>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="GD_Bobcat"]</xpath>
+					<value>
+						<weaponTags>
+							<li>GD_Grenades</li>
+						</weaponTags>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="GD_GrenadeLauncher"]</xpath>
 					<value>
 						<weaponTags>
 							<li>GD_GrenadeLauncher</li>
+						</weaponTags>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/thingDef[defName="GD_INGrenadeLauncher"]</xpath>
+					<value>
+						<weaponTags>
+							<li>GD_INGrenadeLauncher</li>
 						</weaponTags>
 					</value>
 				</li>
@@ -173,10 +134,10 @@
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="GD_ModularRifle"]</xpath>
+					<xpath>/Defs/ThingDef[defName="GD_ModularDMR"]</xpath>
 					<value>
 						<weaponTags>
-							<li>GD_Rifle</li>
+							<li>GD_DMR</li>
 						</weaponTags>
 					</value>
 				</li>
