@@ -60,6 +60,7 @@
 			<GD_Defender_Rifle>15</GD_Defender_Rifle>
 			<GD_Defender_Scout>20</GD_Defender_Scout>
 			<GD_Defender_Grenadier>20</GD_Defender_Grenadier>
+			<GD_Defender_Melee>20</GD_Defender_Melee>
 			<GD_Protector_Carbine>40</GD_Protector_Carbine>
 			<GD_Protector_Rifle>30</GD_Protector_Rifle>
 			<GD_Protector_DMR>30</GD_Protector_DMR>
@@ -95,6 +96,7 @@
 			<GD_Defender_Rifle>15</GD_Defender_Rifle>
 			<GD_Defender_Scout>20</GD_Defender_Scout>
 			<GD_Defender_Grenadier>20</GD_Defender_Grenadier>
+			<GD_Defender_Melee>20</GD_Defender_Melee>
         </options>
       </li>
       <li>
@@ -131,6 +133,7 @@
 			<GD_Defender_Carbine>20</GD_Defender_Carbine>
 			<GD_Defender_Rifle>15</GD_Defender_Rifle>
 			<GD_Defender_Scout>20</GD_Defender_Scout>
+			<GD_Defender_Melee>20</GD_Defender_Melee>
 			<GD_Defender_Grenadier>20</GD_Defender_Grenadier>
 			<GD_Protector_Carbine>40</GD_Protector_Carbine>
 			<GD_Protector_Rifle>30</GD_Protector_Rifle>
