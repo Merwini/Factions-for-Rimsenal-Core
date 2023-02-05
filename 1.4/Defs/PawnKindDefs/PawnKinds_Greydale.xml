@@ -62,9 +62,8 @@
 		</specificApparelRequirements>
 		<apparelTags>
 			<li>CO_Carbonsuit</li>
-			<li>GD_Grunt</li>
 		</apparelTags>
-		<apparelAllowHeadgearChance>0.15</apparelAllowHeadgearChance>
+		<apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
     </PawnKindDef>
   
 	<PawnKindDef ParentName="GD_GruntBase">
@@ -87,7 +86,7 @@
 			<min>1600</min>
 			<max>1800</max>
 		</apparelMoney>
-		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
 		<weaponTags>
 			<li>GD_AutoPistol</li>
 			<li>GD_BasicPistol</li>
@@ -110,7 +109,7 @@
 			<max>9500</max>
 		</apparelMoney>
 		<apparelTags>
-			<li>GD_Defender</li>
+			<li>CO_Carbonsuit</li>
 		</apparelTags>
 		<specificApparelRequirements>
 			<li>
@@ -131,13 +130,39 @@
 		<label>Greydale Guard</label>
 		<weaponTags>
 			<li>GD_Carbine</li>
-			<li>GD_Shotgun</li>
 		</weaponTags>
+		<apparelRequired>
+			<li>Apparel_SecurityArmor</li>
+			<li>Apparel_SecurityHelmet</li>
+		</apparelRequired>
 		<weaponMoney>
 			<min>1700</min>
 			<max>1700</max>
 		</weaponMoney>
     </PawnKindDef>
+
+	<PawnKindDef ParentName="GD_DefenderBase">
+		<defName>GD_Defender_Melee</defName>
+		<label>Greydale Warrior</label>
+		<combatPower>75</combatPower>
+		<weaponTags>
+			<li>GD_Knife</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>8~10</range>
+			</li>
+		</skills>
+		<apparelRequired>
+			<li>Apparel_NomadArmor</li>
+			<li>Apparel_SecurityHelmet</li>
+		</apparelRequired>
+		<weaponMoney>
+			<min>1700</min>
+			<max>1700</max>
+		</weaponMoney>
+	</PawnKindDef>
 	
 	<PawnKindDef ParentName="GD_DefenderBase">
 		<defName>GD_Defender_Rifle</defName>
@@ -145,6 +170,10 @@
 		<weaponTags>
 			<li>GD_Rifle</li>
 		</weaponTags>
+		<apparelRequired>
+			<li>Apparel_SecurityArmor</li>
+			<li>Apparel_SecurityHelmet</li>
+		</apparelRequired>
 		<weaponMoney>
 			<min>1700</min>
 			<max>1700</max>
@@ -154,12 +183,16 @@
 	<PawnKindDef ParentName="GD_DefenderBase">
 		<defName>GD_Defender_Scout</defName>
 		<label>Greydale Scout</label>
-		<combatPower>115</combatPower>
+		<combatPower>75</combatPower>
 		<weaponTags>
 			<li>GD_SMG</li>
 			<li>GD_MachinePistol</li>
 			<li>GD_Shotgun</li>
 		</weaponTags>
+		<apparelRequired>
+			<li>Apparel_SecurityArmor</li>
+			<li>Apparel_SecurityHelmet</li>
+		</apparelRequired>
 		<weaponMoney>
 			<min>1700</min>
 			<max>1700</max>
@@ -169,13 +202,17 @@
 	<PawnKindDef ParentName="GD_DefenderBase">
 		<defName>GD_Defender_Grenadier</defName>
 		<label>Greydale Bomber</label>
-		<combatPower>105</combatPower>
+		<combatPower>115</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<weaponTags>
 			<li>GD_Grenades</li>
 			<li>GD_Flakker</li>
 		</weaponTags>
+		<apparelRequired>
+			<li>Apparel_SecurityArmor</li>
+			<li>Apparel_SecurityHelmet</li>
+		</apparelRequired>
 		<weaponMoney>
 			<min>1700</min>
 			<max>1700</max>
@@ -195,11 +232,11 @@
 		</apparelMoney>
 		<specificApparelRequirements>
 			<li>
-				<color>(200,200,200)</color>
+				<color>(222,222,222)</color>
 			</li>
 		</specificApparelRequirements>
 		<apparelTags>
-			<li>GD_Protector</li>
+			<li>CO_Carbonsuit</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<skills>
@@ -218,6 +255,10 @@
 			<li>GD_Carbine</li>
 			<li>GD_Shotgun</li>
 		</weaponTags>
+		<apparelRequired>
+			<li>Apparel_SecurityArmor</li>
+			<li>Apparel_MedicH</li>
+		</apparelRequired>
 		<weaponMoney>
 			<min>1900</min>
 			<max>1900</max>
@@ -231,6 +272,10 @@
 		<weaponTags>
 			<li>GD_Rifle</li>
 		</weaponTags>
+		<apparelRequired>
+			<li>Apparel_SecurityArmor</li>
+			<li>Apparel_MedicH</li>
+		</apparelRequired>
 		<weaponMoney>
 			<min>1900</min>
 			<max>1900</max>
@@ -240,14 +285,15 @@
 	<PawnKindDef ParentName="GD_ProtectorBase">
 		<defName>GD_Protector_DMR</defName>
 		<label>Greydale Marksman</label>
-		<apparelTags>
-			<li>GD_Marksman</li>
-		</apparelTags>
 		<combatPower>135</combatPower>
 		<itemQuality>Normal</itemQuality>
 		<weaponTags>
 			<li>GD_DMR</li>
 		</weaponTags>
+		<apparelRequired>
+			<li>Apparel_NomadArmor</li>
+			<li>Apparel_MedicH</li>
+		</apparelRequired>
 		<weaponMoney>
 			<min>1900</min>
 			<max>1900</max>
@@ -263,13 +309,14 @@
 	<PawnKindDef ParentName="GD_ProtectorBase">
 		<defName>GD_Protector_LMG</defName>
 		<label>Greydale Machinegunner</label>
-		<apparelTags>
-			<li>GD_Pioneer</li>
-		</apparelTags>
-		<combatPower>155</combatPower>
+		<combatPower>145</combatPower>
 		<weaponTags>
 			<li>GD_LMG</li>
 		</weaponTags>
+		<apparelRequired>
+			<li>Apparel_SecurityArmor</li>
+			<li>Apparel_PioneerH</li>
+		</apparelRequired>
 		<weaponMoney>
 			<min>1900</min>
 			<max>1900</max>
@@ -279,15 +326,16 @@
 	<PawnKindDef ParentName="GD_ProtectorBase">
 		<defName>GD_Protector_Grenadier</defName>
 		<label>Greydale Grenadier</label>
-		<apparelTags>
-			<li>GD_Pioneer</li>
-		</apparelTags>
-		<combatPower>165</combatPower>
+		<combatPower>175</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<weaponTags>
 			<li>GD_GrenadeLauncher</li>
 			<li>GD_INGrenadeLauncher</li>
 		</weaponTags>
+		<apparelRequired>
+			<li>Apparel_SecurityArmor</li>
+			<li>Apparel_PioneerH</li>
+		</apparelRequired>
 		<weaponMoney>
 			<min>1900</min>
 			<max>1900</max>
@@ -297,15 +345,16 @@
 	<PawnKindDef ParentName="GD_ProtectorBase">
 		<defName>GD_Protector_Sapper</defName>
 		<label>Greydale Sapper</label>
-		<apparelTags>
-			<li>GD_Medic</li>
-		</apparelTags>
 		<combatPower>135</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<weaponTags>
 			<li>GD_Grenades</li>
 			<li>GD_Flakker</li>
 		</weaponTags>
+		<apparelRequired>
+			<li>Apparel_PioneerArmor</li>
+			<li>Apparel_SecurityHelmet</li>
+		</apparelRequired>
 		<weaponMoney>
 			<min>1900</min>
 			<max>1900</max>
@@ -315,15 +364,16 @@
 	<PawnKindDef ParentName="GD_ProtectorBase">
 		<defName>GD_Protector_Recon</defName>
 		<label>Greydale Recon</label>
-		<apparelTags>
-			<li>GD_Medic</li>
-		</apparelTags>
 		<combatPower>135</combatPower>
 		<weaponTags>
 			<li>GD_SMG</li>
 			<li>GD_MachinePistol</li>
 			<li>GD_Shotgun</li>
 		</weaponTags>
+		<apparelRequired>
+			<li>Apparel_SecurityArmor</li>
+			<li>Apparel_MedicH</li>
+		</apparelRequired>
 		<weaponMoney>
 			<min>1900</min>
 			<max>1900</max>
@@ -357,7 +407,7 @@
 		</skills>
 		<specificApparelRequirements>
 			<li>
-				<color>(155,155,155)</color>
+				<color>(233,233,211)</color>
 			</li>
 		</specificApparelRequirements>
     </PawnKindDef>
@@ -365,9 +415,10 @@
 	<PawnKindDef ParentName="GD_EliteBase">
 		<defName>GD_Elite_Pioneer</defName>
 		<label>Greydale Elite Pioneer</label>
-		<apparelTags>
-			<li>GD_ElitePioneer</li>
-		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_PioneerArmor</li>
+			<li>Apparel_PioneerH</li>
+		</apparelRequired>
 		<combatPower>220</combatPower>
 		<weaponTags>
 			<li>GD_HybridRifle</li>
@@ -378,12 +429,16 @@
 		<defName>GD_Elite_Nomad</defName>
 		<label>Greydale Elite Nomad</label>
 		<apparelTags>
-			<li>GD_EliteNomad</li>
+			<li>CO_Shieldbelt</li>
 		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_NomadArmor</li>
+			<li>Apparel_NomadH</li>
+		</apparelRequired>
 		<skills>
 		  <li>
 			<skill>Melee</skill>
-			<range>9~15</range>
+			<range>10~16</range>
 		  </li>
 		</skills>
 		<combatPower>200</combatPower>
@@ -395,9 +450,10 @@
 	<PawnKindDef ParentName="GD_EliteBase">
 		<defName>GD_Elite_Sniper</defName>
 		<label>Greydale Elite Sniper</label>
-		<apparelTags>
-			<li>GD_EliteSniper</li>
-		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_NomadArmor</li>
+			<li>Apparel_NomadH</li>
+		</apparelRequired>
 		<skills>
 		  <li>
 			<skill>Shooting</skill>
@@ -413,9 +469,10 @@
 	<PawnKindDef ParentName="GD_EliteBase">
 		<defName>GD_Elite_Medic</defName>
 		<label>Greydale Elite Hospitaller</label>
-		<apparelTags>
-			<li>GD_EliteMedic</li>
-		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_MedicArmor</li>
+			<li>Apparel_MedicH</li>
+		</apparelRequired>
 		<skills>
 		  <li>
 			<skill>Medicine</skill>
