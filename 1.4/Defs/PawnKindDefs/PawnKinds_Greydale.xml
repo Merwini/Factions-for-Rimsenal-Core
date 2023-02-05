@@ -4,7 +4,7 @@
 	
 	<PawnKindDef Name="GD_GreydaleBasePawn" Abstract="True">
       <race>Human</race>
-      <defaultFactionType>GD_GreydaleFriendly</defaultFactionType>
+      <defaultFactionType>Greydale_Defense</defaultFactionType>
       <chemicalAddictionChance>0.1</chemicalAddictionChance>
       <invNutrition>1.2</invNutrition>
       <itemQuality>Normal</itemQuality>
@@ -25,7 +25,7 @@
 	
 	<PawnKindDef Name="GD_GreydaleElitePawn" Abstract="True">
       <race>Human</race>
-      <defaultFactionType>GD_GreydaleFriendly</defaultFactionType>
+      <defaultFactionType>Greydale_Defense</defaultFactionType>
       <chemicalAddictionChance>0</chemicalAddictionChance>
       <invNutrition>2.2</invNutrition>
       <itemQuality>Excellent</itemQuality>

@@ -147,4 +147,41 @@
 			</rulesRaw>
 		</rulePack>
 	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerDeserterBase</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[Deserterbaseprefix] [Deserterbasesuffix]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>Deserterbaseprefix</keyword>
+					<path>NameBanks/Deserter/Deserterbaseprefix</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Deserterbasesuffix</keyword>
+					<path>NameBanks/Deserter/Deserterbasesuffix</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>NamerDeserterFaction</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[Deserterfactionprefix] [Deserterfactionsuffix]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>Deserterfactionprefix</keyword>
+					<path>NameBanks/Deserter/Deserterfactionprefix</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Deserterfactionsuffix</keyword>
+					<path>NameBanks/Deserter/Deserterfactionsuffix</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
 </Defs>
