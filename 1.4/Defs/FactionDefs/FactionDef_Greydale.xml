@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-  <FactionDef Name="GD_GreydaleBase" ParentName="OutlanderRimsenalBase" Abstract="True">
+  <FactionDef Name="GD_GreydaleBase" ParentName="OutlanderFactionBase" Abstract="True">
     <pawnSingular>corporate</pawnSingular>
     <pawnsPlural>greydale units</pawnsPlural>
     <settlementGenerationWeight>3</settlementGenerationWeight>
@@ -56,16 +56,32 @@
         <options>
 			<GD_Grunt_Melee>1</GD_Grunt_Melee>
 			<GD_Grunt_Pistol>1.5</GD_Grunt_Pistol>
+			<GD_Defender_Carbine>20</GD_Defender_Carbine>
+			<GD_Defender_Rifle>15</GD_Defender_Rifle>
+			<GD_Defender_Scout>20</GD_Defender_Scout>
+			<GD_Defender_Grenadier>20</GD_Defender_Grenadier>
 			<GD_Protector_Carbine>40</GD_Protector_Carbine>
 			<GD_Protector_Rifle>30</GD_Protector_Rifle>
+			<GD_Protector_DMR>30</GD_Protector_DMR>
+			<GD_Protector_LMG>20</GD_Protector_LMG>
+			<GD_Protector_Grenadier>20</GD_Protector_Grenadier>
+			<GD_Protector_Sapper>20</GD_Protector_Sapper>
+			<GD_Protector_Recon>30</GD_Protector_Recon>
+			<GD_Elite_Pioneer>25</GD_Elite_Pioneer>
+			<GD_Elite_Nomad>15</GD_Elite_Nomad>
+			<GD_Elite_Sniper>15</GD_Elite_Sniper>
+			<GD_Elite_Medic>15</GD_Elite_Medic>
         </options>
       </li>
       <li>
         <!-- Elite Raid -->
-		<commonality>25</commonality>
+		<commonality>35</commonality>
         <kindDef>Combat</kindDef>
         <options>
-			<GD_Elite_Pioneer>1</GD_Elite_Pioneer>
+			<GD_Elite_Pioneer>8</GD_Elite_Pioneer>
+			<GD_Elite_Nomad>5</GD_Elite_Nomad>
+			<GD_Elite_Sniper>5</GD_Elite_Sniper>
+			<GD_Elite_Medic>8</GD_Elite_Medic>
         </options>
       </li>
 	  <li>
@@ -73,7 +89,12 @@
 		<commonality>25</commonality>
         <kindDef>Combat</kindDef>
         <options>
-			<GD_Grunt_Pistol>1</GD_Grunt_Pistol>
+			<GD_Grunt_Melee>1</GD_Grunt_Melee>
+			<GD_Grunt_Pistol>1.5</GD_Grunt_Pistol>
+			<GD_Defender_Carbine>20</GD_Defender_Carbine>
+			<GD_Defender_Rifle>15</GD_Defender_Rifle>
+			<GD_Defender_Scout>20</GD_Defender_Scout>
+			<GD_Defender_Grenadier>20</GD_Defender_Grenadier>
         </options>
       </li>
       <li>
@@ -81,6 +102,7 @@
         <options>
 			<Villager>20</Villager>
 			<GD_Grunt_Pistol>1</GD_Grunt_Pistol>
+			<GD_Defender_Carbine>2</GD_Defender_Carbine>
         </options>
       </li>
       <li>
@@ -97,14 +119,30 @@
         <guards>
 			<Villager>3</Villager>
 			<GD_Grunt_Pistol>1</GD_Grunt_Pistol>
+			<GD_Defender_Carbine>2</GD_Defender_Carbine>
+			<GD_Defender_Scout>2</GD_Defender_Scout>
 		</guards>
       </li>
       <li>
         <kindDef>Settlement</kindDef>
         <options>
-			<Villager>10</Villager>
-			<GD_Grunt_Pistol>1</GD_Grunt_Pistol>
-			<Town_Councilman>1</Town_Councilman>
+			<GD_Grunt_Melee>1</GD_Grunt_Melee>
+			<GD_Grunt_Pistol>1.5</GD_Grunt_Pistol>
+			<GD_Defender_Carbine>20</GD_Defender_Carbine>
+			<GD_Defender_Rifle>15</GD_Defender_Rifle>
+			<GD_Defender_Scout>20</GD_Defender_Scout>
+			<GD_Defender_Grenadier>20</GD_Defender_Grenadier>
+			<GD_Protector_Carbine>40</GD_Protector_Carbine>
+			<GD_Protector_Rifle>30</GD_Protector_Rifle>
+			<GD_Protector_DMR>30</GD_Protector_DMR>
+			<GD_Protector_LMG>20</GD_Protector_LMG>
+			<GD_Protector_Grenadier>20</GD_Protector_Grenadier>
+			<GD_Protector_Sapper>20</GD_Protector_Sapper>
+			<GD_Protector_Recon>30</GD_Protector_Recon>
+			<GD_Elite_Pioneer>15</GD_Elite_Pioneer>
+			<GD_Elite_Nomad>15</GD_Elite_Nomad>
+			<GD_Elite_Sniper>15</GD_Elite_Sniper>
+			<GD_Elite_Medic>15</GD_Elite_Medic>
         </options>
       </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">
@@ -113,6 +151,8 @@
         <options>
           <Miner>3</Miner>
 			<GD_Grunt_Pistol>1.5</GD_Grunt_Pistol>
+			<GD_Defender_Carbine>2</GD_Defender_Carbine>
+			<GD_Defender_Scout>2</GD_Defender_Scout>
         </options>
       </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">
@@ -120,6 +160,8 @@
         <commonality>1</commonality>
         <options>
 			<GD_Grunt_Pistol>1.5</GD_Grunt_Pistol>
+			<GD_Defender_Carbine>2</GD_Defender_Carbine>
+			<GD_Defender_Scout>2</GD_Defender_Scout>
         </options>
       </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">
@@ -128,6 +170,8 @@
         <options>
           <Logger>3</Logger>
 			<GD_Grunt_Pistol>1.5</GD_Grunt_Pistol>
+			<GD_Defender_Carbine>2</GD_Defender_Carbine>
+			<GD_Defender_Scout>2</GD_Defender_Scout>
         </options>
       </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">
@@ -136,6 +180,8 @@
         <options>
           <Farmer>3</Farmer>
 			<GD_Grunt_Pistol>1.5</GD_Grunt_Pistol>
+			<GD_Defender_Carbine>2</GD_Defender_Carbine>
+			<GD_Defender_Scout>2</GD_Defender_Scout>
         </options>
       </li>
     </pawnGroupMakers>
