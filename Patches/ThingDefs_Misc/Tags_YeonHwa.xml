@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rimsenal - Core</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="YP_SeoLi"]/weaponTags</xpath>
+					<value>
+							<li>YP_ShardRifle</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="YP_SagPung"]/weaponTags</xpath>
+					<value>
+							<li>YP_Shotgun</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="YP_BingJu"]</xpath>
+					<value>
+						<weaponTags>
+							<li>YP_Knife</li>
+						</weaponTags>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="YP_BaegYa"]</xpath>
+					<value>
+						<weaponTags>
+							<li>YP_Grenades</li>
+						</weaponTags>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="YP_SangAe"]</xpath>
+					<value>
+						<weaponTags>
+							<li>YP_SpikeLance</li>
+						</weaponTags>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="YP_SeolHwa"]</xpath>
+					<value>
+						<weaponTags>
+							<li>YP_ShardPistols</li>
+						</weaponTags>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="YP_GeugGwang"]</xpath>
+					<value>
+						<weaponTags>
+							<li>YP_MicrowaveGun</li>
+						</weaponTags>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="YP_VectorShot"]</xpath>
+					<value>
+						<weaponTags>
+							<li>YP_VectorShot</li>
+						</weaponTags>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+</Patch>
