@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rimsenal - Core</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName="Carbonsuit"]/apparel/tags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName="Carbonsuit"]</xpath>
+						<value>
+							<tags></tags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName="Carbonsuit"]/apparel/tags</xpath>
+						<value>
+							<li>CO_Carbonsuit</li>
+							<li>GD_Defender</li>
+							<li>GD_Protector</li>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName="Apparel_ShieldBelt"]/apparel/tags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName="Apparel_ShieldBelt"]</xpath>
+						<value>
+							<tags></tags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName="Apparel_ShieldBelt"]/apparel/tags</xpath>
+						<value>
+							<li>CO_Shieldbelt</li>
+							<li>GD_EliteNomad</li>
+						</value>
+					</match>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+</Patch>
