@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rimsenal - Core</li>
+		</mods>
+        <match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/thingDef[defName="TE_KineticRifle"]/weaponTags</xpath>
+					<value>
+							<li>TE_KineticRifle</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/thingDef[defName="TE_KineticPistol"]/weaponTags</xpath>
+					<value>
+							<li>TE_KineticPistol</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/thingDef[defName="TE_ThuddGun"]</xpath>
+					<value>
+						<weaponTags>
+							<li>TE_ThuddGun</li>
+						</weaponTags>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/thingDef[defName="TE_StormCannon"]</xpath>
+					<value>
+						<weaponTags>
+							<li>TE_StormCannon</li>
+						</weaponTags>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/thingDef[defName="TE_KineticLance"]</xpath>
+					<value>
+						<weaponTags>
+							<li>TE_KineticLance</li>
+						</weaponTags>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/thingDef[defName="TE_KineticLongRifle"]</xpath>
+					<value>
+						<weaponTags>
+							<li>TE_KineticLongRifle</li>
+						</weaponTags>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="TE_Eris"]/weaponTags</xpath>
+					<value>
+							<li>TE_Eris</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="TE_Grief"]</xpath>
+					<value>
+						<weaponTags>
+							<li>TE_Grief</li>
+						</weaponTags>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+</Patch>
