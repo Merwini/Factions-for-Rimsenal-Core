@@ -26,29 +26,23 @@
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="GD_HybridRifle"]</xpath>
+					<xpath>/Defs/ThingDef[defName="GD_HybridRifle"]/weaponTags</xpath>
 					<value>
-						<weaponTags>
 							<li>GD_HybridRifle</li>
-						</weaponTags>
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="GD_MSSH"]</xpath>
+					<xpath>/Defs/ThingDef[defName="GD_MSSH"]/weaponTags</xpath>
 					<value>
-						<weaponTags>
 							<li>GD_HybridPistol</li>
-						</weaponTags>
 					</value>
 				</li>
-
+				
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="GD_Sabertooth"]</xpath>
+					<xpath>/Defs/ThingDef[defName="GD_Sabertooth"]/weaponTags</xpath>
 					<value>
-						<weaponTags>
 							<li>GD_Knife</li>
-						</weaponTags>
 					</value>
 				</li>
 				
@@ -89,14 +83,12 @@
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="GD_Bobcat"]</xpath>
+					<xpath>/Defs/ThingDef[defName="GD_Bobcat"]/weaponTags</xpath>
 					<value>
-						<weaponTags>
 							<li>GD_Grenades</li>
-						</weaponTags>
 					</value>
 				</li>
-
+				
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="GD_GrenadeLauncher"]</xpath>
 					<value>
@@ -134,11 +126,9 @@
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="GD_ModularDMR"]</xpath>
+					<xpath>/Defs/ThingDef[defName="GD_ModularDMR"]/weaponTags</xpath>
 					<value>
-						<weaponTags>
 							<li>GD_DMR</li>
-						</weaponTags>
 					</value>
 				</li>
 				
