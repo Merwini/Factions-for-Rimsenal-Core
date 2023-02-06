@@ -2,7 +2,7 @@
 	<FactionDef ParentName="RimsenalBase">
 		<defName>YeonHwa_Precision</defName>
 		<label>YeonHwa Precision</label>
-		<description>The YeonHwa Precision is a cold-blooded megacorp that exploits the surrounding systems with invasive and elusive methods.\n\nAgents of their Aggressive Marketing Division remove elements in advance that would be a discouragement to the corporation's complex plans via high mobility gears and fast-firing weapons.</description>
+		<description>The YeonHwa Precision is a cold-blooded megacorp that exploits the surrounding sysYPms with invasive and elusive methods.\n\nAgents of their Aggressive Marketing Division remove elements in advance that would be a discouragement to the corporation's complex plans via high mobility gears and fast-firing weapons.</description>
 		<pawnSingular>agent</pawnSingular>
 		<pawnsPlural>agents</pawnsPlural>
 		<listOrderPriority>39</listOrderPriority>
@@ -36,6 +36,141 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
 		</requiredMemes>
+		<pawnGroupMakers Inherit="False">
+			<li>
+				<!-- Normal fights, standard mix -->
+				<commonality>100</commonality>
+				<kindDef>Combat</kindDef>
+				<options>
+					<YP_Melee>1</YP_Melee>
+					<YP_Recruit>5</YP_Recruit>
+					<YP_Soldier>3</YP_Soldier>
+					<YP_Elite>1</YP_Elite>
+					<YP_Microwave>1</YP_Microwave>
+					<YP_Officer>0</YP_Officer>
+				</options>
+			</li>
+			<li>
+				<!-- Elite Raid -->
+				<commonality>35</commonality>
+				<kindDef>Combat</kindDef>
+				<options>
+					<YP_Melee>2</YP_Melee>
+					<YP_Recruit>0</YP_Recruit>
+					<YP_Soldier>6</YP_Soldier>
+					<YP_Elite>2</YP_Elite>
+					<YP_Microwave>2</YP_Microwave>
+					<YP_Officer>1</YP_Officer>
+					<YP_Leader>0.1</YP_Leader>
+				</options>
+			</li>
+			<li>
+				<!-- Swarm Raid -->
+				<commonality>25</commonality>
+				<kindDef>Combat</kindDef>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+				</disallowedStrategies>
+				<options>
+					<YP_Melee>5</YP_Melee>
+					<YP_Recruit>5</YP_Recruit>
+					<YP_Soldier>1</YP_Soldier>
+					<YP_Elite>0</YP_Elite>
+					<YP_Officer>0</YP_Officer>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Villager>20</Villager>
+					<YP_Melee>0</YP_Melee>
+					<YP_Recruit>5</YP_Recruit>
+					<YP_Soldier>3</YP_Soldier>
+					<YP_Elite>0</YP_Elite>
+					<YP_Officer>0</YP_Officer>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Town_Trader>1</Town_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<Villager>3</Villager>
+					<YP_Melee>0</YP_Melee>
+					<YP_Recruit>5</YP_Recruit>
+					<YP_Soldier>3</YP_Soldier>
+					<YP_Elite>2</YP_Elite>
+					<YP_Officer>1</YP_Officer>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<YP_Melee>5</YP_Melee>
+					<YP_Recruit>5</YP_Recruit>
+					<YP_Soldier>5</YP_Soldier>
+					<YP_Elite>3</YP_Elite>
+					<YP_Officer>2</YP_Officer>
+					<YP_Leader>0.5</YP_Leader>
+					<YP_Microwave>5</YP_Microwave>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Miner>3</Miner>
+					<YP_Melee>5</YP_Melee>
+					<YP_Recruit>5</YP_Recruit>
+					<YP_Soldier>3</YP_Soldier>
+					<YP_Elite>0</YP_Elite>
+					<YP_Officer>0</YP_Officer>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<YP_Melee>0</YP_Melee>
+					<YP_Recruit>5</YP_Recruit>
+					<YP_Soldier>5</YP_Soldier>
+					<YP_Elite>3</YP_Elite>
+					<YP_Officer>0</YP_Officer>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Logger>3</Logger>
+					<YP_Melee>5</YP_Melee>
+					<YP_Recruit>5</YP_Recruit>
+					<YP_Soldier>3</YP_Soldier>
+					<YP_Elite>0</YP_Elite>
+					<YP_Officer>0</YP_Officer>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Farmer>3</Farmer>
+					<YP_Melee>5</YP_Melee>
+					<YP_Recruit>5</YP_Recruit>
+					<YP_Soldier>3</YP_Soldier>
+					<YP_Elite>0</YP_Elite>
+					<YP_Officer>0</YP_Officer>
+				</options>
+			</li>
+		</pawnGroupMakers>
 	</FactionDef>
 
 </Defs>
