@@ -1,6 +1,6 @@
 <Defs>
 	<FactionDef ParentName="RimsenalBase">
-		<defName>Rimsenal_Deserters</defName>
+		<defName>Corporate_Deserters</defName>
 		<label>Corporate Deserters</label>
 		<description>Ex-employees of the major corporations, fired or quit. Now they are little more than pirates.</description>
 		<pawnSingular>deserter</pawnSingular>
@@ -40,5 +40,138 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
 		</requiredMemes>
+		<pawnGroupMakers Inherit="False">
+			<li>
+				<!-- Normal fights, standard mix -->
+				<commonality>100</commonality>
+				<kindDef>Combat</kindDef>
+				<options>
+					<CD_Melee>1</CD_Melee>
+					<CD_Recruit>5</CD_Recruit>
+					<CD_Soldier>3</CD_Soldier>
+					<CD_Elite>1</CD_Elite>
+					<CD_Officer>0</CD_Officer>
+				</options>
+			</li>
+			<li>
+				<!-- Elite Raid -->
+				<commonality>35</commonality>
+				<kindDef>Combat</kindDef>
+				<options>
+					<CD_Melee>2</CD_Melee>
+					<CD_Recruit>0</CD_Recruit>
+					<CD_Soldier>6</CD_Soldier>
+					<CD_Elite>2</CD_Elite>
+					<CD_Officer>1</CD_Officer>
+					<CD_Leader>0.1</CD_Leader>
+				</options>
+			</li>
+			<li>
+				<!-- Swarm Raid -->
+				<commonality>25</commonality>
+				<kindDef>Combat</kindDef>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+				</disallowedStrategies>
+				<options>
+					<CD_Melee>5</CD_Melee>
+					<CD_Recruit>5</CD_Recruit>
+					<CD_Soldier>1</CD_Soldier>
+					<CD_Elite>0</CD_Elite>
+					<CD_Officer>0</CD_Officer>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Villager>20</Villager>
+					<CD_Melee>0</CD_Melee>
+					<CD_Recruit>5</CD_Recruit>
+					<CD_Soldier>3</CD_Soldier>
+					<CD_Elite>0</CD_Elite>
+					<CD_Officer>0</CD_Officer>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Town_Trader>1</Town_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<Villager>3</Villager>
+					<CD_Melee>0</CD_Melee>
+					<CD_Recruit>5</CD_Recruit>
+					<CD_Soldier>3</CD_Soldier>
+					<CD_Elite>2</CD_Elite>
+					<CD_Officer>1</CD_Officer>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<CD_Melee>5</CD_Melee>
+					<CD_Recruit>5</CD_Recruit>
+					<CD_Soldier>5</CD_Soldier>
+					<CD_Elite>3</CD_Elite>
+					<CD_Officer>2</CD_Officer>
+					<CD_Leader>0.5</CD_Leader>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Miner>3</Miner>
+					<CD_Melee>5</CD_Melee>
+					<CD_Recruit>5</CD_Recruit>
+					<CD_Soldier>3</CD_Soldier>
+					<CD_Elite>0</CD_Elite>
+					<CD_Officer>0</CD_Officer>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<CD_Melee>0</CD_Melee>
+					<CD_Recruit>5</CD_Recruit>
+					<CD_Soldier>5</CD_Soldier>
+					<CD_Elite>3</CD_Elite>
+					<CD_Officer>0</CD_Officer>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Logger>3</Logger>
+					<CD_Melee>5</CD_Melee>
+					<CD_Recruit>5</CD_Recruit>
+					<CD_Soldier>3</CD_Soldier>
+					<CD_Elite>0</CD_Elite>
+					<CD_Officer>0</CD_Officer>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Farmer>3</Farmer>
+					<CD_Melee>5</CD_Melee>
+					<CD_Recruit>5</CD_Recruit>
+					<CD_Soldier>3</CD_Soldier>
+					<CD_Elite>0</CD_Elite>
+					<CD_Officer>0</CD_Officer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		
 	</FactionDef>
 </Defs>

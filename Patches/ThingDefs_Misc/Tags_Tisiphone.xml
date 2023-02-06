@@ -8,6 +8,32 @@
 			<operations>
 
 				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_ReflactorArmor"]/apparel/tags</xpath>
+					<value>
+						<li>TE_ArmorE</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_ReflactorArmorH"]/apparel/tags</xpath>
+					<value>
+						<li>TE_ArmorHE</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_HazardCarapace"]/apparel/tags</xpath>
+					<value>
+						<li>TE_ArmorL</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_HazardCarapaceH"]/apparel/tags</xpath>
+					<value>
+						<li>TE_ArmorHL</li>
+					</value>
+				</li>
+		
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/thingDef[defName="TE_KineticRifle"]/weaponTags</xpath>
 					<value>
 							<li>TE_KineticRifle</li>

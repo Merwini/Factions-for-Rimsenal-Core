@@ -1,0 +1,187 @@
+<Defs>
+	<PawnKindDef Name="CD_BasePawn" ParentName="RCF_BasePawn" Abstract="True">
+		<defaultFactionType>Corporate_Deserters</defaultFactionType>
+	</PawnKindDef>
+
+	<PawnKindDef Name="CD_ElitePawn" ParentName="RCF_ElitePawn" Abstract="True">
+		<defaultFactionType>Corporate_Deserters</defaultFactionType>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CD_BasePawn">
+		<defName>CD_Recruit</defName>
+		<label>trainee</label>
+		<labelPlural>trainees</labelPlural>
+		<combatPower>40</combatPower>
+		<weaponTags>
+			<li>CD_KineticPistol</li>
+			<li>GD_AutoPistol</li>
+			<li>GD_BasicPistol</li>
+			<li>JI_Pistol</li>
+			<li>YP_ShardPistols</li>
+		</weaponTags>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<apparelRequired>
+			<li>Apparel_SimpleHelmet</li>
+		</apparelRequired>
+		<apparelMoney>
+			<min>600</min>
+			<max>1000</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CD_BasePawn">
+		<defName>CD_Melee</defName>
+		<label>janitor</label>
+		<labelPlural>janitors</labelPlural>
+		<combatPower>125</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<apparelMoney>
+			<min>3500</min>
+			<max>4500</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_CloseCombatArmor</li>
+			<li>Apparel_CloseCombatHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>CD_Eris</li>
+			<li>YP_Knife</li>
+			<li>JI_Melee</li>
+			<li>GD_Knife</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CD_BasePawn">
+		<defName>CD_Soldier</defName>
+		<label>wagie</label>
+		<labelPlural>wagies</labelPlural>
+		<combatPower>125</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<apparelMoney>
+			<min>3500</min>
+			<max>4500</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>GD_ArmorL</li>
+			<li>GD_ArmorHL</li>
+			<li>JI_ArmorL</li>
+			<li>JI_ArmorHL</li>
+			<li>TE_ArmorL</li>
+			<li>TE_ArmorHL</li>
+			<li>YP_ArmorL</li>
+			<li>YP_ArmorHL</li>
+		</apparelTags>
+		<weaponTags>
+			<li>TE_KineticRifle</li>
+			<li>TE_ThuddGun</li>
+			<li>JI_Medium</li>
+			<li>YP_ShardRifle</li>
+			<li>YP_Shotgun</li>
+			<li>GD_Carbine</li>
+			<li>GD_Rifle</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CD_ElitePawn">
+		<defName>CD_Elite</defName>
+		<label>supervisor</label>
+		<labelPlural>supervisors</labelPlural>
+		<combatPower>160</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>true</canBeSapper>
+		<apparelTags>
+			<li>GD_ArmorE</li>
+			<li>GD_ArmorHE</li>
+			<li>JI_ArmorE</li>
+			<li>JI_ArmorHE</li>
+			<li>TE_ArmorE</li>
+			<li>TE_ArmorHE</li>
+			<li>YP_ArmorE</li>
+			<li>YP_ArmorHE</li>
+		</apparelTags>
+		<weaponTags>
+			<li>TE_KineticLance</li>
+			<li>GD_HybridRifle</li>
+			<li>GD_GrenadeLauncher</li>
+			<li>GD_INGrenadeLauncher</li>
+			<li>JI_Heavy</li>
+			<li>YP_SpikeLance</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>4500</min>
+			<max>5500</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CD_ElitePawn">
+		<defName>CD_Officer</defName>
+		<label>manager</label>
+		<labelPlural>managers</labelPlural>
+		<combatPower>225</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<itemQuality Inherit="False" >Excellent</itemQuality>
+		<apparelTags>
+			<li>GD_ArmorE</li>
+			<li>GD_ArmorHE</li>
+			<li>JI_ArmorE</li>
+			<li>JI_ArmorHE</li>
+			<li>TE_ArmorE</li>
+			<li>TE_ArmorHE</li>
+			<li>YP_ArmorE</li>
+			<li>YP_ArmorHE</li>
+		</apparelTags>
+		<weaponTags>
+			<li>TE_KineticRifle</li>
+			<li>JI_Medium</li>
+			<li>YP_SpikeLance</li>
+			<li>GD_HybridRifle</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>5500</min>
+			<max>6500</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CD_ElitePawn">
+		<defName>CD_Leader</defName>
+		<label>executive</label>
+		<labelPlural>executives</labelPlural>
+		<combatPower>300</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<factionLeader>true</factionLeader>
+		<itemQuality Inherit="False" >Masterwork</itemQuality>
+		<apparelTags>
+			<li>GD_ArmorE</li>
+			<li>GD_ArmorHE</li>
+			<li>JI_ArmorE</li>
+			<li>JI_ArmorHE</li>
+			<li>TE_ArmorE</li>
+			<li>TE_ArmorHE</li>
+			<li>YP_ArmorE</li>
+			<li>YP_ArmorHE</li>
+		</apparelTags>
+		<weaponTags>
+			<li>TE_KineticLance</li>
+			<li>GD_HybridRifle</li>
+			<li>GD_GrenadeLauncher</li>
+			<li>GD_INGrenadeLauncher</li>
+			<li>JI_Heavy</li>
+			<li>YP_SpikeLance</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>7500</min>
+			<max>9500</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+	</PawnKindDef>
+</Defs>

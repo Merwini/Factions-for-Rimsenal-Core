@@ -8,6 +8,32 @@
 			<operations>
 
 				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_Dropsuit"]/apparel/tags</xpath>
+					<value>
+						<li>YP_ArmorE</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_DropsuitH"]/apparel/tags</xpath>
+					<value>
+						<li>YP_ArmorHE</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_Strikesuit"]/apparel/tags</xpath>
+					<value>
+						<li>YP_ArmorL</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_StrikesuitH"]/apparel/tags</xpath>
+					<value>
+						<li>YP_ArmorHL</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="YP_SeoLi"]/weaponTags</xpath>
 					<value>
 							<li>YP_ShardRifle</li>

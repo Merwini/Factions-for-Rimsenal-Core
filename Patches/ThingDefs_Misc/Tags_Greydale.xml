@@ -8,6 +8,59 @@
 			<operations>
 
 				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_SecurityArmor"]/apparel/tags</xpath>
+					<value>
+						<li>GD_ArmorL</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_SecurityHelmet"]/apparel/tags</xpath>
+					<value>
+						<li>GD_ArmorHL</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_NomadArmor"]/apparel/tags</xpath>
+					<value>
+						<li>GD_ArmorE</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_NomadH"]/apparel/tags</xpath>
+					<value>
+						<li>GD_ArmorHE</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_PioneerArmor"]/apparel/tags</xpath>
+					<value>
+						<li>GD_ArmorE</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_PioneerH"]/apparel/tags</xpath>
+					<value>
+						<li>GD_ArmorHE</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_MedicArmor"]/apparel/tags</xpath>
+					<value>
+						<li>GD_ArmorE</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_MedicH"]/apparel/tags</xpath>
+					<value>
+						<li>GD_ArmorHE</li>
+					</value>
+				</li>
+
+
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="GD_TacticalPistol"]</xpath>
 					<value>
 						<weaponTags>

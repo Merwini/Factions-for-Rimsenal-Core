@@ -2,6 +2,35 @@
 <Patch>
 		<Operation Class="PatchOperationSequence">
 			<operations>
+
+				<!--Assault Armor-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_AssaultArmor"]/apparel/tags</xpath>
+					<value>
+						<li>JI_ArmorL</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_AssaultArmorH"]/apparel/tags</xpath>
+					<value>
+						<li>JI_ArmorHL</li>
+					</value>
+				</li>
+
+				<!--Fire Support Armor-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_FSArmor"]/apparel/tags</xpath>
+					<value>
+						<li>JI_ArmorE</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_FSArmorH"]/apparel/tags</xpath>
+					<value>
+						<li>JI_ArmorHE</li>
+					</value>
+				</li>
+				
 				<!-- Assault Hammer -->
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="JI_Ormbane"]</xpath>
