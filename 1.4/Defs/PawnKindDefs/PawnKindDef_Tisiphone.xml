@@ -1,0 +1,153 @@
+<Defs>
+	<PawnKindDef ParentName ="RCF_BasePawn" Name="TE_BasePawn" Abstract="True">
+		<defaultFactionType>Tisiphone_Enterprise</defaultFactionType>
+		<apparelTags>
+			<li>CO_Carbonsuit</li>
+		</apparelTags>
+		<weaponMoney>1500~5000</weaponMoney>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName ="RCF_ElitePawn" Name="TE_ElitePawn" Abstract="True">
+		<defaultFactionType>Tisiphone_Enterprise</defaultFactionType>
+		<apparelTags>
+			<li>CO_Carbonsuit</li>
+		</apparelTags>
+		<weaponMoney>2000~7500</weaponMoney>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TE_BasePawn">
+		<defName>TE_Recruit</defName>
+		<label>penitent</label>
+		<labelPlural>penitents</labelPlural>
+		<combatPower>40</combatPower>
+		<weaponTags>
+			<li>TE_KineticPistol</li>
+		</weaponTags>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<apparelRequired>
+			<li>Apparel_SimpleHelmet</li>
+		</apparelRequired>
+		<apparelMoney>
+			<min>600</min>
+			<max>1000</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="TE_BasePawn">
+		<defName>TE_Melee</defName>
+		<label>fury</label>
+		<labelPlural>furies</labelPlural>
+		<combatPower>125</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<apparelMoney>
+			<min>3500</min>
+			<max>4500</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_CloseCombatArmor</li>
+			<li>Apparel_CloseCombatHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>TE_Eris</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TE_BasePawn">
+		<defName>TE_Soldier</defName>
+		<label>erinys</label>
+		<labelPlural>erinyes</labelPlural>
+		<combatPower>125</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<apparelMoney>
+			<min>3500</min>
+			<max>4500</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_HazardCarapace</li>
+			<li>Apparel_HazardCarapaceH</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>TE_KineticRifle</li>
+			<li>TE_ThuddGun</li>
+			<li>TE_KineticLongRifle</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="JI_ElitePawn">
+		<defName>TE_Elite</defName>
+		<label>eumenide</label>
+		<labelPlural>eumenides</labelPlural>
+		<combatPower>160</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>true</canBeSapper>
+		<apparelRequired>
+			<li>Apparel_ReflactorArmor</li>
+			<li>Apparel_ReflactorArmorH</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>TE_KineticLance</li>
+			<li>TE_StormCannon</li>
+			<li>TE_Grief</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>4500</min>
+			<max>5500</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TE_ElitePawn">
+		<defName>TE_Officer</defName>
+		<label>dira</label>
+		<labelPlural>dirae</labelPlural>
+		<combatPower>225</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<itemQuality Inherit="False" >Excellent</itemQuality>
+		<apparelRequired>
+			<li>Apparel_ReflactorArmor</li>
+			<li>Apparel_ReflactorArmorH</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>TE_KineticLongRifle</li>
+			<li>TE_KineticLance</li>
+			<li>TE_StormCannon</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>5500</min>
+			<max>6500</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TE_ElitePawn">
+		<defName>TE_Leader</defName>
+		<label>nemesis</label>
+		<labelPlural>nemeses</labelPlural>
+		<combatPower>300</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<factionLeader>true</factionLeader>
+		<itemQuality Inherit="False" >Masterwork</itemQuality>
+		<apparelRequired>
+			<li>Apparel_ReflactorArmor</li>
+			<li>Apparel_ReflactorArmorH</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>TE_KineticLongRifle</li>
+			<li>TE_KineticLance</li>
+			<li>TE_StormCannon</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>7500</min>
+			<max>9500</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+	</PawnKindDef>
+</Defs>
