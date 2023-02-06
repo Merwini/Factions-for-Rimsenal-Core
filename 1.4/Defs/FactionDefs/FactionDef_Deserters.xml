@@ -1,0 +1,44 @@
+<Defs>
+	<FactionDef ParentName="RimsenalBase">
+		<defName>Rimsenal_Deserters</defName>
+		<label>Corporate Deserters</label>
+		<description>Ex-employees of the major corporations, fired or quit. Now they are little more than pirates.</description>
+		<pawnSingular>deserter</pawnSingular>
+		<pawnsPlural>deserters</pawnsPlural>
+		<listOrderPriority>43</listOrderPriority>
+		<canMakeRandomly>true</canMakeRandomly>
+		<permanentEnemy>true</permanentEnemy>
+		<canSiege>true</canSiege>
+		<leaderTitle>chief murder officer</leaderTitle>
+		<factionIconPath>Things/DeserterIcon</factionIconPath>
+		<factionNameMaker>NamerDeserterFaction</factionNameMaker>
+		<settlementNameMaker>NamerDeserterBase</settlementNameMaker>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<techLevel>Industrial</techLevel>
+		<colorSpectrum>
+			<li>(0.50, 0.44, 0.33)</li>
+		</colorSpectrum>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.50</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.50</commonality>
+			</li>
+		</backstoryFilters>
+		<allowedCultures>
+			<li>Anti-Corporatism</li>
+		</allowedCultures>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</requiredMemes>
+	</FactionDef>
+</Defs>

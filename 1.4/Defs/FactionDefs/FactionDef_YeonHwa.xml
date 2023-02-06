@@ -1,0 +1,41 @@
+<Defs>
+	<FactionDef ParentName="RimsenalBase">
+		<defName>YeonHwa_Precision</defName>
+		<label>YeonHwa Precision</label>
+		<description>The YeonHwa Precision is a cold-blooded megacorp that exploits the surrounding systems with invasive and elusive methods.\n\nAgents of their Aggressive Marketing Division remove elements in advance that would be a discouragement to the corporation's complex plans via high mobility gears and fast-firing weapons.</description>
+		<pawnSingular>agent</pawnSingular>
+		<pawnsPlural>agents</pawnsPlural>
+		<listOrderPriority>39</listOrderPriority>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>false</canSiege>
+		<leaderTitle>marketing director</leaderTitle>
+		<factionIconPath>Things/YeonHwaIconBlack</factionIconPath>
+		<factionNameMaker>NamerYeonHwaFaction</factionNameMaker>
+		<settlementNameMaker>NamerYeonHwaBase</settlementNameMaker>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<techLevel>Spacer</techLevel>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.75</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Pirate</li>
+				</categories>
+				<commonality>0.25</commonality>
+			</li>
+		</backstoryFilters>
+		<allowedCultures>
+			<li>Kleptocracism</li>
+		</allowedCultures>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</requiredMemes>
+	</FactionDef>
+
+</Defs>

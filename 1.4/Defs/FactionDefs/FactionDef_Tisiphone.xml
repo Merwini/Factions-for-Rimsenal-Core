@@ -1,0 +1,53 @@
+<Defs>
+	<FactionDef ParentName="RimsenalBase">
+		<defName>Tisiphone_Enterprise</defName>
+		<label>Tisiphone Enterprise</label>
+		<description>Founded to track down and exterminate the Federation and its peacekeeper corps, the Tisiphone Hunting Contingent is the merciless embodiment of vengeance that can do anything to achieve their goals.\n\nUsing anti-federation kinetic impact weapons, Tisiphone hunters have a reputation for being the ones who will invade hell if there is a trace of the federation.</description>
+		<pawnSingular>hunter</pawnSingular>
+		<pawnsPlural>hunters</pawnsPlural>
+		<listOrderPriority>41</listOrderPriority>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>false</canSiege>
+		<leaderTitle>hunter commander</leaderTitle>
+		<factionIconPath>Things/TisiphoneIconBlack</factionIconPath>
+		<factionNameMaker>NamerTisiphoneFaction</factionNameMaker>
+		<settlementNameMaker>NamerTisiphoneBase</settlementNameMaker>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<techLevel>Spacer</techLevel>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.50</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.25</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Pirate</li>
+				</categories>
+				<commonality>0.15</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+				<commonality>0.10</commonality>
+			</li>
+		</backstoryFilters>
+		<allowedCultures>
+			<li>Tantalism</li>
+		</allowedCultures>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		</disallowedMemes>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+		</requiredMemes>
+	</FactionDef>
+</Defs>
