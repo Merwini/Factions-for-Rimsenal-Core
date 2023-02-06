@@ -389,6 +389,7 @@
 		<weaponTags>
 			<li>GD_HybridRifle</li>
 		</weaponTags>
+		<factionLeader>true</factionLeader>
     </PawnKindDef>
 	
 	<PawnKindDef ParentName="GD_EliteBase">
@@ -411,6 +412,7 @@
 		<weaponTags>
 			<li>GD_Knife</li>
 		</weaponTags>
+		<factionLeader>true</factionLeader>
     </PawnKindDef>
 	
 	<PawnKindDef ParentName="GD_EliteBase">
@@ -430,6 +432,7 @@
 		<weaponTags>
 			<li>GD_DMR</li>
 		</weaponTags>
+		<factionLeader>true</factionLeader>
     </PawnKindDef>
 	
 	<PawnKindDef ParentName="GD_EliteBase">
@@ -449,6 +452,7 @@
 		<weaponTags>
 			<li>GD_HybridPistol</li>
 		</weaponTags>
+		<factionLeader>true</factionLeader>
     </PawnKindDef>
 	
 </Defs>
