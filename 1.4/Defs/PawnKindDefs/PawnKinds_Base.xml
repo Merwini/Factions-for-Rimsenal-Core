@@ -14,7 +14,7 @@
 			<max>1</max>
 		</combatEnhancingDrugsCount>
 		<apparelRequired>
-			<li>CO_Carbonsuit</li>
+			<li>Carbonsuit</li>
 		</apparelRequired>
 		<initialWillRange>9~12</initialWillRange>
 		<initialResistanceRange>12~20</initialResistanceRange>
@@ -35,7 +35,7 @@
 			<max>1</max>
 		</combatEnhancingDrugsCount>
 		<apparelRequired>
-			<li>CO_Carbonsuit</li>
+			<li>Carbonsuit</li>
 		</apparelRequired>
 		<initialWillRange>20~22</initialWillRange>
 		<initialResistanceRange>10~14</initialResistanceRange>
