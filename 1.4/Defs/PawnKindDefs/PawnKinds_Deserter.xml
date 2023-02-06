@@ -11,7 +11,7 @@
 		<defName>CD_Recruit</defName>
 		<label>trainee</label>
 		<labelPlural>trainees</labelPlural>
-		<combatPower>50</combatPower>
+		<combatPower>45</combatPower>
 		<weaponTags>
 			<li>CD_KineticPistol</li>
 			<li>GD_AutoPistol</li>
@@ -35,7 +35,7 @@
 		<defName>CD_Melee</defName>
 		<label>janitor</label>
 		<labelPlural>janitors</labelPlural>
-		<combatPower>155</combatPower>
+		<combatPower>140</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<apparelMoney>
@@ -59,7 +59,7 @@
 		<defName>CD_Soldier</defName>
 		<label>wagie</label>
 		<labelPlural>wagies</labelPlural>
-		<combatPower>155</combatPower>
+		<combatPower>120</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<apparelMoney>
@@ -92,7 +92,7 @@
 		<defName>CD_Elite</defName>
 		<label>supervisor</label>
 		<labelPlural>supervisors</labelPlural>
-		<combatPower>200</combatPower>
+		<combatPower>160</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>true</canBeSapper>
 		<apparelTags>
@@ -124,7 +124,7 @@
 		<defName>CD_Officer</defName>
 		<label>manager</label>
 		<labelPlural>managers</labelPlural>
-		<combatPower>275</combatPower>
+		<combatPower>200</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<itemQuality Inherit="False" >Excellent</itemQuality>
@@ -155,7 +155,7 @@
 		<defName>CD_Leader</defName>
 		<label>executive</label>
 		<labelPlural>executives</labelPlural>
-		<combatPower>400</combatPower>
+		<combatPower>350</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<factionLeader>true</factionLeader>

@@ -19,7 +19,7 @@
 		<defName>JI_Recruit</defName>
 		<label>drengr</label>
 		<labelPlural>drengir</labelPlural>
-		<combatPower>60</combatPower>
+		<combatPower>50</combatPower>
 		<weaponTags>
 			<li>JI_Pistol</li>
 		</weaponTags>
@@ -39,7 +39,7 @@
 		<defName>JI_Melee</defName>
 		<label>berserker</label>
 		<labelPlural>berserkers</labelPlural>
-		<combatPower>240</combatPower>
+		<combatPower>200</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<apparelMoney>
@@ -60,7 +60,7 @@
 		<defName>JI_Soldier</defName>
 		<label>huskarl</label>
 		<labelPlural>huskarls</labelPlural>
-		<combatPower>240</combatPower>
+		<combatPower>170</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<apparelMoney>
@@ -81,7 +81,7 @@
 		<defName>JI_Elite</defName>
 		<label>einherjar</label>
 		<labelPlural>einheri</labelPlural>
-		<combatPower>300</combatPower>
+		<combatPower>220</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<apparelRequired>
@@ -102,7 +102,7 @@
 		<defName>JI_Sapper</defName>
 		<label>ivarr</label>
 		<labelPlural>ivarrs</labelPlural>
-		<combatPower>240</combatPower>
+		<combatPower>190</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>true</canBeSapper>
 		<apparelRequired>
@@ -123,7 +123,7 @@
 		<defName>JI_Officer</defName>
 		<label>skald</label>
 		<labelPlural>skalds</labelPlural>
-		<combatPower>355</combatPower>
+		<combatPower>305</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<itemQuality Inherit="False" >Excellent</itemQuality>
@@ -145,7 +145,7 @@
 		<defName>JI_Leader</defName>
 		<label>jarl</label>
 		<labelPlural>jarls</labelPlural>
-		<combatPower>600</combatPower>
+		<combatPower>450</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<factionLeader>true</factionLeader>

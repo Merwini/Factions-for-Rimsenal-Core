@@ -19,7 +19,7 @@
 		<defName>YP_Recruit</defName>
 		<label>kite</label>
 		<labelPlural>kites</labelPlural>
-		<combatPower>50</combatPower>
+		<combatPower>45</combatPower>
 		<weaponTags>
 			<li>YP_ShardPistols</li>
 		</weaponTags>
@@ -39,7 +39,7 @@
 		<defName>YP_Melee</defName>
 		<label>strix</label>
 		<labelPlural>striges</labelPlural>
-		<combatPower>155</combatPower>
+		<combatPower>140</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<apparelMoney>
@@ -60,7 +60,7 @@
 		<defName>YP_Soldier</defName>
 		<label>falcon</label>
 		<labelPlural>falcons</labelPlural>
-		<combatPower>155</combatPower>
+		<combatPower>120</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<apparelMoney>
@@ -82,7 +82,7 @@
 		<defName>YP_Elite</defName>
 		<label>hawk</label>
 		<labelPlural>hawks</labelPlural>
-		<combatPower>180</combatPower>
+		<combatPower>150</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>true</canBeSapper>
 		<apparelRequired>
@@ -105,7 +105,7 @@
 		<defName>YP_Microwave</defName>
 		<label>albatross</label>
 		<labelPlural>albatrosses</labelPlural>
-		<combatPower>180</combatPower>
+		<combatPower>170</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>true</canBeSapper>
 		<apparelRequired>
@@ -126,7 +126,7 @@
 		<defName>YP_Officer</defName>
 		<label>eagle</label>
 		<labelPlural>eagles</labelPlural>
-		<combatPower>270</combatPower>
+		<combatPower>200</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<itemQuality Inherit="False" >Excellent</itemQuality>
@@ -149,7 +149,7 @@
 		<defName>YP_Leader</defName>
 		<label>raptor</label>
 		<labelPlural>raptors</labelPlural>
-		<combatPower>400</combatPower>
+		<combatPower>350</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<factionLeader>true</factionLeader>

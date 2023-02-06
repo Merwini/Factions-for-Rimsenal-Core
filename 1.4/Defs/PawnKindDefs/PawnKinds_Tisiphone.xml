@@ -19,7 +19,7 @@
 		<defName>TE_Recruit</defName>
 		<label>penitent</label>
 		<labelPlural>penitents</labelPlural>
-		<combatPower>50</combatPower>
+		<combatPower>45</combatPower>
 		<weaponTags>
 			<li>TE_KineticPistol</li>
 		</weaponTags>
@@ -39,7 +39,7 @@
 		<defName>TE_Melee</defName>
 		<label>fury</label>
 		<labelPlural>furies</labelPlural>
-		<combatPower>145</combatPower>
+		<combatPower>140</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<apparelMoney>
@@ -60,7 +60,7 @@
 		<defName>TE_Soldier</defName>
 		<label>erinys</label>
 		<labelPlural>erinyes</labelPlural>
-		<combatPower>145</combatPower>
+		<combatPower>120</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<apparelMoney>
@@ -83,7 +83,7 @@
 		<defName>TE_Elite</defName>
 		<label>eumenide</label>
 		<labelPlural>eumenides</labelPlural>
-		<combatPower>190</combatPower>
+		<combatPower>150</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>true</canBeSapper>
 		<apparelRequired>
@@ -106,7 +106,7 @@
 		<defName>TE_Officer</defName>
 		<label>dira</label>
 		<labelPlural>dirae</labelPlural>
-		<combatPower>255</combatPower>
+		<combatPower>200</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<itemQuality Inherit="False" >Excellent</itemQuality>
