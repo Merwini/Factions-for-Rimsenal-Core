@@ -18,6 +18,9 @@
 		</apparelRequired>
 		<initialWillRange>9~12</initialWillRange>
 		<initialResistanceRange>12~20</initialResistanceRange>
+		<apparelTags>
+			<li>stopspawningwithshocklances</li>
+		</apparelTags>
 	</PawnKindDef>
 
 	<PawnKindDef Name="RCF_ElitePawn" Abstract="True">
@@ -39,5 +42,8 @@
 		</apparelRequired>
 		<initialWillRange>20~22</initialWillRange>
 		<initialResistanceRange>10~14</initialResistanceRange>
+		<apparelTags>
+			<li>stopspawningwithshocklances</li>
+		</apparelTags>
 	</PawnKindDef>
 </Defs>
