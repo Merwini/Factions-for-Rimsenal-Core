@@ -170,6 +170,13 @@
 				</li>
 
 				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="GD_ModularLMG"]/weaponTags</xpath>
+					<value>
+						<li>GD_LMG</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="GD_ModularCarbine"]</xpath>
 					<value>
 						<weaponTags>
