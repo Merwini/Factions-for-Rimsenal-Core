@@ -28,6 +28,10 @@
 			<min>600</min>
 			<max>1000</max>
 		</apparelMoney>
+		<weaponMoney>
+			<min>400</min>
+			<max>1100</max>
+		</weaponMoney>
 		<apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
 	</PawnKindDef>
 
@@ -52,6 +56,10 @@
 			<li>JI_Melee</li>
 			<li>GD_Knife</li>
 		</weaponTags>
+		<weaponMoney>
+			<min>500</min>
+			<max>1100</max>
+		</weaponMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 	</PawnKindDef>
 
@@ -85,6 +93,10 @@
 			<li>GD_Carbine</li>
 			<li>GD_Rifle</li>
 		</weaponTags>
+		<weaponMoney>
+			<min>1100</min>
+			<max>1600</max>
+		</weaponMoney>
 		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
 	</PawnKindDef>
 
@@ -117,6 +129,10 @@
 			<min>4500</min>
 			<max>5500</max>
 		</apparelMoney>
+		<weaponMoney>
+			<min>1200</min>
+			<max>1800</max>
+		</weaponMoney>
 		<apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
 	</PawnKindDef>
 
@@ -148,6 +164,10 @@
 			<min>5500</min>
 			<max>6500</max>
 		</apparelMoney>
+		<weaponMoney>
+			<min>1500</min>
+			<max>2100</max>
+		</weaponMoney>
 		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
 	</PawnKindDef>
 
@@ -182,6 +202,10 @@
 			<min>7500</min>
 			<max>9500</max>
 		</apparelMoney>
+		<weaponMoney>
+			<min>2500</min>
+			<max>3500</max>
+		</weaponMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 	</PawnKindDef>
 </Defs>

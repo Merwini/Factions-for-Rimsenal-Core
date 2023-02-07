@@ -2,7 +2,7 @@
 	<FactionDef ParentName="RimsenalBase">
 		<defName>YeonHwa_Precision</defName>
 		<label>YeonHwa Precision</label>
-		<description>The YeonHwa Precision is a cold-blooded megacorp that exploits the surrounding sysYPms with invasive and elusive methods.\n\nAgents of their Aggressive Marketing Division remove elements in advance that would be a discouragement to the corporation's complex plans via high mobility gears and fast-firing weapons.</description>
+		<description>The YeonHwa Precision is a cold-blooded megacorp that exploits the surrounding systems with invasive and elusive methods.\n\nAgents of their Aggressive Marketing Division remove elements in advance that would be a discouragement to the corporation's complex plans via high mobility gears and fast-firing weapons.</description>
 		<pawnSingular>agent</pawnSingular>
 		<pawnsPlural>agents</pawnsPlural>
 		<listOrderPriority>39</listOrderPriority>

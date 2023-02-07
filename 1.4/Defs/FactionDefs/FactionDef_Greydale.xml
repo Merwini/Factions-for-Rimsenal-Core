@@ -13,7 +13,7 @@
 		<factionNameMaker>NamerGreydaleFaction</factionNameMaker>
 		<settlementNameMaker>NamerGreydaleBase</settlementNameMaker>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Spacer</techLevel>
 		<backstoryFilters>
 			<li>
 				<categories>
@@ -44,16 +44,14 @@
 				<options>
 					<GD_Grunt_Melee>1</GD_Grunt_Melee>
 					<GD_Grunt_Pistol>1.5</GD_Grunt_Pistol>
-					<GD_Defender_Carbine>20</GD_Defender_Carbine>
-					<GD_Defender_Rifle>15</GD_Defender_Rifle>
-					<GD_Defender_Scout>20</GD_Defender_Scout>
+					<GD_Defender_Rifle>30</GD_Defender_Rifle>
+					<GD_Defender_Scout>25</GD_Defender_Scout>
 					<GD_Defender_Grenadier>20</GD_Defender_Grenadier>
 					<GD_Defender_Melee>20</GD_Defender_Melee>
-					<GD_Protector_Carbine>40</GD_Protector_Carbine>
-					<GD_Protector_Rifle>30</GD_Protector_Rifle>
-					<GD_Protector_DMR>30</GD_Protector_DMR>
+					<GD_Protector_Carbine>35</GD_Protector_Carbine>
+					<GD_Protector_DMR>20</GD_Protector_DMR>
 					<GD_Protector_LMG>20</GD_Protector_LMG>
-					<GD_Protector_Grenadier>20</GD_Protector_Grenadier>
+					<GD_Protector_Grenadier>18</GD_Protector_Grenadier>
 					<GD_Protector_Sapper>20</GD_Protector_Sapper>
 					<GD_Protector_Recon>30</GD_Protector_Recon>
 					<GD_Elite_Pioneer>25</GD_Elite_Pioneer>
@@ -80,8 +78,7 @@
 				<options>
 					<GD_Grunt_Melee>1</GD_Grunt_Melee>
 					<GD_Grunt_Pistol>1.5</GD_Grunt_Pistol>
-					<GD_Defender_Carbine>20</GD_Defender_Carbine>
-					<GD_Defender_Rifle>15</GD_Defender_Rifle>
+					<GD_Defender_Rifle>20</GD_Defender_Rifle>
 					<GD_Defender_Scout>20</GD_Defender_Scout>
 					<GD_Defender_Grenadier>20</GD_Defender_Grenadier>
 					<GD_Defender_Melee>20</GD_Defender_Melee>
@@ -92,7 +89,7 @@
 				<options>
 					<Villager>20</Villager>
 					<GD_Grunt_Pistol>1</GD_Grunt_Pistol>
-					<GD_Defender_Carbine>2</GD_Defender_Carbine>
+					<GD_Defender_Rifle>2</GD_Defender_Rifle>
 				</options>
 			</li>
 			<li>
@@ -109,7 +106,7 @@
 				<guards>
 					<Villager>3</Villager>
 					<GD_Grunt_Pistol>1</GD_Grunt_Pistol>
-					<GD_Defender_Carbine>2</GD_Defender_Carbine>
+					<GD_Defender_Rifle>2</GD_Defender_Rifle>
 					<GD_Defender_Scout>2</GD_Defender_Scout>
 				</guards>
 			</li>
@@ -118,19 +115,17 @@
 				<options>
 					<GD_Grunt_Melee>1</GD_Grunt_Melee>
 					<GD_Grunt_Pistol>1.5</GD_Grunt_Pistol>
-					<GD_Defender_Carbine>20</GD_Defender_Carbine>
-					<GD_Defender_Rifle>15</GD_Defender_Rifle>
-					<GD_Defender_Scout>20</GD_Defender_Scout>
-					<GD_Defender_Melee>20</GD_Defender_Melee>
+					<GD_Defender_Rifle>30</GD_Defender_Rifle>
+					<GD_Defender_Scout>25</GD_Defender_Scout>
 					<GD_Defender_Grenadier>20</GD_Defender_Grenadier>
-					<GD_Protector_Carbine>40</GD_Protector_Carbine>
-					<GD_Protector_Rifle>30</GD_Protector_Rifle>
-					<GD_Protector_DMR>30</GD_Protector_DMR>
+					<GD_Defender_Melee>20</GD_Defender_Melee>
+					<GD_Protector_Carbine>35</GD_Protector_Carbine>
+					<GD_Protector_DMR>20</GD_Protector_DMR>
 					<GD_Protector_LMG>20</GD_Protector_LMG>
-					<GD_Protector_Grenadier>20</GD_Protector_Grenadier>
+					<GD_Protector_Grenadier>18</GD_Protector_Grenadier>
 					<GD_Protector_Sapper>20</GD_Protector_Sapper>
 					<GD_Protector_Recon>30</GD_Protector_Recon>
-					<GD_Elite_Pioneer>15</GD_Elite_Pioneer>
+					<GD_Elite_Pioneer>25</GD_Elite_Pioneer>
 					<GD_Elite_Nomad>15</GD_Elite_Nomad>
 					<GD_Elite_Sniper>15</GD_Elite_Sniper>
 					<GD_Elite_Medic>15</GD_Elite_Medic>
@@ -142,7 +137,7 @@
 				<options>
 					<Miner>3</Miner>
 					<GD_Grunt_Pistol>1.5</GD_Grunt_Pistol>
-					<GD_Defender_Carbine>2</GD_Defender_Carbine>
+					<GD_Defender_Rifle>2</GD_Defender_Rifle>
 					<GD_Defender_Scout>2</GD_Defender_Scout>
 				</options>
 			</li>
@@ -151,7 +146,7 @@
 				<commonality>1</commonality>
 				<options>
 					<GD_Grunt_Pistol>1.5</GD_Grunt_Pistol>
-					<GD_Defender_Carbine>2</GD_Defender_Carbine>
+					<GD_Defender_Rifle>2</GD_Defender_Rifle>
 					<GD_Defender_Scout>2</GD_Defender_Scout>
 				</options>
 			</li>
@@ -161,7 +156,7 @@
 				<options>
 					<Logger>3</Logger>
 					<GD_Grunt_Pistol>1.5</GD_Grunt_Pistol>
-					<GD_Defender_Carbine>2</GD_Defender_Carbine>
+					<GD_Defender_Rifle>2</GD_Defender_Rifle>
 					<GD_Defender_Scout>2</GD_Defender_Scout>
 				</options>
 			</li>
@@ -171,7 +166,7 @@
 				<options>
 					<Farmer>3</Farmer>
 					<GD_Grunt_Pistol>1.5</GD_Grunt_Pistol>
-					<GD_Defender_Carbine>2</GD_Defender_Carbine>
+					<GD_Defender_Rifle>2</GD_Defender_Rifle>
 					<GD_Defender_Scout>2</GD_Defender_Scout>
 				</options>
 			</li>

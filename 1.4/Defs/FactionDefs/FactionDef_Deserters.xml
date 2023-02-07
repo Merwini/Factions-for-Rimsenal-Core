@@ -2,7 +2,7 @@
 	<FactionDef ParentName="RimsenalBase">
 		<defName>Corporate_Deserters</defName>
 		<label>Corporate Deserters</label>
-		<description>Ex-employees of the major corporations, fired or quit. Now they are little more than pirates.</description>
+		<description>Ex-employees of major interstellar corporations, terminated from their jobs or simply abandoning their duties. Now they are little more than pirates.</description>
 		<pawnSingular>deserter</pawnSingular>
 		<pawnsPlural>deserters</pawnsPlural>
 		<listOrderPriority>43</listOrderPriority>
