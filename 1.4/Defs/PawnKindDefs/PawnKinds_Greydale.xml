@@ -14,7 +14,7 @@
 	
 	<PawnKindDef Name="GD_GruntBase" ParentName="GD_BasePawn" Abstract="True">
 		<combatPower>40</combatPower>
-		<itemQuality Inherit="False" >Normal</itemQuality>
+		<itemQuality Inherit="False" >Poor</itemQuality>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<apparelMoney>
@@ -34,7 +34,8 @@
   
 	<PawnKindDef ParentName="GD_GruntBase">
 		<defName>GD_Grunt_Melee</defName>
-		<label>Mook</label>
+		<label>mook</label>
+		<labelPlural>mooks</labelPlural>
 		<weaponTags>
 			<li>GD_Knife</li>
 		</weaponTags>
@@ -47,12 +48,13 @@
 	<PawnKindDef ParentName="GD_GruntBase">
 		<defName>GD_Grunt_Pistol</defName>
 		<combatPower>45</combatPower>
-		<label>Grunt</label>
+		<label>grunt</label>
+		<labelPlural>grunts</labelPlural>
 		<apparelMoney>
 			<min>1600</min>
 			<max>1800</max>
 		</apparelMoney>
-		<apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
+		<apparelAllowHeadgearChance>0.45</apparelAllowHeadgearChance>
 		<weaponTags>
 			<li>GD_AutoPistol</li>
 			<li>GD_BasicPistol</li>
@@ -66,7 +68,7 @@
 	<!--Defenders : Security Armor-->
 	
 	<PawnKindDef Name="GD_DefenderBase" ParentName="GD_BasePawn" Abstract="True">
-		<combatPower>85</combatPower>
+		<combatPower>95</combatPower>
 		<itemQuality Inherit="False" >Poor</itemQuality>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
@@ -90,11 +92,13 @@
 		  </li>
 		</skills>
     </PawnKindDef>
-	
+
 	<PawnKindDef ParentName="GD_DefenderBase">
-		<defName>GD_Defender_Carbine</defName>
-		<label>Greydale Guard</label>
+		<defName>GD_Defender_Rifle</defName>
+		<label>defender</label>
+		<labelPlural>defenders</labelPlural>
 		<weaponTags>
+			<li>GD_Rifle</li>
 			<li>GD_Carbine</li>
 		</weaponTags>
 		<apparelRequired>
@@ -105,11 +109,12 @@
 			<min>1700</min>
 			<max>1700</max>
 		</weaponMoney>
-    </PawnKindDef>
+	</PawnKindDef>
 
 	<PawnKindDef ParentName="GD_DefenderBase">
 		<defName>GD_Defender_Melee</defName>
-		<label>Greydale Warrior</label>
+		<label>sabre</label>
+		<labelPlural>sabres</labelPlural>
 		<combatPower>75</combatPower>
 		<weaponTags>
 			<li>GD_Knife</li>
@@ -121,7 +126,7 @@
 			</li>
 		</skills>
 		<apparelRequired>
-			<li>Apparel_NomadArmor</li>
+			<li>Apparel_SecurityArmor</li>
 			<li>Apparel_SecurityHelmet</li>
 		</apparelRequired>
 		<weaponMoney>
@@ -131,24 +136,9 @@
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="GD_DefenderBase">
-		<defName>GD_Defender_Rifle</defName>
-		<label>Greydale Trooper</label>
-		<weaponTags>
-			<li>GD_Rifle</li>
-		</weaponTags>
-		<apparelRequired>
-			<li>Apparel_SecurityArmor</li>
-			<li>Apparel_SecurityHelmet</li>
-		</apparelRequired>
-		<weaponMoney>
-			<min>1700</min>
-			<max>1700</max>
-		</weaponMoney>
-    </PawnKindDef>
-	
-	<PawnKindDef ParentName="GD_DefenderBase">
 		<defName>GD_Defender_Scout</defName>
-		<label>Greydale Scout</label>
+		<label>scout</label>
+		<labelPlural>scouts</labelPlural>
 		<combatPower>75</combatPower>
 		<weaponTags>
 			<li>GD_SMG</li>
@@ -167,7 +157,8 @@
 	
 	<PawnKindDef ParentName="GD_DefenderBase">
 		<defName>GD_Defender_Grenadier</defName>
-		<label>Greydale Bomber</label>
+		<label>grenadier</label>
+		<labelPlural>grenadiers</labelPlural>
 		<combatPower>115</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
@@ -189,7 +180,7 @@
 	
 	<PawnKindDef Name="GD_ProtectorBase" ParentName="GD_BasePawn" Abstract="True">
 		<combatPower>125</combatPower>
-		<itemQuality Inherit="False" >Good</itemQuality>
+		<itemQuality Inherit="False" >Excellent</itemQuality>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<apparelMoney>
@@ -215,27 +206,12 @@
 	
 	<PawnKindDef ParentName="GD_ProtectorBase">
 		<defName>GD_Protector_Carbine</defName>
-		<label>Greydale Soldier</label>
+		<label>protectorate</label>
+		<labelPlural>protectorates</labelPlural>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<weaponTags>
 			<li>GD_Carbine</li>
 			<li>GD_Shotgun</li>
-		</weaponTags>
-		<apparelRequired>
-			<li>Apparel_SecurityArmor</li>
-			<li>Apparel_MedicH</li>
-		</apparelRequired>
-		<weaponMoney>
-			<min>1900</min>
-			<max>1900</max>
-		</weaponMoney>
-    </PawnKindDef>
-	
-	<PawnKindDef ParentName="GD_ProtectorBase">
-		<defName>GD_Protector_Rifle</defName>
-		<label>Greydale Rifleman</label>
-		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-		<weaponTags>
 			<li>GD_Rifle</li>
 		</weaponTags>
 		<apparelRequired>
@@ -250,15 +226,15 @@
 	
 	<PawnKindDef ParentName="GD_ProtectorBase">
 		<defName>GD_Protector_DMR</defName>
-		<label>Greydale Marksman</label>
+		<label>pointman</label>
+		<labelPlural>pointmen</labelPlural>
 		<combatPower>135</combatPower>
-		<itemQuality>Normal</itemQuality>
 		<weaponTags>
 			<li>GD_DMR</li>
 		</weaponTags>
 		<apparelRequired>
-			<li>Apparel_NomadArmor</li>
-			<li>Apparel_MedicH</li>
+			<li>Apparel_SecurityArmor</li>
+			<li>Apparel_NomadH</li>
 		</apparelRequired>
 		<weaponMoney>
 			<min>1900</min>
@@ -274,7 +250,8 @@
 	
 	<PawnKindDef ParentName="GD_ProtectorBase">
 		<defName>GD_Protector_LMG</defName>
-		<label>Greydale Machinegunner</label>
+		<label>mandator</label>
+		<labelPlural>mandators</labelPlural>
 		<combatPower>145</combatPower>
 		<weaponTags>
 			<li>GD_LMG</li>
@@ -291,7 +268,8 @@
 	
 	<PawnKindDef ParentName="GD_ProtectorBase">
 		<defName>GD_Protector_Grenadier</defName>
-		<label>Greydale Grenadier</label>
+		<label>bombardier</label>
+		<labelPlural>bombardiers</labelPlural>
 		<combatPower>175</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<weaponTags>
@@ -310,8 +288,9 @@
 	
 	<PawnKindDef ParentName="GD_ProtectorBase">
 		<defName>GD_Protector_Sapper</defName>
-		<label>Greydale Sapper</label>
-		<combatPower>135</combatPower>
+		<label>renovator</label>
+		<labelPlural>renovators</labelPlural>
+		<combatPower>145</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<weaponTags>
 			<li>GD_Grenades</li>
@@ -329,7 +308,8 @@
 	
 	<PawnKindDef ParentName="GD_ProtectorBase">
 		<defName>GD_Protector_Recon</defName>
-		<label>Greydale Recon</label>
+		<label>stormer</label>
+		<labelPlural>stormers</labelPlural>
 		<combatPower>135</combatPower>
 		<weaponTags>
 			<li>GD_SMG</li>
@@ -337,7 +317,7 @@
 			<li>GD_Shotgun</li>
 		</weaponTags>
 		<apparelRequired>
-			<li>Apparel_SecurityArmor</li>
+			<li>Apparel_NomadArmor</li>
 			<li>Apparel_MedicH</li>
 		</apparelRequired>
 		<weaponMoney>
@@ -380,7 +360,8 @@
 	
 	<PawnKindDef ParentName="GD_EliteBase">
 		<defName>GD_Elite_Pioneer</defName>
-		<label>Greydale Elite Pioneer</label>
+		<label>pioneer</label>
+		<labelPlural>pioneers</labelPlural>
 		<apparelRequired>
 			<li>Apparel_PioneerArmor</li>
 			<li>Apparel_PioneerH</li>
@@ -394,7 +375,8 @@
 	
 	<PawnKindDef ParentName="GD_EliteBase">
 		<defName>GD_Elite_Nomad</defName>
-		<label>Greydale Elite Nomad</label>
+		<label>nomad</label>
+		<labelPlural>nomads</labelPlural>
 		<apparelTags>
 			<li>CO_Shieldbelt</li>
 		</apparelTags>
@@ -417,7 +399,8 @@
 	
 	<PawnKindDef ParentName="GD_EliteBase">
 		<defName>GD_Elite_Sniper</defName>
-		<label>Greydale Elite Sniper</label>
+		<label>exactor</label>
+		<labelPlural>exactors</labelPlural>
 		<apparelRequired>
 			<li>Apparel_NomadArmor</li>
 			<li>Apparel_NomadH</li>
@@ -425,7 +408,7 @@
 		<skills>
 		  <li>
 			<skill>Shooting</skill>
-			<range>12~18</range>
+			<range>13~18</range>
 		  </li>
 		</skills>
 		<combatPower>200</combatPower>
@@ -437,7 +420,8 @@
 	
 	<PawnKindDef ParentName="GD_EliteBase">
 		<defName>GD_Elite_Medic</defName>
-		<label>Greydale Elite Hospitaller</label>
+		<label>hospitaller</label>
+		<labelPlural>hospitallers</labelPlural>
 		<apparelRequired>
 			<li>Apparel_MedicArmor</li>
 			<li>Apparel_MedicH</li>
