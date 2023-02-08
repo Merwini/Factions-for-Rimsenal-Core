@@ -4,6 +4,16 @@
 		<apparelTags>
 			<li>CO_Carbonsuit</li>
 		</apparelTags>
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>8~13</range>
+		  </li>
+		  <li>
+			<skill>Melee</skill>
+			<range>9~14</range>
+		  </li>
+		</skills>
 		<weaponMoney>1500~5000</weaponMoney>
 	</PawnKindDef>
 
@@ -12,6 +22,16 @@
 		<apparelTags>
 			<li>CO_Carbonsuit</li>
 		</apparelTags>
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>10~16</range>
+		  </li>
+		  <li>
+			<skill>Melee</skill>
+			<range>10~16</range>
+		  </li>
+		</skills>
 		<weaponMoney>2000~7500</weaponMoney>
 	</PawnKindDef>
 
@@ -19,7 +39,7 @@
 		<defName>JI_Recruit</defName>
 		<label>drengr</label>
 		<labelPlural>drengir</labelPlural>
-		<combatPower>50</combatPower>
+		<combatPower>95</combatPower>
 		<weaponTags>
 			<li>JI_Pistol</li>
 		</weaponTags>
@@ -27,12 +47,18 @@
 		<canBeSapper>false</canBeSapper>
 		<apparelRequired>
 			<li>Apparel_SimpleHelmet</li>
+			<li>Apparel_PlateArmor</li>
 		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<color>(123,117,90)</color>
+			</li>
+		</specificApparelRequirements>
 		<apparelMoney>
 			<min>600</min>
 			<max>1000</max>
 		</apparelMoney>
-		<apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
+		<apparelAllowHeadgearChance>0.65</apparelAllowHeadgearChance>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="JI_BasePawn">
@@ -53,6 +79,11 @@
 		<weaponTags>
 			<li>JI_Melee</li>
 		</weaponTags>
+		<specificApparelRequirements>
+			<li>
+				<color>(123,117,90)</color>
+			</li>
+		</specificApparelRequirements>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 	</PawnKindDef>
 	

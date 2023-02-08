@@ -44,12 +44,12 @@
 				<commonality>100</commonality>
 				<kindDef>Combat</kindDef>
 				<options>
-					<JI_Melee>1</JI_Melee>
-					<JI_Recruit>5</JI_Recruit>
-					<JI_Soldier>3</JI_Soldier>
-					<JI_Elite>1</JI_Elite>
-					<JI_Sapper>0</JI_Sapper>
-					<JI_Officer>0</JI_Officer>
+					<JI_Melee>2</JI_Melee>
+					<JI_Recruit>3</JI_Recruit>
+					<JI_Soldier>15</JI_Soldier>
+					<JI_Elite>3</JI_Elite>
+					<JI_Sapper>1</JI_Sapper>
+					<JI_Officer>1</JI_Officer>
 				</options>
 			</li>
 			<li>
@@ -57,12 +57,11 @@
 				<commonality>35</commonality>
 				<kindDef>Combat</kindDef>
 				<options>
-					<JI_Melee>2</JI_Melee>
-					<JI_Recruit>0</JI_Recruit>
-					<JI_Soldier>6</JI_Soldier>
-					<JI_Elite>2</JI_Elite>
+					<JI_Melee>4</JI_Melee>
+					<JI_Soldier>8</JI_Soldier>
+					<JI_Elite>10</JI_Elite>
 					<JI_Sapper>1</JI_Sapper>
-					<JI_Officer>1</JI_Officer>
+					<JI_Officer>3</JI_Officer>
 					<JI_Leader>0.1</JI_Leader>
 				</options>
 			</li>
@@ -78,21 +77,14 @@
 					<JI_Melee>5</JI_Melee>
 					<JI_Recruit>5</JI_Recruit>
 					<JI_Soldier>1</JI_Soldier>
-					<JI_Elite>0</JI_Elite>
-					<JI_Sapper>0</JI_Sapper>
-					<JI_Officer>0</JI_Officer>
 				</options>
 			</li>
 			<li>
 				<kindDef>Peaceful</kindDef>
 				<options>
 					<Villager>20</Villager>
-					<JI_Melee>0</JI_Melee>
 					<JI_Recruit>5</JI_Recruit>
 					<JI_Soldier>3</JI_Soldier>
-					<JI_Elite>0</JI_Elite>
-					<JI_Sapper>0</JI_Sapper>
-					<JI_Officer>0</JI_Officer>
 				</options>
 			</li>
 			<li>
@@ -108,11 +100,9 @@
 				</carriers>
 				<guards>
 					<Villager>3</Villager>
-					<JI_Melee>0</JI_Melee>
 					<JI_Recruit>5</JI_Recruit>
 					<JI_Soldier>3</JI_Soldier>
 					<JI_Elite>2</JI_Elite>
-					<JI_Sapper>0</JI_Sapper>
 					<JI_Officer>1</JI_Officer>
 				</guards>
 			</li>
@@ -120,10 +110,9 @@
 				<kindDef>Settlement</kindDef>
 				<options>
 					<JI_Melee>5</JI_Melee>
-					<JI_Recruit>5</JI_Recruit>
-					<JI_Soldier>5</JI_Soldier>
+					<JI_Recruit>4</JI_Recruit>
+					<JI_Soldier>10</JI_Soldier>
 					<JI_Elite>3</JI_Elite>
-					<JI_Sapper>0</JI_Sapper>
 					<JI_Officer>2</JI_Officer>
 					<JI_Leader>0.5</JI_Leader>
 				</options>

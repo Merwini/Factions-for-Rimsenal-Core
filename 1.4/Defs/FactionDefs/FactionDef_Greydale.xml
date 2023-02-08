@@ -76,12 +76,12 @@
 				<commonality>25</commonality>
 				<kindDef>Combat</kindDef>
 				<options>
-					<GD_Grunt_Melee>1</GD_Grunt_Melee>
-					<GD_Grunt_Pistol>1.5</GD_Grunt_Pistol>
-					<GD_Defender_Rifle>20</GD_Defender_Rifle>
-					<GD_Defender_Scout>20</GD_Defender_Scout>
-					<GD_Defender_Grenadier>20</GD_Defender_Grenadier>
-					<GD_Defender_Melee>20</GD_Defender_Melee>
+					<GD_Grunt_Melee>8</GD_Grunt_Melee>
+					<GD_Grunt_Pistol>8</GD_Grunt_Pistol>
+					<GD_Defender_Rifle>3</GD_Defender_Rifle>
+					<GD_Defender_Scout>3</GD_Defender_Scout>
+					<GD_Defender_Grenadier>2</GD_Defender_Grenadier>
+					<GD_Defender_Melee>3</GD_Defender_Melee>
 				</options>
 			</li>
 			<li>

@@ -5,6 +5,21 @@
 			<li>CO_Carbonsuit</li>
 		</apparelTags>
 		<weaponMoney>1500~5000</weaponMoney>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>7~11</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>6~10</range>
+			</li>
+		</skills>
+		<specificApparelRequirements>
+			<li>
+				<color>(164,164,255)</color>
+			</li>
+		</specificApparelRequirements>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName ="RCF_ElitePawn" Name="YP_ElitePawn" Abstract="True">
@@ -13,33 +28,49 @@
 			<li>CO_Carbonsuit</li>
 		</apparelTags>
 		<weaponMoney>2000~7500</weaponMoney>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>8~14</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>8~11</range>
+			</li>
+		</skills>
+		<specificApparelRequirements>
+			<li>
+				<color>(164,164,255)</color>
+			</li>
+		</specificApparelRequirements>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="YP_BasePawn">
 		<defName>YP_Recruit</defName>
 		<label>kite</label>
 		<labelPlural>kites</labelPlural>
-		<combatPower>45</combatPower>
+		<combatPower>75</combatPower>
 		<weaponTags>
 			<li>YP_ShardPistols</li>
+			<li>YP_Knife</li>
 		</weaponTags>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<apparelRequired>
-			<li>Apparel_SimpleHelmet</li>
+			<li>Apparel_AdvancedHelmet</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>600</min>
 			<max>1000</max>
 		</apparelMoney>
-		<apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
+		<apparelAllowHeadgearChance>0.45</apparelAllowHeadgearChance>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="YP_BasePawn">
 		<defName>YP_Melee</defName>
 		<label>strix</label>
 		<labelPlural>striges</labelPlural>
-		<combatPower>140</combatPower>
+		<combatPower>155</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<apparelMoney>
@@ -60,7 +91,7 @@
 		<defName>YP_Soldier</defName>
 		<label>falcon</label>
 		<labelPlural>falcons</labelPlural>
-		<combatPower>120</combatPower>
+		<combatPower>175</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<apparelMoney>
@@ -74,6 +105,7 @@
 		<weaponTags>
 			<li>YP_ShardRifle</li>
 			<li>YP_Shotgun</li>
+			<li>YP_ShardPistols</li>
 		</weaponTags>
 		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
 	</PawnKindDef>
@@ -82,7 +114,7 @@
 		<defName>YP_Elite</defName>
 		<label>hawk</label>
 		<labelPlural>hawks</labelPlural>
-		<combatPower>150</combatPower>
+		<combatPower>175</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>true</canBeSapper>
 		<apparelRequired>
@@ -105,7 +137,7 @@
 		<defName>YP_Microwave</defName>
 		<label>albatross</label>
 		<labelPlural>albatrosses</labelPlural>
-		<combatPower>170</combatPower>
+		<combatPower>185</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>true</canBeSapper>
 		<apparelRequired>
@@ -126,7 +158,7 @@
 		<defName>YP_Officer</defName>
 		<label>eagle</label>
 		<labelPlural>eagles</labelPlural>
-		<combatPower>200</combatPower>
+		<combatPower>215</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<itemQuality Inherit="False" >Excellent</itemQuality>
@@ -137,6 +169,7 @@
 		<weaponTags>
 			<li>YP_SpikeLance</li>
 			<li>YP_ShardRifle</li>
+			<li>YP_ShardPistols</li>
 		</weaponTags>
 		<apparelMoney>
 			<min>5500</min>
@@ -160,7 +193,7 @@
 		</apparelRequired>
 		<weaponTags>
 			<li>YP_SpikeLance</li>
-			<li>YP_MicrowaveGun</li>
+			<li>YP_ShardPistols</li>
 		</weaponTags>
 		<apparelMoney>
 			<min>7500</min>

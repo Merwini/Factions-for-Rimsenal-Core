@@ -13,7 +13,7 @@
 	<!--Grunts : Just Clothes-->
 	
 	<PawnKindDef Name="GD_GruntBase" ParentName="GD_BasePawn" Abstract="True">
-		<combatPower>40</combatPower>
+		<combatPower>45</combatPower>
 		<itemQuality Inherit="False" >Poor</itemQuality>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
@@ -47,14 +47,17 @@
   
 	<PawnKindDef ParentName="GD_GruntBase">
 		<defName>GD_Grunt_Pistol</defName>
-		<combatPower>45</combatPower>
+		<combatPower>65</combatPower>
 		<label>grunt</label>
 		<labelPlural>grunts</labelPlural>
 		<apparelMoney>
 			<min>1600</min>
 			<max>1800</max>
 		</apparelMoney>
-		<apparelAllowHeadgearChance>0.45</apparelAllowHeadgearChance>
+		<apparelRequired>
+			<li>Apparel_AdvancedHelmet</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<weaponTags>
 			<li>GD_AutoPistol</li>
 			<li>GD_BasicPistol</li>

@@ -47,8 +47,8 @@
 				<kindDef>Combat</kindDef>
 				<options>
 					<CD_Melee>1</CD_Melee>
-					<CD_Recruit>5</CD_Recruit>
-					<CD_Soldier>3</CD_Soldier>
+					<CD_Recruit>3</CD_Recruit>
+					<CD_Soldier>6</CD_Soldier>
 					<CD_Elite>1</CD_Elite>
 					<CD_Officer>0</CD_Officer>
 				</options>
@@ -68,7 +68,7 @@
 			</li>
 			<li>
 				<!-- Swarm Raid -->
-				<commonality>25</commonality>
+				<commonality>15</commonality>
 				<kindDef>Combat</kindDef>
 				<disallowedStrategies>
 					<li>Siege</li>
@@ -77,7 +77,7 @@
 				<options>
 					<CD_Melee>5</CD_Melee>
 					<CD_Recruit>5</CD_Recruit>
-					<CD_Soldier>1</CD_Soldier>
+					<CD_Soldier>3</CD_Soldier>
 					<CD_Elite>0</CD_Elite>
 					<CD_Officer>0</CD_Officer>
 				</options>

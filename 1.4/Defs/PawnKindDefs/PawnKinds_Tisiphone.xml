@@ -4,6 +4,12 @@
 		<apparelTags>
 			<li>CO_Carbonsuit</li>
 		</apparelTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>8~14</range>
+			</li>
+		</skills>
 		<weaponMoney>1500~5000</weaponMoney>
 	</PawnKindDef>
 
@@ -12,6 +18,12 @@
 		<apparelTags>
 			<li>CO_Carbonsuit</li>
 		</apparelTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>11~19</range>
+			</li>
+		</skills>
 		<weaponMoney>2000~7500</weaponMoney>
 	</PawnKindDef>
 
@@ -19,7 +31,7 @@
 		<defName>TE_Recruit</defName>
 		<label>penitent</label>
 		<labelPlural>penitents</labelPlural>
-		<combatPower>45</combatPower>
+		<combatPower>55</combatPower>
 		<weaponTags>
 			<li>TE_KineticPistol</li>
 		</weaponTags>
@@ -32,14 +44,19 @@
 			<min>600</min>
 			<max>1000</max>
 		</apparelMoney>
-		<apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<color>(242,216,248)</color>
+			</li>
+		</specificApparelRequirements>
+		<apparelAllowHeadgearChance>0.45</apparelAllowHeadgearChance>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="TE_BasePawn">
 		<defName>TE_Melee</defName>
 		<label>fury</label>
 		<labelPlural>furies</labelPlural>
-		<combatPower>140</combatPower>
+		<combatPower>145</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<apparelMoney>
@@ -53,6 +70,17 @@
 		<weaponTags>
 			<li>TE_Eris</li>
 		</weaponTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>9~14</range>
+			</li>
+		</skills>
+		<specificApparelRequirements>
+			<li>
+				<color>(242,216,248)</color>
+			</li>
+		</specificApparelRequirements>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 	</PawnKindDef>
 
@@ -60,7 +88,7 @@
 		<defName>TE_Soldier</defName>
 		<label>erinys</label>
 		<labelPlural>erinyes</labelPlural>
-		<combatPower>120</combatPower>
+		<combatPower>155</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<apparelMoney>
@@ -83,7 +111,7 @@
 		<defName>TE_Elite</defName>
 		<label>eumenide</label>
 		<labelPlural>eumenides</labelPlural>
-		<combatPower>150</combatPower>
+		<combatPower>165</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>true</canBeSapper>
 		<apparelRequired>

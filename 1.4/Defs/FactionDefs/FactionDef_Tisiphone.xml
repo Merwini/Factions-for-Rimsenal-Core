@@ -55,11 +55,11 @@
 				<commonality>100</commonality>
 				<kindDef>Combat</kindDef>
 				<options>
-					<TE_Melee>1</TE_Melee>
-					<TE_Recruit>5</TE_Recruit>
-					<TE_Soldier>3</TE_Soldier>
-					<TE_Elite>1</TE_Elite>
-					<TE_Officer>0</TE_Officer>
+					<TE_Melee>3</TE_Melee>
+					<TE_Recruit>4</TE_Recruit>
+					<TE_Soldier>12</TE_Soldier>
+					<TE_Elite>4</TE_Elite>
+					<TE_Officer>1</TE_Officer>
 				</options>
 			</li>
 			<li>
@@ -77,7 +77,7 @@
 			</li>
 			<li>
 				<!-- Swarm Raid -->
-				<commonality>25</commonality>
+				<commonality>15</commonality>
 				<kindDef>Combat</kindDef>
 				<disallowedStrategies>
 					<li>Siege</li>
