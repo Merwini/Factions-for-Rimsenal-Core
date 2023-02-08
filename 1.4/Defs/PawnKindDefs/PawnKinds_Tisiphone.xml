@@ -46,7 +46,7 @@
 		</apparelMoney>
 		<specificApparelRequirements>
 			<li>
-				<color>(242,216,248)</color>
+				<color>(255,251,254)</color>
 			</li>
 		</specificApparelRequirements>
 		<apparelAllowHeadgearChance>0.45</apparelAllowHeadgearChance>
@@ -78,7 +78,7 @@
 		</skills>
 		<specificApparelRequirements>
 			<li>
-				<color>(242,216,248)</color>
+				<color>(255,251,254)</color>
 			</li>
 		</specificApparelRequirements>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
