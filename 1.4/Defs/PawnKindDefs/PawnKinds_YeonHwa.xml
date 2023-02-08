@@ -1,4 +1,4 @@
-a<Defs>
+<Defs>
 	<PawnKindDef ParentName ="RCF_BasePawn" Name="YP_BasePawn" Abstract="True">
 		<defaultFactionType>YeonHwa_Precision</defaultFactionType>
 		<apparelTags>
