@@ -1,4 +1,4 @@
-<Defs>
+a<Defs>
 	<PawnKindDef ParentName ="RCF_BasePawn" Name="YP_BasePawn" Abstract="True">
 		<defaultFactionType>YeonHwa_Precision</defaultFactionType>
 		<apparelTags>
@@ -105,7 +105,6 @@
 		<weaponTags>
 			<li>YP_ShardRifle</li>
 			<li>YP_Shotgun</li>
-			<li>YP_ShardPistols</li>
 		</weaponTags>
 		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
 	</PawnKindDef>
@@ -169,7 +168,6 @@
 		<weaponTags>
 			<li>YP_SpikeLance</li>
 			<li>YP_ShardRifle</li>
-			<li>YP_ShardPistols</li>
 		</weaponTags>
 		<apparelMoney>
 			<min>5500</min>
@@ -193,7 +191,6 @@
 		</apparelRequired>
 		<weaponTags>
 			<li>YP_SpikeLance</li>
-			<li>YP_ShardPistols</li>
 		</weaponTags>
 		<apparelMoney>
 			<min>7500</min>
