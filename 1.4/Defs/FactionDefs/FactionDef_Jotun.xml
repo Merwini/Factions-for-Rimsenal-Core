@@ -38,6 +38,12 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
 		</requiredMemes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.065</Dirtmole>
+				<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.035</Neanderthal>
+			</xenotypeChances>
+		</xenotypeSet>
 		<pawnGroupMakers Inherit="False">
 			<li>
 				<!-- Normal fights, standard mix -->

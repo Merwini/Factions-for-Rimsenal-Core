@@ -36,6 +36,14 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
 		</requiredMemes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.05</Hussar>
+				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.05</Dirtmole>
+				<Genie MayRequire="Ludeon.RimWorld.Biotech">0.025</Genie>
+				<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.025</Neanderthal>
+			</xenotypeChances>
+		</xenotypeSet>
 		<pawnGroupMakers Inherit="False">
 			<li>
 				<!-- Normal fights, standard mix -->
@@ -46,13 +54,13 @@
 					<GD_Grunt_Pistol>1.5</GD_Grunt_Pistol>
 					<GD_Defender_Rifle>30</GD_Defender_Rifle>
 					<GD_Defender_Scout>25</GD_Defender_Scout>
-					<GD_Defender_Grenadier>20</GD_Defender_Grenadier>
+					<GD_Defender_Grenadier>14</GD_Defender_Grenadier>
 					<GD_Defender_Melee>20</GD_Defender_Melee>
 					<GD_Protector_Carbine>35</GD_Protector_Carbine>
 					<GD_Protector_DMR>20</GD_Protector_DMR>
 					<GD_Protector_LMG>20</GD_Protector_LMG>
-					<GD_Protector_Grenadier>18</GD_Protector_Grenadier>
-					<GD_Protector_Sapper>20</GD_Protector_Sapper>
+					<GD_Protector_Grenadier>13</GD_Protector_Grenadier>
+					<GD_Protector_Sapper>13</GD_Protector_Sapper>
 					<GD_Protector_Recon>30</GD_Protector_Recon>
 					<GD_Elite_Pioneer>25</GD_Elite_Pioneer>
 					<GD_Elite_Nomad>15</GD_Elite_Nomad>
