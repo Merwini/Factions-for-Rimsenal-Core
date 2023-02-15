@@ -189,5 +189,11 @@
 				</options>
 			</li>
 		</pawnGroupMakers>
+		<baseTraderKinds>
+			<li>RSF_Base_TE</li>
+		</baseTraderKinds>
+		<caravanTraderKinds>
+			<li>RSF_Caravan_TE</li>
+		</caravanTraderKinds>
 	</FactionDef>
 </Defs>

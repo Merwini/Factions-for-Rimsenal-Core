@@ -1,0 +1,171 @@
+<Defs>
+	<TraderKindDef>
+		<defName>RSF_Caravan_TE</defName>
+		<label>Tisiphone liquidator</label>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>1200~2400</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Carbonsuit</thingDef>
+				<countRange>1~2</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>TE_Armor</tradeTag>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>TE_Weapon</tradeTag>
+				<thingDefCountRange>2~3</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineIndustrial</thingDef>
+				<countRange>16~32</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineUltratech</thingDef>
+				<countRange>6~12</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>TechHediff</tradeTag>
+				<thingDefCountRange>2~4</thingDefCountRange>
+				<countRange>1~1</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Drugs</categoryDef>
+				<thingDefCountRange>-1~2</thingDefCountRange>
+				<totalPriceRange>400~700</totalPriceRange>
+			</li>
+
+			<li Class="StockGenerator_BuyExpensiveSimple"/>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>RS_Armor</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>RS_Weapon</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ImplantEmpireCommon</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ImplantEmpireRoyal</tag>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+
+	<TraderKindDef>
+		<defName>RSF_Base_TE</defName>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>4800~6000</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Carbonsuit</thingDef>
+				<countRange>3~5</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>TE_Armor</tradeTag>
+				<thingDefCountRange>4~4</thingDefCountRange>
+				<countRange>1~4</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>TE_Weapon</tradeTag>
+				<thingDefCountRange>3~5</thingDefCountRange>
+				<countRange>2~4</countRange>
+			</li>
+
+			<li MayRequire="rimsenal.federation" Class="StockGenerator_Category">
+				<categoryDef>ADWeapons</categoryDef>
+				<thingDefCountRange>2~4</thingDefCountRange>
+				<countRange>1~3</countRange>
+			</li>
+			<li MayRequire="rimsenal.federation" Class="StockGenerator_SingleDef">
+				<thingDef>AD_ConcussionBaton</thingDef>
+				<countRange>0~3</countRange>
+			</li>
+			<li MayRequire="rimsenal.federation" Class="StockGenerator_SingleDef">
+				<thingDef>Proj_Repose</thingDef>
+				<countRange>0~2</countRange>
+			</li>
+			<li MayRequire="rimsenal.federation" Class="StockGenerator_SingleDef">
+				<thingDef>FedSuit</thingDef>
+				<countRange>2~5</countRange>
+			</li>
+			<li MayRequire="rimsenal.federation" Class="StockGenerator_SingleDef">
+				<thingDef>Apparel_Judicator</thingDef>
+				<countRange>0~2</countRange>
+			</li>
+			<li MayRequire="rimsenal.federation" Class="StockGenerator_SingleDef">
+				<thingDef>Apparel_JudicatorH</thingDef>
+				<countRange>0~2</countRange>
+			</li>
+			<li MayRequire="rimsenal.federation" Class="StockGenerator_SingleDef">
+				<thingDef>Apparel_MarksmanGear</thingDef>
+				<countRange>0~2</countRange>
+			</li>
+			<li MayRequire="rimsenal.federation" Class="StockGenerator_SingleDef">
+				<thingDef>Apparel_MarksmanGearH</thingDef>
+				<countRange>0~2</countRange>
+			</li>
+			<li MayRequire="rimsenal.federation" Class="StockGenerator_SingleDef">
+				<thingDef>Apparel_UGCuirass</thingDef>
+				<countRange>0~2</countRange>
+			</li>
+			<li MayRequire="rimsenal.federation" Class="StockGenerator_SingleDef">
+				<thingDef>Apparel_UGHelmet</thingDef>
+				<countRange>0~2</countRange>
+			</li>
+			<li MayRequire="rimsenal.federation" Class="StockGenerator_SingleDef">
+				<thingDef>Apparel_UGCloak</thingDef>
+				<countRange>0~2</countRange>
+			</li>
+			<li MayRequire="rimsenal.federation" Class="StockGenerator_SingleDef">
+				<thingDef>AD_AuxPistol</thingDef>
+				<countRange>2~4</countRange>
+			</li>
+			<li MayRequire="rimsenal.federation" Class="StockGenerator_SingleDef">
+				<thingDef>AD_FedRifle</thingDef>
+				<countRange>0~2</countRange>
+			</li>
+			
+
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineIndustrial</thingDef>
+				<countRange>24~48</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineUltratech</thingDef>
+				<countRange>12~24</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>TechHediff</tradeTag>
+				<thingDefCountRange>3~6</thingDefCountRange>
+				<countRange>1~3</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Drugs</categoryDef>
+				<thingDefCountRange>-1~4</thingDefCountRange>
+				<totalPriceRange>800~1600</totalPriceRange>
+			</li>
+
+			<li Class="StockGenerator_BuyExpensiveSimple"/>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>RS_Armor</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>RS_Weapon</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ImplantEmpireCommon</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ImplantEmpireRoyal</tag>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+</Defs>

@@ -33,7 +33,6 @@
 		</allowedCultures>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
 		</requiredMemes>
 		<xenotypeSet>
@@ -178,6 +177,12 @@
 				</options>
 			</li>
 		</pawnGroupMakers>
+		<baseTraderKinds>
+			<li>RSF_Base_YP</li>
+		</baseTraderKinds>
+		<caravanTraderKinds>
+			<li>RSF_Caravan_YP</li>
+		</caravanTraderKinds>
 	</FactionDef>
 
 </Defs>

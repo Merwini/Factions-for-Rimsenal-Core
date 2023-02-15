@@ -1,0 +1,31 @@
+<Defs>
+	<TraderKindDef>
+		<defName>Orbital_BlackCorp</defName>
+		<label>corporate black market</label>
+		<orbital>true</orbital>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>3000~6000</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>RS_Weapon</tradeTag>
+				<thingDefCountRange>10~20</thingDefCountRange>
+				<countRange>2~3</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>RS_Armor</tradeTag>
+				<thingDefCountRange>8~16</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			
+			<li Class="StockGenerator_BuyExpensiveSimple"/>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>RS_Weapon</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>RS_Armor</tag>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+</Defs>
