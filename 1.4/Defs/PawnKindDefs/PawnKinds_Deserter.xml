@@ -49,6 +49,7 @@
 			<li>GD_BasicPistol</li>
 			<li>JI_Pistol</li>
 			<li>YP_ShardPistols</li>
+			<li>AB_Pistol</li>
 		</weaponTags>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
@@ -193,6 +194,7 @@
 			<li>JI_Medium</li>
 			<li>YP_SpikeLance</li>
 			<li>GD_HybridRifle</li>
+			<li>AB_Heavy</li>
 		</weaponTags>
 		<apparelMoney>
 			<min>5500</min>

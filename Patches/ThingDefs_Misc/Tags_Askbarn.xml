@@ -1,0 +1,44 @@
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rimsenal Xenotype Pack - Askbarn</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!--EMP Surge Pack-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_SurgePack"]/apparel/tags</xpath>
+					<value>
+						<li>JI_ArmorE</li>
+					</value>
+				</li>
+
+				<!--Molten Recon Carbine-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/thingDef[defName="JI_Sigrun"]/weaponTags</xpath>
+					<value>
+						<li>JI_Medium</li>
+					</value>
+				</li>
+
+				<!--EMP Pistol-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/thingDef[defName="Gun_DisruptionPistol"]/weaponTags</xpath>
+					<value>
+						<li>AB_Pistol</li>
+					</value>
+				</li>
+				
+				<!--Fuster Clucker-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/thingDef[defName="Gun_FusterClucker"]/weaponTags</xpath>
+					<value>
+						<li>AB_Heavy</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>	
+	</Operation>
+</Patch>

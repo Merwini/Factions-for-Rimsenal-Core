@@ -42,6 +42,7 @@
 		<combatPower>95</combatPower>
 		<weaponTags>
 			<li>JI_Pistol</li>
+			<li>AB_Pistol</li>
 		</weaponTags>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
@@ -121,6 +122,7 @@
 		</apparelRequired>
 		<weaponTags>
 			<li>JI_Heavy</li>
+			<li>AB_Heavy</li>
 		</weaponTags>
 		<apparelMoney>
 			<min>4500</min>

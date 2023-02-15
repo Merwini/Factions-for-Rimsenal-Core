@@ -42,10 +42,14 @@
 		</requiredMemes>
 		<xenotypeSet>
 			<xenotypeChances>
-				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.05</Hussar>
-				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.15</Dirtmole>
-				<Genie MayRequire="Ludeon.RimWorld.Biotech">0.015</Genie>
-				<Waster MayRequire="Ludeon.RimWorld.Biotech">0.035</Waster>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.025</Hussar>
+				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.025</Dirtmole>
+				<Genie MayRequire="Ludeon.RimWorld.Biotech">0.025</Genie>
+				<Waster MayRequire="Ludeon.RimWorld.Biotech">0.05</Waster>
+				<Pigskin MayRequire="Ludeon.RimWorld.Biotech">0.05</Pigskin>
+				<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.025</Neanderthal>
+				<Impid MayRequire="Ludeon.RimWorld.Biotech">0.025</Impid>
+				<Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.025</Yttakin>
 			</xenotypeChances>
 		</xenotypeSet>
 		<pawnGroupMakers Inherit="False">

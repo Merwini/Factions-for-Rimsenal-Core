@@ -39,8 +39,8 @@
 		<xenotypeSet>
 			<xenotypeChances>
 				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.05</Hussar>
-				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.025</Dirtmole>
-				<Genie MayRequire="Ludeon.RimWorld.Biotech">0.05</Genie>
+				<Genie MayRequire="Ludeon.RimWorld.Biotech">0.025</Genie>
+				<Impid MayRequire="Ludeon.RimWorld.Biotech">0.125</Impid>
 			</xenotypeChances>
 		</xenotypeSet>
 		<pawnGroupMakers Inherit="False">

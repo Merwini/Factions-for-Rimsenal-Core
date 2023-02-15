@@ -49,6 +49,14 @@
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
 		</requiredMemes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.075</Hussar>
+				<Genie MayRequire="Ludeon.RimWorld.Biotech">0.015</Genie>
+				<Impid MayRequire="Ludeon.RimWorld.Biotech">0.075</Impid>
+				<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.015</Neanderthal>
+			</xenotypeChances>
+		</xenotypeSet>
 		<pawnGroupMakers Inherit="False">
 			<li>
 				<!-- Normal fights, standard mix -->
