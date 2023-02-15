@@ -1,0 +1,102 @@
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			
+			<!--GD Melee-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="GD_Sabertooth"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Biocodable"/>
+					</comps>
+				</value>
+			</li>
+			
+			<!--JI Melee-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="JI_Ormbane"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Biocodable"/>
+					</comps>
+				</value>
+			</li>
+			
+			<!--YP Melee-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="YP_BingJu"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Biocodable"/>
+					</comps>
+				</value>
+			</li>
+			
+			<!--TE Melee-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="TE_Eris"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Biocodable"/>
+					</comps>
+				</value>
+			</li>
+			
+			<!--GD Guns-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="BaseGDGun"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Biocodable"/>
+					</comps>
+				</value>
+			</li>
+			
+			<!--JI Guns-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/thingDef[@Name="BaseJIGun"]/comps</xpath>
+				<value>
+						<li Class="CompProperties_Biocodable"/>
+				</value>
+			</li>
+			
+			<!--YP Guns-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="BaseYPGun"]/comps</xpath>
+				<value>
+						<li Class="CompProperties_Biocodable"/>
+				</value>
+			</li>
+
+			<!--TE Guns-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/thingDef[@Name="BaseTEGun"]/comps</xpath>
+				<value>
+						<li Class="CompProperties_Biocodable"/>
+				</value>
+			</li>
+			
+			<!--Grenades-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="BaseRSGrenade"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Biocodable"/>
+					</comps>
+				</value>
+			</li>
+			
+			<!--Apparels-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="RSApparelMakeableBase"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Biocodable"/>
+					</comps>
+				</value>
+			</li>
+			
+			
+		</operations>
+	</Operation>
+</Patch>
