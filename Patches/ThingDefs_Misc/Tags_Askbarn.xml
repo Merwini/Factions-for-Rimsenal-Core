@@ -24,7 +24,7 @@
 
 				<!--EMP Pistol-->
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/thingDef[defName="Gun_DisruptionPistol"]/weaponTags</xpath>
+					<xpath>Defs/ThingDef[defName="Gun_DisruptionPistol"]/weaponTags</xpath>
 					<value>
 						<li>AB_Pistol</li>
 					</value>
@@ -32,7 +32,7 @@
 				
 				<!--Fuster Clucker-->
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/thingDef[defName="Gun_FusterClucker"]/weaponTags</xpath>
+					<xpath>Defs/ThingDef[defName="Gun_FusterClucker"]/weaponTags</xpath>
 					<value>
 						<li>AB_Heavy</li>
 					</value>
