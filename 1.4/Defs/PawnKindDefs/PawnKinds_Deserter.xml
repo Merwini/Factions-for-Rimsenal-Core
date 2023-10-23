@@ -41,7 +41,7 @@
 		<defName>CD_Recruit</defName>
 		<label>traitor</label>
 		<labelPlural>traitors</labelPlural>
-		<itemQuality Inherit="False" >Awful</itemQuality>
+		<itemQuality Inherit="False" >Poor</itemQuality>
 		<combatPower>45</combatPower>
 		<weaponTags>
 			<li>CD_KineticPistol</li>
@@ -72,7 +72,7 @@
 		<label>derelict</label>
 		<labelPlural>derelicts</labelPlural>
 		<combatPower>185</combatPower>
-		<itemQuality Inherit="False" >Awful</itemQuality>
+		<itemQuality Inherit="False" >Poor</itemQuality>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<apparelMoney>
@@ -101,7 +101,7 @@
 		<label>deserter</label>
 		<labelPlural>deserters</labelPlural>
 		<combatPower>165</combatPower>
-		<itemQuality Inherit="False" >Awful</itemQuality>
+		<itemQuality Inherit="False" >Poor</itemQuality>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
 		<apparelMoney>
@@ -139,7 +139,7 @@
 		<label>defector</label>
 		<labelPlural>defectors</labelPlural>
 		<combatPower>195</combatPower>
-		<itemQuality Inherit="False" >Poor</itemQuality>
+		<itemQuality Inherit="False" >Normal</itemQuality>
 		<isFighter>true</isFighter>
 		<canBeSapper>true</canBeSapper>
 		<apparelTags>
@@ -178,7 +178,7 @@
 		<combatPower>215</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
-		<itemQuality Inherit="False" >Normal</itemQuality>
+		<itemQuality Inherit="False" >Good</itemQuality>
 		<apparelTags>
 			<li>GD_ArmorE</li>
 			<li>GD_ArmorHE</li>

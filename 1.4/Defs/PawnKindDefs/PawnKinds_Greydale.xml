@@ -182,7 +182,7 @@
 	<!--Protectors : Security Armor + Extras-->
 	
 	<PawnKindDef Name="GD_ProtectorBase" ParentName="GD_BasePawn" Abstract="True">
-		<combatPower>125</combatPower>
+		<combatPower>115</combatPower>
 		<itemQuality Inherit="False" >Excellent</itemQuality>
 		<isFighter>true</isFighter>
 		<canBeSapper>false</canBeSapper>
@@ -231,7 +231,7 @@
 		<defName>GD_Protector_DMR</defName>
 		<label>pointman</label>
 		<labelPlural>pointmen</labelPlural>
-		<combatPower>135</combatPower>
+		<combatPower>125</combatPower>
 		<weaponTags>
 			<li>GD_DMR</li>
 		</weaponTags>
@@ -255,7 +255,7 @@
 		<defName>GD_Protector_LMG</defName>
 		<label>mandator</label>
 		<labelPlural>mandators</labelPlural>
-		<combatPower>145</combatPower>
+		<combatPower>135</combatPower>
 		<weaponTags>
 			<li>GD_LMG</li>
 		</weaponTags>
@@ -273,7 +273,7 @@
 		<defName>GD_Protector_Grenadier</defName>
 		<label>bombardier</label>
 		<labelPlural>bombardiers</labelPlural>
-		<combatPower>175</combatPower>
+		<combatPower>165</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<weaponTags>
 			<li>GD_GrenadeLauncher</li>
@@ -293,7 +293,7 @@
 		<defName>GD_Protector_Sapper</defName>
 		<label>renovator</label>
 		<labelPlural>renovators</labelPlural>
-		<combatPower>145</combatPower>
+		<combatPower>125</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<weaponTags>
 			<li>GD_Grenades</li>
@@ -313,7 +313,7 @@
 		<defName>GD_Protector_Recon</defName>
 		<label>stormer</label>
 		<labelPlural>stormers</labelPlural>
-		<combatPower>135</combatPower>
+		<combatPower>105</combatPower>
 		<weaponTags>
 			<li>GD_SMG</li>
 			<li>GD_MachinePistol</li>
