@@ -1,0 +1,72 @@
+<Defs>
+	<RulePackDef>
+		<defName>NamerIdeoDeserter</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_ideoName->Anti-Corporatism</li>
+				<li>r_ideoAdjective->Anti-Corporate</li>
+				<li>r_memberName->Anti-Corper</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>NamerLeaderDeserter</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_leaderTitle(p=6)->anti-manager</li>
+				<li>r_leaderTitle(p=3)->anti-director</li>
+				<li>r_leaderTitle(p=1)->anti-ceo</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<CultureDef>
+		<defName>Anti-Corporatism</defName>
+		<label>anti-corporatism</label>
+		<description>Corporations, and really any heirarchal power structure, are an abomination and must be destroyed. Except for our own, of course.</description>
+		<ideoNameMaker>NamerIdeoDeserter</ideoNameMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalKriminul</festivalNameMaker>
+		<leaderTitleMaker>NamerLeaderDeserter</leaderTitleMaker>
+		<allowedPlaceTags>
+			<li MayRequire="Ludeon.RimWorld.Ideology">OriginSpacer</li>
+		</allowedPlaceTags>
+		<iconPath>Things/DeserterIcon</iconPath>
+		<thingStyleCategories>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Spikecore</category>
+				<priority>1</priority>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Techist</category>
+				<priority>2</priority>
+			</li>
+		</thingStyleCategories>
+		<preferredWeaponClasses>
+			<noble>Ultratech</noble>
+			<despised>Neolithic</despised>
+		</preferredWeaponClasses>
+		<styleItemTags>
+			<li>
+				<tag>Punk</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Urban</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardPunk</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardUrban</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+</Defs>

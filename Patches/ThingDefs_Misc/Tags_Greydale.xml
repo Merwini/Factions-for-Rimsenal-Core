@@ -58,16 +58,6 @@
 						<li>GD_ArmorHE</li>
 					</value>
 				</li>
-
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="GD_TacticalPistol"]</xpath>
-					<value>
-						<weaponTags>
-							<li>GD_BasicPistol</li>
-						</weaponTags>
-					</value>
-				</li>
 				
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="GD_MSST"]</xpath>
@@ -104,15 +94,6 @@
 					<value>
 						<weaponTags>
 							<li>GD_MachinePistol</li>
-						</weaponTags>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/thingDef[defName="GD_HVSMG"]</xpath>
-					<value>
-						<weaponTags>
-							<li>GD_SMG</li>
 						</weaponTags>
 					</value>
 				</li>

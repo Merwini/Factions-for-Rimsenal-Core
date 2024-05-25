@@ -1,0 +1,125 @@
+<Defs>
+	<TraderKindDef>
+		<defName>RSF_Caravan_YP</defName>
+		<label>YeonHwa corporate outlet</label>
+		<category>Slaver</category>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>1200~2400</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Carbonsuit</thingDef>
+				<countRange>1~2</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>YP_Armor</tradeTag>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>YP_Weapon</tradeTag>
+				<thingDefCountRange>2~3</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+
+			<li Class="StockGenerator_Slaves">
+				<respectPopulationIntent>true</respectPopulationIntent>
+				<countRange>3~5</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Artifact</tradeTag>
+				<thingDefCountRange>1~4</thingDefCountRange>
+				<countRange>1~1</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>ExoticMisc</tradeTag>
+				<thingDefCountRange>1~4</thingDefCountRange>
+				<countRange>1~2</countRange>
+				<customCountRanges>
+					<MedicineUltratech>1~2</MedicineUltratech>
+					<Hyperweave>75~225</Hyperweave>
+				</customCountRanges>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+				<thingDef>Genepack</thingDef>
+				<countRange>2~4</countRange>
+			</li>
+
+			<li Class="StockGenerator_BuyExpensiveSimple"/>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>RS_Armor</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>RS_Weapon</tag>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+
+	<TraderKindDef>
+		<defName>RSF_Base_YP</defName>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>4800~6000</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Carbonsuit</thingDef>
+				<countRange>3~5</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>YP_Armor</tradeTag>
+				<thingDefCountRange>4~4</thingDefCountRange>
+				<countRange>1~4</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>YP_Weapon</tradeTag>
+				<thingDefCountRange>3~5</thingDefCountRange>
+				<countRange>2~4</countRange>
+			</li>
+
+			<li Class="StockGenerator_Slaves">
+				<respectPopulationIntent>true</respectPopulationIntent>
+				<countRange>5~7</countRange>
+			</li>
+			<li Class="StockGenerator_Slaves">
+				<respectPopulationIntent>false</respectPopulationIntent>
+				<countRange>1~2</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Artifact</tradeTag>
+				<thingDefCountRange>1~4</thingDefCountRange>
+				<countRange>1~1</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>ExoticMisc</tradeTag>
+				<thingDefCountRange>1~4</thingDefCountRange>
+				<countRange>1~2</countRange>
+				<customCountRanges>
+					<MedicineUltratech>1~2</MedicineUltratech>
+					<Hyperweave>75~225</Hyperweave>
+				</customCountRanges>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+				<thingDef>Genepack</thingDef>
+				<countRange>4~8</countRange>
+			</li>
+			<li Class="StockGenerator_Techprints">
+				<countChances>
+					<li>
+						<count>1</count>
+						<chance>1</chance>
+					</li>
+				</countChances>
+			</li>
+
+			<li Class="StockGenerator_BuyExpensiveSimple"/>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>RS_Armor</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>RS_Weapon</tag>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+</Defs>

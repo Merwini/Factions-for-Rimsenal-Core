@@ -1,0 +1,199 @@
+<Defs>
+	<PawnKindDef ParentName ="RCF_BasePawn" Name="JI_BasePawn" Abstract="True">
+		<defaultFactionType>Jotun_Interstellar</defaultFactionType>
+		<apparelTags>
+			<li>CO_Carbonsuit</li>
+		</apparelTags>
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>8~13</range>
+		  </li>
+		  <li>
+			<skill>Melee</skill>
+			<range>9~14</range>
+		  </li>
+		</skills>
+		<weaponMoney>1500~5000</weaponMoney>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName ="RCF_ElitePawn" Name="JI_ElitePawn" Abstract="True">
+		<defaultFactionType>Jotun_Interstellar</defaultFactionType>
+		<apparelTags>
+			<li>CO_Carbonsuit</li>
+		</apparelTags>
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>10~16</range>
+		  </li>
+		  <li>
+			<skill>Melee</skill>
+			<range>10~16</range>
+		  </li>
+		</skills>
+		<weaponMoney>2000~7500</weaponMoney>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="JI_BasePawn">
+		<defName>JI_Recruit</defName>
+		<label>drengr</label>
+		<labelPlural>drengir</labelPlural>
+		<combatPower>95</combatPower>
+		<weaponTags>
+			<li>JI_Pistol</li>
+			<li>AB_Pistol</li>
+		</weaponTags>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<apparelRequired>
+			<li>Apparel_SimpleHelmet</li>
+			<li>Apparel_PlateArmor</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<color>(123,117,90)</color>
+			</li>
+		</specificApparelRequirements>
+		<apparelMoney>
+			<min>600</min>
+			<max>1000</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.65</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="JI_BasePawn">
+		<defName>JI_Melee</defName>
+		<label>berserker</label>
+		<labelPlural>berserkers</labelPlural>
+		<combatPower>200</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<apparelMoney>
+			<min>3500</min>
+			<max>4500</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_CloseCombatArmor</li>
+			<li>Apparel_CloseCombatHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>JI_Melee</li>
+		</weaponTags>
+		<specificApparelRequirements>
+			<li>
+				<color>(123,117,90)</color>
+			</li>
+		</specificApparelRequirements>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="JI_BasePawn">
+		<defName>JI_Soldier</defName>
+		<label>huskarl</label>
+		<labelPlural>huskarls</labelPlural>
+		<combatPower>170</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<apparelMoney>
+			<min>3500</min>
+			<max>4500</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_AssaultArmor</li>
+			<li>Apparel_AssaultArmorH</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>JI_Medium</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="JI_ElitePawn">
+		<defName>JI_Elite</defName>
+		<label>einherjar</label>
+		<labelPlural>einheri</labelPlural>
+		<combatPower>220</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<apparelRequired>
+			<li>Apparel_FSArmor</li>
+			<li>Apparel_FSArmorH</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>JI_Heavy</li>
+			<li>AB_Heavy</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>4500</min>
+			<max>5500</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="JI_ElitePawn">
+		<defName>JI_Sapper</defName>
+		<label>ivarr</label>
+		<labelPlural>ivarrs</labelPlural>
+		<combatPower>190</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>true</canBeSapper>
+		<apparelRequired>
+			<li>Apparel_FSArmor</li>
+			<li>Apparel_FSArmorH</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>JI_Sapper</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>4500</min>
+			<max>5500</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="JI_ElitePawn">
+		<defName>JI_Officer</defName>
+		<label>skald</label>
+		<labelPlural>skalds</labelPlural>
+		<combatPower>305</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<itemQuality Inherit="False" >Excellent</itemQuality>
+		<apparelRequired>
+			<li>Apparel_AssaultArmor</li>
+			<li>Apparel_AssaultArmorH</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>JI_Medium</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>5500</min>
+			<max>6500</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="JI_ElitePawn">
+		<defName>JI_Leader</defName>
+		<label>jarl</label>
+		<labelPlural>jarls</labelPlural>
+		<combatPower>450</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<factionLeader>true</factionLeader>
+		<itemQuality Inherit="False" >Masterwork</itemQuality>
+		<apparelRequired>
+			<li>Apparel_AssaultArmor</li>
+			<li>Apparel_AssaultArmorH</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>JI_Medium</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>7500</min>
+			<max>9500</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+	</PawnKindDef>
+</Defs>
