@@ -1,0 +1,246 @@
+<Defs>
+	<PawnKindDef Name="CD_BasePawn" ParentName="RCF_BasePawn" Abstract="True">
+		<defaultFactionType>Corporate_Deserters</defaultFactionType>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>3~9</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>3~9</range>
+			</li>
+		</skills>
+		<specificApparelRequirements>
+			<li>
+				<color>(199,199,199)</color>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+
+	<PawnKindDef Name="CD_ElitePawn" ParentName="RCF_ElitePawn" Abstract="True">
+		<defaultFactionType>Corporate_Deserters</defaultFactionType>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>5~13</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>4~12</range>
+			</li>
+		</skills>
+		<specificApparelRequirements>
+			<li>
+				<color>(122,122,122)</color>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CD_BasePawn">
+		<defName>CD_Recruit</defName>
+		<label>traitor</label>
+		<labelPlural>traitors</labelPlural>
+		<itemQuality Inherit="False" >Poor</itemQuality>
+		<combatPower>45</combatPower>
+		<weaponTags>
+			<li>CD_KineticPistol</li>
+			<li>GD_AutoPistol</li>
+			<li>JI_Pistol</li>
+			<li>YP_ShardPistols</li>
+			<li>AB_Pistol</li>
+		</weaponTags>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<apparelRequired>
+			<li>Apparel_SimpleHelmet</li>
+		</apparelRequired>
+		<apparelMoney>
+			<min>600</min>
+			<max>1000</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>400</min>
+			<max>1100</max>
+		</weaponMoney>
+		<apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CD_BasePawn">
+		<defName>CD_Melee</defName>
+		<label>derelict</label>
+		<labelPlural>derelicts</labelPlural>
+		<combatPower>185</combatPower>
+		<itemQuality Inherit="False" >Poor</itemQuality>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<apparelMoney>
+			<min>3500</min>
+			<max>4500</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_CloseCombatArmor</li>
+			<li>Apparel_CloseCombatHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>CD_Eris</li>
+			<li>YP_Knife</li>
+			<li>JI_Melee</li>
+			<li>GD_Knife</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>500</min>
+			<max>1100</max>
+		</weaponMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CD_BasePawn">
+		<defName>CD_Soldier</defName>
+		<label>deserter</label>
+		<labelPlural>deserters</labelPlural>
+		<combatPower>165</combatPower>
+		<itemQuality Inherit="False" >Poor</itemQuality>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<apparelMoney>
+			<min>3500</min>
+			<max>4500</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>GD_ArmorL</li>
+			<li>GD_ArmorHL</li>
+			<li>JI_ArmorL</li>
+			<li>JI_ArmorHL</li>
+			<li>TE_ArmorL</li>
+			<li>TE_ArmorHL</li>
+			<li>YP_ArmorL</li>
+			<li>YP_ArmorHL</li>
+		</apparelTags>
+		<weaponTags>
+			<li>TE_KineticRifle</li>
+			<li>TE_ThuddGun</li>
+			<li>JI_Medium</li>
+			<li>YP_ShardRifle</li>
+			<li>YP_Shotgun</li>
+			<li>GD_Carbine</li>
+			<li>GD_Rifle</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>1100</min>
+			<max>1600</max>
+		</weaponMoney>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CD_ElitePawn">
+		<defName>CD_Elite</defName>
+		<label>defector</label>
+		<labelPlural>defectors</labelPlural>
+		<combatPower>195</combatPower>
+		<itemQuality Inherit="False" >Normal</itemQuality>
+		<isFighter>true</isFighter>
+		<canBeSapper>true</canBeSapper>
+		<apparelTags>
+			<li>GD_ArmorE</li>
+			<li>GD_ArmorHE</li>
+			<li>JI_ArmorE</li>
+			<li>JI_ArmorHE</li>
+			<li>TE_ArmorE</li>
+			<li>TE_ArmorHE</li>
+			<li>YP_ArmorE</li>
+			<li>YP_ArmorHE</li>
+		</apparelTags>
+		<weaponTags>
+			<li>TE_KineticLance</li>
+			<li>GD_HybridRifle</li>
+			<li>GD_GrenadeLauncher</li>
+			<li>GD_INGrenadeLauncher</li>
+			<li>JI_Heavy</li>
+			<li>YP_SpikeLance</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>4500</min>
+			<max>5500</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>1200</min>
+			<max>1800</max>
+		</weaponMoney>
+		<apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CD_ElitePawn">
+		<defName>CD_Officer</defName>
+		<label>usurper</label>
+		<labelPlural>usurpers</labelPlural>
+		<combatPower>215</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<itemQuality Inherit="False" >Good</itemQuality>
+		<apparelTags>
+			<li>GD_ArmorE</li>
+			<li>GD_ArmorHE</li>
+			<li>JI_ArmorE</li>
+			<li>JI_ArmorHE</li>
+			<li>TE_ArmorE</li>
+			<li>TE_ArmorHE</li>
+			<li>YP_ArmorE</li>
+			<li>YP_ArmorHE</li>
+		</apparelTags>
+		<weaponTags>
+			<li>TE_KineticRifle</li>
+			<li>JI_Medium</li>
+			<li>YP_SpikeLance</li>
+			<li>GD_HybridRifle</li>
+			<li>AB_Heavy</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>5500</min>
+			<max>6500</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>1500</min>
+			<max>2100</max>
+		</weaponMoney>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CD_ElitePawn">
+		<defName>CD_Leader</defName>
+		<label>tyrant</label>
+		<labelPlural>tyrants</labelPlural>
+		<combatPower>425</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<factionLeader>true</factionLeader>
+		<itemQuality Inherit="False" >Excellent</itemQuality>
+		<apparelTags>
+			<li>GD_ArmorE</li>
+			<li>GD_ArmorHE</li>
+			<li>JI_ArmorE</li>
+			<li>JI_ArmorHE</li>
+			<li>TE_ArmorE</li>
+			<li>TE_ArmorHE</li>
+			<li>YP_ArmorE</li>
+			<li>YP_ArmorHE</li>
+		</apparelTags>
+		<weaponTags>
+			<li>TE_KineticLance</li>
+			<li>GD_HybridRifle</li>
+			<li>GD_GrenadeLauncher</li>
+			<li>GD_INGrenadeLauncher</li>
+			<li>JI_Heavy</li>
+			<li>YP_SpikeLance</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>7500</min>
+			<max>9500</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>2500</min>
+			<max>3500</max>
+		</weaponMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+	</PawnKindDef>
+</Defs>

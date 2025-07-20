@@ -1,0 +1,199 @@
+<Defs>
+	<FactionDef ParentName="RimsenalBase">
+		<defName>Corporate_Deserters</defName>
+		<label>Corporate Deserters</label>
+		<description>Ex-employees of major interstellar corporations, terminated from their jobs or simply abandoning their duties. Now they are little more than pirates.</description>
+		<pawnSingular>deserter</pawnSingular>
+		<pawnsPlural>deserters</pawnsPlural>
+		<listOrderPriority>43</listOrderPriority>
+		<canMakeRandomly>true</canMakeRandomly>
+		<permanentEnemy>true</permanentEnemy>
+		<canSiege>true</canSiege>
+		<leaderTitle>chief murder officer</leaderTitle>
+		<factionIconPath>Things/DeserterIcon</factionIconPath>
+		<factionNameMaker>NamerDeserterFaction</factionNameMaker>
+		<settlementNameMaker>NamerDeserterBase</settlementNameMaker>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<techLevel>Industrial</techLevel>
+		<colorSpectrum>
+			<li>(0.50, 0.44, 0.33)</li>
+		</colorSpectrum>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.50</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.50</commonality>
+			</li>
+		</backstoryFilters>
+		<allowedCultures>
+			<li>Anti-Corporatism</li>
+		</allowedCultures>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</requiredMemes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.025</Hussar>
+				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.025</Dirtmole>
+				<Genie MayRequire="Ludeon.RimWorld.Biotech">0.025</Genie>
+				<Waster MayRequire="Ludeon.RimWorld.Biotech">0.05</Waster>
+				<Pigskin MayRequire="Ludeon.RimWorld.Biotech">0.05</Pigskin>
+				<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.025</Neanderthal>
+				<Impid MayRequire="Ludeon.RimWorld.Biotech">0.025</Impid>
+				<Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.025</Yttakin>
+			</xenotypeChances>
+		</xenotypeSet>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(100,45)</li>
+				<li>(2100, 165)</li>
+				<li>(4200, 185)</li>
+				<li>(6000, 195)</li>
+				<li>(8000, 215)</li>
+				<li>(190000, 9000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers Inherit="False">
+			<li>
+				<!-- Normal fights, standard mix -->
+				<commonality>100</commonality>
+				<kindDef>Combat</kindDef>
+				<options>
+					<CD_Melee>1</CD_Melee>
+					<CD_Recruit>3</CD_Recruit>
+					<CD_Soldier>10</CD_Soldier>
+					<CD_Elite>1</CD_Elite>
+					<CD_Officer>0.05</CD_Officer>
+				</options>
+			</li>
+			<li>
+				<!-- Elite Raid -->
+				<commonality>35</commonality>
+				<kindDef>Combat</kindDef>
+				<options>
+					<CD_Melee>2</CD_Melee>
+					<CD_Soldier>6</CD_Soldier>
+					<CD_Elite>8</CD_Elite>
+					<CD_Officer>1</CD_Officer>
+					<CD_Leader>0.1</CD_Leader>
+				
+			</options>
+			</li>
+			<li>
+				<!-- Swarm Raid -->
+				<commonality>5</commonality>
+				<kindDef>Combat</kindDef>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+				</disallowedStrategies>
+				<options>
+					<CD_Melee>5</CD_Melee>
+					<CD_Recruit>5</CD_Recruit>
+					<CD_Soldier>3</CD_Soldier>
+					<CD_Elite>0</CD_Elite>
+					<CD_Officer>0</CD_Officer>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Villager>20</Villager>
+					<CD_Melee>0</CD_Melee>
+					<CD_Recruit>5</CD_Recruit>
+					<CD_Soldier>3</CD_Soldier>
+					<CD_Elite>0</CD_Elite>
+					<CD_Officer>0</CD_Officer>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Town_Trader>1</Town_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<Villager>3</Villager>
+					<CD_Melee>0</CD_Melee>
+					<CD_Recruit>5</CD_Recruit>
+					<CD_Soldier>3</CD_Soldier>
+					<CD_Elite>2</CD_Elite>
+					<CD_Officer>1</CD_Officer>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<CD_Melee>5</CD_Melee>
+					<CD_Recruit>5</CD_Recruit>
+					<CD_Soldier>5</CD_Soldier>
+					<CD_Elite>3</CD_Elite>
+					<CD_Officer>2</CD_Officer>
+					<CD_Leader>0.5</CD_Leader>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Miner>3</Miner>
+					<CD_Melee>5</CD_Melee>
+					<CD_Recruit>5</CD_Recruit>
+					<CD_Soldier>3</CD_Soldier>
+					<CD_Elite>0</CD_Elite>
+					<CD_Officer>0</CD_Officer>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<CD_Melee>0</CD_Melee>
+					<CD_Recruit>5</CD_Recruit>
+					<CD_Soldier>5</CD_Soldier>
+					<CD_Elite>3</CD_Elite>
+					<CD_Officer>0</CD_Officer>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Logger>3</Logger>
+					<CD_Melee>5</CD_Melee>
+					<CD_Recruit>5</CD_Recruit>
+					<CD_Soldier>3</CD_Soldier>
+					<CD_Elite>0</CD_Elite>
+					<CD_Officer>0</CD_Officer>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Farmer>3</Farmer>
+					<CD_Melee>5</CD_Melee>
+					<CD_Recruit>5</CD_Recruit>
+					<CD_Soldier>3</CD_Soldier>
+					<CD_Elite>0</CD_Elite>
+					<CD_Officer>0</CD_Officer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		
+	</FactionDef>
+</Defs>

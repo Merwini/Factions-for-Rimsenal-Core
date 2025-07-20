@@ -1,0 +1,187 @@
+<Defs>
+	<RulePackDef>
+		<defName>NamerYeonHwaBase</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[YeonHwabaseprefix] [YeonHwabasesuffix]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>YeonHwabaseprefix</keyword>
+					<path>NameBanks/YeonHwa/YeonHwabaseprefix</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YeonHwabasesuffix</keyword>
+					<path>NameBanks/YeonHwa/YeonHwabasesuffix</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>NamerYeonHwaFaction</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[YeonHwafactionprefix] [YeonHwafactionsuffix]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>YeonHwafactionprefix</keyword>
+					<path>NameBanks/YeonHwa/YeonHwafactionprefix</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YeonHwafactionsuffix</keyword>
+					<path>NameBanks/YeonHwa/YeonHwafactionsuffix</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>NamerJotunFaction</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[Jotunfactionprefix] [Jotunfactionsuffix]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>Jotunfactionprefix</keyword>
+					<path>NameBanks/Jotun/Jotunfactionprefix</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Jotunfactionsuffix</keyword>
+					<path>NameBanks/Jotun/Jotunfactionsuffix</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>NamerJotunBase</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[Jotunbaseprefix] [Jotunbasesuffix]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>Jotunbaseprefix</keyword>
+					<path>NameBanks/Jotun/Jotunbaseprefix</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Jotunbasesuffix</keyword>
+					<path>NameBanks/Jotun/Jotunbasesuffix</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>NamerTisiphoneFaction</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[Tisiphonefactionprefix] [Tisiphonefactionsuffix]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>Tisiphonefactionprefix</keyword>
+					<path>NameBanks/Tisiphone/Tisiphonefactionprefix</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Tisiphonefactionsuffix</keyword>
+					<path>NameBanks/Tisiphone/Tisiphonefactionsuffix</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>NamerTisiphoneBase</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[Tisiphonebase]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>Tisiphonebase</keyword>
+					<path>NameBanks/Tisiphone/Tisiphonebase</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>NamerGreydaleFaction</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[Greydalefactionprefix] [Greydalefactionsuffix]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>Greydalefactionprefix</keyword>
+					<path>NameBanks/Greydale/Greydalefactionprefix</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Greydalefactionsuffix</keyword>
+					<path>NameBanks/Greydale/Greydalefactionsuffix</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>NamerGreydaleBase</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[Greydalebaseprefix] [Greydalebasemidfix] [Greydalebasesuffix]</li>
+				<li>name->[Greydalebaseprefix] [Greydalebasesuffix]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>Greydalebaseprefix</keyword>
+					<path>NameBanks/Greydale/Greydalebaseprefix</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Greydalebasemidfix</keyword>
+					<path>NameBanks/Greydale/Greydalebasemidfix</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Greydalebasesuffix</keyword>
+					<path>NameBanks/Greydale/Greydalebasesuffix</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerDeserterBase</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[Deserterbaseprefix] [Deserterbasesuffix]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>Deserterbaseprefix</keyword>
+					<path>NameBanks/Deserter/Deserterbaseprefix</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Deserterbasesuffix</keyword>
+					<path>NameBanks/Deserter/Deserterbasesuffix</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>NamerDeserterFaction</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[Deserterfactionprefix] [Deserterfactionsuffix]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>Deserterfactionprefix</keyword>
+					<path>NameBanks/Deserter/Deserterfactionprefix</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Deserterfactionsuffix</keyword>
+					<path>NameBanks/Deserter/Deserterfactionsuffix</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+</Defs>
