@@ -42,16 +42,6 @@
 				</value>
 			</li>
 			
-			<!--GD Guns-->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[@Name="BaseGDGun"]</xpath>
-				<value>
-					<comps>
-						<li Class="CompProperties_Biocodable"/>
-					</comps>
-				</value>
-			</li>
-			
 			<!--JI Guns-->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/thingDef[@Name="BaseJIGun"]/comps</xpath>
@@ -95,7 +85,6 @@
 					</comps>
 				</value>
 			</li>
-			
 			
 		</operations>
 	</Operation>
