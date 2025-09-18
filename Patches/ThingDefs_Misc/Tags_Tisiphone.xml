@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Rimsenal - Core</li>
-		</mods>
-        <match Class="PatchOperationSequence">
+	<Operation Class="PatchOperationSequence">
 			<operations>
 
 				<li Class="PatchOperationAdd">
@@ -48,7 +44,7 @@
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/thingDef[defName="TE_ThuddGun"]</xpath>
+					<xpath>Defs/thingDef[defName="TE_ThuddGun"]</xpath>
 					<value>
 						<weaponTags>
 							<li>TE_ThuddGun</li>
@@ -100,6 +96,5 @@
 				</li>
 				
 			</operations>
-		</match>
 	</Operation>
 </Patch>

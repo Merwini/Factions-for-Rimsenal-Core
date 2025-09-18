@@ -128,7 +128,7 @@
 		</weaponTags>
 		<weaponMoney>
 			<min>1100</min>
-			<max>1600</max>
+			<max>2200</max>
 		</weaponMoney>
 		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
 	</PawnKindDef>
