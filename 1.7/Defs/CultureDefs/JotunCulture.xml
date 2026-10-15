@@ -1,0 +1,86 @@
+<Defs>
+	<RulePackDef>
+		<defName>NamerIdeoJotun</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_ideoName->Bulwarkism</li>
+				<li>r_ideoAdjective->Bulwarkic</li>
+				<li>r_memberName->Bulwark</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>NamerLeaderJotun</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_leaderTitle(p=6)->senior engineer</li>
+				<li>r_leaderTitle(p=3)->senior skald</li>
+				<li>r_leaderTitle(p=1)->chief engineer</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<CultureDef>
+		<defName>Bulwarkism</defName>
+		<label>bulwarkism</label>
+		<description>Tenere Lineam. The mechanoid menace is an existential threat to all of humanity. While others bicker and fight, Jotuns never forget that they are the final bulwark, protecting humanity from extinction.</description>
+		<ideoNameMaker>NamerIdeoJotun</ideoNameMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalCorunan</festivalNameMaker>
+		<leaderTitleMaker>NamerLeaderJotun</leaderTitleMaker>
+		<allowedPlaceTags>
+			<li MayRequire="Ludeon.RimWorld.Ideology">OriginSpacer</li>
+		</allowedPlaceTags>
+		<iconPath>Things/JotunIcon</iconPath>
+		<thingStyleCategories>
+			<li MayRequire="VanillaExpanded.VMemesE">
+				<category>Spikecore</category>
+				<priority>2</priority>
+			</li>
+			<li MayRequire="VanillaExpanded.VMemesE">
+				<category>Totemic</category>
+				<priority>1</priority>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Techist</category>
+				<priority>3</priority>
+			</li>
+		</thingStyleCategories>
+		<preferredWeaponClasses>
+			<noble>Ultratech</noble>
+			<despised>Neolithic</despised>
+		</preferredWeaponClasses>
+		<styleItemTags>
+			<li>
+				<tag>Tribal</tag>
+				<baseWeight>5</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Punk</tag>
+				<baseWeight>5</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Rural</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardPunk</tag>
+				<baseWeight>5</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardTribal</tag>
+				<baseWeight>5</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardUrban</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+</Defs>

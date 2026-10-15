@@ -1,174 +1,416 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationSequence">
-			<operations>
 
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_SecurityArmor"]/apparel/tags</xpath>
-					<value>
-						<li>GD_ArmorL</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_SecurityHelmet"]/apparel/tags</xpath>
-					<value>
-						<li>GD_ArmorHL</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_NomadArmor"]/apparel/tags</xpath>
-					<value>
-						<li>GD_ArmorE</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_NomadH"]/apparel/tags</xpath>
-					<value>
-						<li>GD_ArmorHE</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_PioneerArmor"]/apparel/tags</xpath>
-					<value>
-						<li>GD_ArmorE</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_PioneerH"]/apparel/tags</xpath>
-					<value>
-						<li>GD_ArmorHE</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_MedicArmor"]/apparel/tags</xpath>
-					<value>
-						<li>GD_ArmorE</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_MedicH"]/apparel/tags</xpath>
-					<value>
-						<li>GD_ArmorHE</li>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="GD_MSST"]</xpath>
-					<value>
-						<weaponTags>
-							<li>GD_AutoPistol</li>
-						</weaponTags>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="GD_HybridRifle"]/weaponTags</xpath>
-					<value>
-							<li>GD_HybridRifle</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="GD_MSSH"]/weaponTags</xpath>
-					<value>
-							<li>GD_HybridPistol</li>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="GD_Sabertooth"]/weaponTags</xpath>
-					<value>
-							<li>GD_Knife</li>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/thingDef[defName="GD_MSSS"]</xpath>
-					<value>
-						<weaponTags>
-							<li>GD_MachinePistol</li>
-						</weaponTags>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/thingDef[defName="GD_BSLauncher"]</xpath>
-					<value>
-						<weaponTags>
-							<li>GD_Shotgun</li>
-						</weaponTags>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="GD_MSSF"]</xpath>
-					<value>
-						<weaponTags>
-							<li>GD_Flakker</li>
-						</weaponTags>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="GD_Bobcat"]/weaponTags</xpath>
-					<value>
-							<li>GD_Grenades</li>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="GD_GrenadeLauncher"]</xpath>
-					<value>
-						<weaponTags>
-							<li>GD_GrenadeLauncher</li>
-						</weaponTags>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/thingDef[defName="GD_INGrenadeLauncher"]</xpath>
-					<value>
-						<weaponTags>
-							<li>GD_INGrenadeLauncher</li>
-						</weaponTags>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="GD_ModularRifle"]</xpath>
-					<value>
-						<weaponTags>
-							<li>GD_Rifle</li>
-						</weaponTags>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="GD_ModularLMG"]/weaponTags</xpath>
-					<value>
-						<li>GD_LMG</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="GD_ModularCarbine"]</xpath>
-					<value>
-						<weaponTags>
-							<li>GD_Carbine</li>
-						</weaponTags>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="GD_ModularDMR"]/weaponTags</xpath>
-					<value>
-							<li>GD_DMR</li>
-					</value>
-				</li>
-				
-			</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_SecurityArmor"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_SecurityArmor"]/apparel/tags</xpath>
+			<value>
+				<li>GD_ArmorL</li>
+				<li>RS_ArmorL</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_SecurityArmor"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>GD_ArmorL</li>
+					<li>RS_ArmorL</li>
+				</tags>
+			</value>
+		</nomatch>
 	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_SecurityHelmet"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_SecurityHelmet"]/apparel/tags</xpath>
+			<value>
+				<li>GD_ArmorL</li>
+				<li>RS_ArmorL</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_SecurityHelmet"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>GD_ArmorL</li>
+					<li>RS_ArmorL</li>
+				</tags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_NomadArmor"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_NomadArmor"]/apparel/tags</xpath>
+			<value>
+				<li>GD_ArmorE</li>
+				<li>RS_ArmorE</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_NomadArmor"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>GD_ArmorE</li>
+					<li>RS_ArmorE</li>
+				</tags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_NomadH"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_NomadH"]/apparel/tags</xpath>
+			<value>
+				<li>GD_ArmorE</li>
+				<li>RS_ArmorE</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_NomadH"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>GD_ArmorE</li>
+					<li>RS_ArmorE</li>
+				</tags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_PioneerArmor"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_PioneerArmor"]/apparel/tags</xpath>
+			<value>
+				<li>GD_ArmorE</li>
+				<li>RS_ArmorE</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_PioneerArmor"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>GD_ArmorE</li>
+					<li>RS_ArmorE</li>
+				</tags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_PioneerH"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_PioneerH"]/apparel/tags</xpath>
+			<value>
+				<li>GD_ArmorE</li>
+				<li>RS_ArmorE</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_PioneerH"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>GD_ArmorE</li>
+					<li>RS_ArmorE</li>
+				</tags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_MedicArmor"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_MedicArmor"]/apparel/tags</xpath>
+			<value>
+				<li>GD_ArmorE</li>
+				<li>RS_ArmorE</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_MedicArmor"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>GD_ArmorE</li>
+					<li>RS_ArmorE</li>
+				</tags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_MedicH"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_MedicH"]/apparel/tags</xpath>
+			<value>
+				<li>GD_ArmorE</li>
+				<li>RS_ArmorE</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_MedicH"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>GD_ArmorE</li>
+					<li>RS_ArmorE</li>
+				</tags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GD_MSST"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_MSST"]/weaponTags</xpath>
+			<value>
+				<li>GD_AutoPistol</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_MSST"]</xpath>
+			<value>
+				<weaponTags>
+					<li>GD_AutoPistol</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GD_HybridRifle"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_HybridRifle"]/weaponTags</xpath>
+			<value>
+				<li>GD_HybridRifle</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_HybridRifle"]</xpath>
+			<value>
+				<weaponTags>
+					<li>GD_HybridRifle</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GD_MSSH"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_MSSH"]/weaponTags</xpath>
+			<value>
+				<li>GD_HybridPistol</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_MSSH"]</xpath>
+			<value>
+				<weaponTags>
+					<li>GD_HybridPistol</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GD_Sabertooth"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_Sabertooth"]/weaponTags</xpath>
+			<value>
+				<li>GD_Knife</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_Sabertooth"]</xpath>
+			<value>
+				<weaponTags>
+					<li>GD_Knife</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GD_MSSS"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_MSSS"]/weaponTags</xpath>
+			<value>
+				<li>GD_MachinePistol</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_MSSS"]</xpath>
+			<value>
+				<weaponTags>
+					<li>GD_MachinePistol</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GD_BSLauncher"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_BSLauncher"]/weaponTags</xpath>
+			<value>
+				<li>GD_Shotgun</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_BSLauncher"]</xpath>
+			<value>
+				<weaponTags>
+					<li>GD_Shotgun</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GD_MSSF"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_MSSF"]/weaponTags</xpath>
+			<value>
+				<li>GD_Flakker</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_MSSF"]</xpath>
+			<value>
+				<weaponTags>
+					<li>GD_Flakker</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GD_Bobcat"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_Bobcat"]/weaponTags</xpath>
+			<value>
+				<li>GD_Grenades</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_Bobcat"]</xpath>
+			<value>
+				<weaponTags>
+					<li>GD_Grenades</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GD_GrenadeLauncher"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_GrenadeLauncher"]/weaponTags</xpath>
+			<value>
+				<li>GD_GrenadeLauncher</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_GrenadeLauncher"]</xpath>
+			<value>
+				<weaponTags>
+					<li>GD_GrenadeLauncher</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GD_INGrenadeLauncher"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_INGrenadeLauncher"]/weaponTags</xpath>
+			<value>
+				<li>GD_INGrenadeLauncher</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_INGrenadeLauncher"]</xpath>
+			<value>
+				<weaponTags>
+					<li>GD_INGrenadeLauncher</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GD_ModularRifle"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_ModularRifle"]/weaponTags</xpath>
+			<value>
+				<li>GD_Rifle</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_ModularRifle"]</xpath>
+			<value>
+				<weaponTags>
+					<li>GD_Rifle</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GD_ModularLMG"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_ModularLMG"]/weaponTags</xpath>
+			<value>
+				<li>GD_LMG</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_ModularLMG"]</xpath>
+			<value>
+				<weaponTags>
+					<li>GD_LMG</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GD_ModularCarbine"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_ModularCarbine"]/weaponTags</xpath>
+			<value>
+				<li>GD_Carbine</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_ModularCarbine"]</xpath>
+			<value>
+				<weaponTags>
+					<li>GD_Carbine</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GD_ModularDMR"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_ModularDMR"]/weaponTags</xpath>
+			<value>
+				<li>GD_DMR</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_ModularDMR"]</xpath>
+			<value>
+				<weaponTags>
+					<li>GD_DMR</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
 </Patch>

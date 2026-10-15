@@ -1,369 +1,155 @@
 <Patch>
-	<Operation Class="PatchOperationSequence">
-		<operations>
 
-			<!--GD-->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="GD_Sabertooth"]</xpath>
-				<value>
-					<tradeTags>
-						<li>GD_Weapon</li>
-						<li>RS_Weapon</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[@Name="BaseGDGun"]</xpath>
-				<value>
-					<tradeTags>
-						<li>GD_Weapon</li>
-						<li>RS_Weapon</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="GD_Bobcat"]</xpath>
-				<value>
-					<tradeTags>
-						<li>GD_Weapon</li>
-						<li>RS_Weapon</li>
-					</tradeTags>
-				</value>
-			</li>
-				
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_SecurityArmor"]</xpath>
-				<value>
-					<tradeTags>
-						<li>GD_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_SecurityHelmet"]</xpath>
-				<value>
-					<tradeTags>
-						<li>GD_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-				
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_NomadArmor"]</xpath>
-				<value>
-					<tradeTags>
-						<li>GD_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_NomadH"]</xpath>
-				<value>
-					<tradeTags>
-						<li>GD_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_PioneerArmor"]</xpath>
-				<value>
-					<tradeTags>
-						<li>GD_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_PioneerH"]</xpath>
-				<value>
-					<tradeTags>
-						<li>GD_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_MedicArmor"]</xpath>
-				<value>
-					<tradeTags>
-						<li>GD_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_MedicH"]</xpath>
-				<value>
-					<tradeTags>
-						<li>GD_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-
-			<!--JI-->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="JI_Ormbane"]</xpath>
-				<value>
-					<tradeTags>
-						<li>JI_Weapon</li>
-						<li>RS_Weapon</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/thingDef[@Name="BaseJIGun"]</xpath>
-				<value>
-					<tradeTags>
-						<li>JI_Weapon</li>
-						<li>RS_Weapon</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="JI_Dunder"]</xpath>
-				<value>
-					<tradeTags>
-						<li>JI_Weapon</li>
-						<li>RS_Weapon</li>
-					</tradeTags>
-				</value>
-			</li>
-				
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_AssaultArmor"]</xpath>
-				<value>
-					<tradeTags>
-						<li>JI_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_AssaultArmorH"]</xpath>
-				<value>
-					<tradeTags>
-						<li>JI_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_FSArmor"]</xpath>
-				<value>
-					<tradeTags>
-						<li>JI_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_FSArmorH"]</xpath>
-				<value>
-					<tradeTags>
-						<li>JI_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_Korp"]</xpath>
-				<value>
-					<tradeTags>
-						<li>JI_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-
-			<!--YP-->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="YP_BingJu"]</xpath>
-				<value>
-					<tradeTags>
-						<li>YP_Weapon</li>
-						<li>RS_Weapon</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[@Name="BaseYPGun"]</xpath>
-				<value>
-					<tradeTags>
-						<li>YP_Weapon</li>
-						<li>RS_Weapon</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="YP_BaegYa"]</xpath>
-				<value>
-					<tradeTags>
-						<li>YP_Weapon</li>
-						<li>RS_Weapon</li>
-					</tradeTags>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_Dropsuit"]</xpath>
-				<value>
-					<tradeTags>
-						<li>YP_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_DropsuitH"]</xpath>
-				<value>
-					<tradeTags>
-						<li>YP_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_Strikesuit"]</xpath>
-				<value>
-					<tradeTags>
-						<li>YP_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_StrikesuitH"]</xpath>
-				<value>
-					<tradeTags>
-						<li>YP_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-				
-			<!--TE-->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="TE_Eris"]</xpath>
-				<value>
-					<tradeTags>
-						<li>TE_Weapon</li>
-						<li>RS_Weapon</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/thingDef[@Name="BaseTEGun"]</xpath>
-				<value>
-					<tradeTags>
-						<li>TE_Weapon</li>
-						<li>RS_Weapon</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="TE_Grief"]</xpath>
-				<value>
-					<tradeTags>
-						<li>TE_Weapon</li>
-						<li>RS_Weapon</li>
-					</tradeTags>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_ReflactorArmor"]</xpath>
-				<value>
-					<tradeTags>
-						<li>TE_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_ReflactorArmorH"]</xpath>
-				<value>
-					<tradeTags>
-						<li>TE_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_HazardCarapace"]</xpath>
-				<value>
-					<tradeTags>
-						<li>TE_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_HazardCarapaceH"]</xpath>
-				<value>
-					<tradeTags>
-						<li>TE_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-				
-			<!--Common-->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="MeleeWeapon_TorchSword"]</xpath>
-				<value>
-					<tradeTags>
-						<li>RS_Weapon</li>
-					</tradeTags>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Carbonsuit"]</xpath>
-				<value>
-					<tradeTags>
-						<li>TE_Armor</li>
-						<li>JI_Armor</li>
-						<li>YP_Armor</li>
-						<li>GD_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_CloseCombatArmor"]</xpath>
-				<value>
-					<tradeTags>
-						<li>TE_Armor</li>
-						<li>JI_Armor</li>
-						<li>YP_Armor</li>
-						<li>GD_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Apparel_CloseCombatHelmet"]</xpath>
-				<value>
-					<tradeTags>
-						<li>TE_Armor</li>
-						<li>JI_Armor</li>
-						<li>YP_Armor</li>
-						<li>GD_Armor</li>
-						<li>RS_Armor</li>
-					</tradeTags>
-				</value>
-			</li>
-			
-		</operations>
+	<!--GD-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+			defName="GD_Sabertooth" or
+			defName="GD_Bobcat" or
+			@Name="BaseGDGun"
+			]</xpath>
+		<value>
+			<tradeTags>
+				<li>GD_Weapon</li>
+				<li>RS_Weapon</li>
+			</tradeTags>
+		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+			defName="Apparel_SecurityArmor" or
+			defName="Apparel_SecurityHelmet" or
+			defName="Apparel_NomadArmor" or
+			defName="Apparel_NomadH" or
+			defName="Apparel_PioneerArmor" or
+			defName="Apparel_PioneerH" or
+			defName="Apparel_MedicArmor" or
+			defName="Apparel_MedicH"
+			]</xpath>
+		<value>
+			<tradeTags>
+				<li>GD_Armor</li>
+				<li>RS_Armor</li>
+			</tradeTags>
+		</value>
+	</Operation>
+
+	<!--JI-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+			defName="JI_Ormbane" or
+			defName="JI_Dunder" or
+			@Name="BaseJIGun"
+			]</xpath>
+		<value>
+			<tradeTags>
+				<li>JI_Weapon</li>
+				<li>RS_Weapon</li>
+			</tradeTags>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+			defName="Apparel_AssaultArmor" or
+			defName="Apparel_AssaultArmorH" or
+			defName="Apparel_FSArmor" or
+			defName="Apparel_FSArmorH" or
+			defName="Apparel_Korp"
+			]</xpath>
+		<value>
+			<tradeTags>
+				<li>JI_Armor</li>
+				<li>RS_Armor</li>
+			</tradeTags>
+		</value>
+	</Operation>
+
+	<!--YP-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+			defName="YP_BingJu" or
+			defName="YP_BaegYa" or
+			@Name="BaseYPGun"
+			]</xpath>
+		<value>
+			<tradeTags>
+				<li>YP_Weapon</li>
+				<li>RS_Weapon</li>
+			</tradeTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+			defName="Apparel_Dropsuit" or
+			defName="Apparel_DropsuitH" or
+			defName="Apparel_Strikesuit" or
+			defName="Apparel_StrikesuitH"
+			]</xpath>
+		<value>
+			<tradeTags>
+				<li>YP_Armor</li>
+				<li>RS_Armor</li>
+			</tradeTags>
+		</value>
+	</Operation>
+		
+	<!--TE-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+			defName="TE_Eris" or
+			defName="TE_Grief" or
+			@Name="BaseTEGun"
+			]</xpath>
+		<value>
+			<tradeTags>
+				<li>TE_Weapon</li>
+				<li>RS_Weapon</li>
+			</tradeTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+			defName="Apparel_ReflactorArmor" or
+			defName="Apparel_ReflactorArmorH" or
+			defName="Apparel_HazardCarapace" or
+			defName="Apparel_HazardCarapaceH"
+			]</xpath>
+		<value>
+			<tradeTags>
+				<li>TE_Armor</li>
+				<li>RS_Armor</li>
+			</tradeTags>
+		</value>
+	</Operation>
+		
+	<!--Common-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_TorchSword"]</xpath>
+		<value>
+			<tradeTags>
+				<li>RS_Weapon</li>
+			</tradeTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+			defName="Carbonsuit" or
+			defName="Apparel_CloseCombatArmor" or
+			defName="Apparel_CloseCombatHelmet"
+			]</xpath>
+		<value>
+			<tradeTags>
+				<li>TE_Armor</li>
+				<li>JI_Armor</li>
+				<li>YP_Armor</li>
+				<li>GD_Armor</li>
+				<li>RS_Armor</li>
+			</tradeTags>
+		</value>
+	</Operation>
+
 </Patch>

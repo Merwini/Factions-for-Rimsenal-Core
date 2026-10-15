@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Mauler Rifle -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GD_Amarok"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_Amarok"]/weaponTags</xpath>
+			<value>
+				<li>GD_Amarok</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_Amarok"]</xpath>
+			<value>
+				<weaponTags>
+					<li>GD_Amarok</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GD_Amarok"]/tradeTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_Amarok"]/tradeTags</xpath>
+			<value>
+				<li>GD_Weapon</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="GD_Amarok"]</xpath>
+			<value>
+				<tradeTags>
+					<li>GD_Weapon</li>
+				</tradeTags>
+			</value>
+		</nomatch>
+	</Operation>
+	
+</Patch>

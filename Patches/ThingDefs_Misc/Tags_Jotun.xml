@@ -1,102 +1,241 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-		<Operation Class="PatchOperationSequence">
-			<operations>
 
-				<!--Assault Armor-->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_AssaultArmor"]/apparel/tags</xpath>
-					<value>
-						<li>JI_ArmorL</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_AssaultArmorH"]/apparel/tags</xpath>
-					<value>
-						<li>JI_ArmorHL</li>
-					</value>
-				</li>
-
-				<!--Fire Support Armor-->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_FSArmor"]/apparel/tags</xpath>
-					<value>
-						<li>JI_ArmorE</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_FSArmorH"]/apparel/tags</xpath>
-					<value>
-						<li>JI_ArmorHE</li>
-					</value>
-				</li>
-				
-				<!-- Assault Hammer -->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="JI_Ormbane"]</xpath>
-					<value>
-						<weaponTags>
-							<li>JI_Melee</li>
-						</weaponTags>
-					</value>
-				</li>
-				<!-- Molten Pistol -->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/thingDef[defName="JI_Trollsverd"]/weaponTags</xpath>
-					<value>
-							<li>JI_Pistol</li>
-					</value>
-				</li>
-				<!-- Siege Shotgun -->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/thingDef[defName="JI_Fafnir"]</xpath>
-					<value>
-						<weaponTags>
-							<li>JI_Medium</li>
-						</weaponTags>
-					</value>
-				</li>
-				<!-- Molten Rifle -->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/thingDef[defName="JI_Hrunting"]/weaponTags</xpath>
-					<value>
-							<li>JI_Medium</li>
-					</value>
-				</li>
-				<!-- Siege Gun -->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/thingDef[defName="JI_Grendel"]</xpath>
-					<value>
-						<weaponTags>
-							<li>JI_Medium</li>
-						</weaponTags>
-					</value>
-				</li>
-				<!-- Suppressor Cannon -->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/thingDef[defName="JI_Muspell"]</xpath>
-					<value>
-						<weaponTags>
-							<li>JI_Heavy</li>
-						</weaponTags>
-					</value>
-				</li>
-				<!-- AMR -->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/thingDef[defName="JI_Gramr"]</xpath>
-					<value>
-						<weaponTags>
-							<li>JI_Heavy</li>
-						</weaponTags>
-					</value>
-				</li>
-				<!-- Satchel Charge -->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="JI_Dunder"]/weaponTags</xpath>
-					<value>
-							<li>JI_Sapper</li>
-					</value>
-				</li>
-			</operations>
+	<!--Assault Armor-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_AssaultArmor"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_AssaultArmor"]/apparel/tags</xpath>
+			<value>
+				<li>JI_ArmorL</li>
+				<li>RS_ArmorL</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_AssaultArmor"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>JI_ArmorL</li>
+					<li>RS_ArmorL</li>
+				</tags>
+			</value>
+		</nomatch>
 	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_AssaultArmorH"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_AssaultArmorH"]/apparel/tags</xpath>
+			<value>
+				<li>JI_ArmorL</li>
+				<li>RS_ArmorL</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_AssaultArmorH"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>JI_ArmorL</li>
+					<li>RS_ArmorL</li>
+				</tags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!--Fire Support Armor-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_FSArmor"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_FSArmor"]/apparel/tags</xpath>
+			<value>
+				<li>JI_ArmorE</li>
+				<li>RS_ArmorE</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_FSArmor"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>JI_ArmorE</li>
+					<li>RS_ArmorE</li>
+				</tags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_FSArmorH"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_FSArmorH"]/apparel/tags</xpath>
+			<value>
+				<li>JI_ArmorE</li>
+				<li>RS_ArmorE</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_FSArmorH"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>JI_ArmorE</li>
+					<li>RS_ArmorE</li>
+				</tags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- Artillery Armor -->
+	<!-- Don't really need raiders spawning with this -->
+	
+	<!-- Assault Hammer -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="JI_Ormbane"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="JI_Ormbane"]/weaponTags</xpath>
+			<value>
+				<li>JI_Melee</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="JI_Ormbane"]</xpath>
+			<value>
+				<weaponTags>
+					<li>JI_Melee</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- Molten Pistol -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="JI_Trollsverd"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="JI_Trollsverd"]/weaponTags</xpath>
+			<value>
+				<li>JI_Pistol</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="JI_Trollsverd"]</xpath>
+			<value>
+				<weaponTags>
+					<li>JI_Pistol</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- Siege Shotgun -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="JI_Fafnir"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="JI_Fafnir"]/weaponTags</xpath>
+			<value>
+				<li>JI_Medium</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="JI_Fafnir"]</xpath>
+			<value>
+				<weaponTags>
+					<li>JI_Medium</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- Molten Rifle -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="JI_Hrunting"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="JI_Hrunting"]/weaponTags</xpath>
+			<value>
+				<li>JI_Medium</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="JI_Hrunting"]</xpath>
+			<value>
+				<weaponTags>
+					<li>JI_Medium</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- Siege Gun -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="JI_Grendel"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="JI_Grendel"]/weaponTags</xpath>
+			<value>
+				<li>JI_Medium</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="JI_Grendel"]</xpath>
+			<value>
+				<weaponTags>
+					<li>JI_Medium</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- Suppressor Cannon -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="JI_Muspell"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="JI_Muspell"]/weaponTags</xpath>
+			<value>
+				<li>JI_Heavy</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="JI_Muspell"]</xpath>
+			<value>
+				<weaponTags>
+					<li>JI_Heavy</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- AMR -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="JI_Gramr"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="JI_Gramr"]/weaponTags</xpath>
+			<value>
+				<li>JI_Heavy</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="JI_Gramr"]</xpath>
+			<value>
+				<weaponTags>
+					<li>JI_Heavy</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- Satchel Charge -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="JI_Dunder"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="JI_Dunder"]/weaponTags</xpath>
+			<value>
+				<li>JI_Sapper</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="JI_Dunder"]</xpath>
+			<value>
+				<weaponTags>
+					<li>JI_Sapper</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+			
 </Patch>

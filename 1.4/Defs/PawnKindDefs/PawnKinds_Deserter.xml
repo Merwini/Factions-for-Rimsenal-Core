@@ -109,14 +109,7 @@
 			<max>4500</max>
 		</apparelMoney>
 		<apparelTags>
-			<li>GD_ArmorL</li>
-			<li>GD_ArmorHL</li>
-			<li>JI_ArmorL</li>
-			<li>JI_ArmorHL</li>
-			<li>TE_ArmorL</li>
-			<li>TE_ArmorHL</li>
-			<li>YP_ArmorL</li>
-			<li>YP_ArmorHL</li>
+			<li>RS_ArmorL</li>
 		</apparelTags>
 		<weaponTags>
 			<li>TE_KineticRifle</li>
@@ -143,14 +136,7 @@
 		<isFighter>true</isFighter>
 		<canBeSapper>true</canBeSapper>
 		<apparelTags>
-			<li>GD_ArmorE</li>
-			<li>GD_ArmorHE</li>
-			<li>JI_ArmorE</li>
-			<li>JI_ArmorHE</li>
-			<li>TE_ArmorE</li>
-			<li>TE_ArmorHE</li>
-			<li>YP_ArmorE</li>
-			<li>YP_ArmorHE</li>
+			<li>RS_ArmorE</li>
 		</apparelTags>
 		<weaponTags>
 			<li>TE_KineticLance</li>
@@ -180,14 +166,7 @@
 		<canBeSapper>false</canBeSapper>
 		<itemQuality Inherit="False" >Good</itemQuality>
 		<apparelTags>
-			<li>GD_ArmorE</li>
-			<li>GD_ArmorHE</li>
-			<li>JI_ArmorE</li>
-			<li>JI_ArmorHE</li>
-			<li>TE_ArmorE</li>
-			<li>TE_ArmorHE</li>
-			<li>YP_ArmorE</li>
-			<li>YP_ArmorHE</li>
+			<li>RS_ArmorE</li>
 		</apparelTags>
 		<weaponTags>
 			<li>TE_KineticRifle</li>
@@ -217,14 +196,7 @@
 		<factionLeader>true</factionLeader>
 		<itemQuality Inherit="False" >Excellent</itemQuality>
 		<apparelTags>
-			<li>GD_ArmorE</li>
-			<li>GD_ArmorHE</li>
-			<li>JI_ArmorE</li>
-			<li>JI_ArmorHE</li>
-			<li>TE_ArmorE</li>
-			<li>TE_ArmorHE</li>
-			<li>YP_ArmorE</li>
-			<li>YP_ArmorHE</li>
+			<li>RS_ArmorE</li>
 		</apparelTags>
 		<weaponTags>
 			<li>TE_KineticLance</li>

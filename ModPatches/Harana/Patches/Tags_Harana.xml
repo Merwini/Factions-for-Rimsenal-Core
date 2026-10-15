@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Mirage Suit -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_Shocksuit"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_Shocksuit"]/apparel/tags</xpath>
+			<value>
+				<li>YP_ArmorE</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_Shocksuit"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>YP_ArmorE</li>
+				</tags>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_Shocksuit"]/tradeTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_Shocksuit"]/tradeTags</xpath>
+			<value>
+				<li>YP_Armor</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_Shocksuit"]</xpath>
+			<value>
+				<tradeTags>
+					<li>YP_Armor</li>
+				</tradeTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- Whisper Shot -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="YP_Seu"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="YP_Seu"]/weaponTags</xpath>
+			<value>
+				<li>YP_Seu</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="YP_Seu"]</xpath>
+			<value>
+				<weaponTags>
+					<li>YP_Seu</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="YP_Seu"]/tradeTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="YP_Seu"]/tradeTags</xpath>
+			<value>
+				<li>YP_Weapon</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="YP_Seu"]</xpath>
+			<value>
+				<tradeTags>
+					<li>YP_Weapon</li>
+				</tradeTags>
+			</value>
+		</nomatch>
+	</Operation>
+				
+</Patch>

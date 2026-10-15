@@ -1,0 +1,79 @@
+<Patch>
+
+	<!--EMP Surge Pack-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_SurgePack"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_SurgePack"]/apparel/tags</xpath>
+			<value>
+				<li>JI_ArmorE</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_SurgePack"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>JI_ArmorE</li>
+				</tags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!--Molten Recon Carbine-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="JI_Sigrun"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="JI_Sigrun"]/weaponTags</xpath>
+			<value>
+				<li>JI_Medium</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="JI_Sigrun"]</xpath>
+			<value>
+				<weaponTags>
+					<li>JI_Medium</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!--EMP Pistol-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Gun_DisruptionPistol"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Gun_DisruptionPistol"]/weaponTags</xpath>
+			<value>
+				<li>AB_Pistol</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Gun_DisruptionPistol"]</xpath>
+			<value>
+				<weaponTags>
+					<li>AB_Pistol</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<!--Fuster Clucker-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Gun_FusterClucker"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Gun_FusterClucker"]/weaponTags</xpath>
+			<value>
+				<li>AB_Heavy</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Gun_FusterClucker"]</xpath>
+			<value>
+				<weaponTags>
+					<li>AB_Heavy</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+			
+</Patch>

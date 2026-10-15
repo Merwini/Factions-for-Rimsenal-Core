@@ -1,102 +1,228 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationSequence">
-			<operations>
 
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_Dropsuit"]/apparel/tags</xpath>
-					<value>
-						<li>YP_ArmorE</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_DropsuitH"]/apparel/tags</xpath>
-					<value>
-						<li>YP_ArmorHE</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_Strikesuit"]/apparel/tags</xpath>
-					<value>
-						<li>YP_ArmorL</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_StrikesuitH"]/apparel/tags</xpath>
-					<value>
-						<li>YP_ArmorHL</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="YP_SeoLi"]/weaponTags</xpath>
-					<value>
-							<li>YP_ShardRifle</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="YP_SagPung"]/weaponTags</xpath>
-					<value>
-							<li>YP_Shotgun</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="YP_BingJu"]</xpath>
-					<value>
-						<weaponTags>
-							<li>YP_Knife</li>
-						</weaponTags>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="YP_BaegYa"]</xpath>
-					<value>
-						<weaponTags>
-							<li>YP_Grenades</li>
-						</weaponTags>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="YP_SangAe"]</xpath>
-					<value>
-						<weaponTags>
-							<li>YP_SpikeLance</li>
-						</weaponTags>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="YP_SeolHwa"]</xpath>
-					<value>
-						<weaponTags>
-							<li>YP_ShardPistols</li>
-						</weaponTags>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="YP_GeugGwang"]</xpath>
-					<value>
-						<weaponTags>
-							<li>YP_MicrowaveGun</li>
-						</weaponTags>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="YP_VectorShot"]</xpath>
-					<value>
-						<weaponTags>
-							<li>YP_VectorShot</li>
-						</weaponTags>
-					</value>
-				</li>
-				
-			</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_Dropsuit"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_Dropsuit"]/apparel/tags</xpath>
+			<value>
+				<li>YP_ArmorE</li>
+				<li>RS_ArmorE</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_Dropsuit"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>YP_ArmorE</li>
+					<li>RS_ArmorE</li>
+				</tags>
+			</value>
+		</nomatch>
 	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_DropsuitH"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_DropsuitH"]/apparel/tags</xpath>
+			<value>
+				<li>YP_ArmorE</li>
+				<li>RS_ArmorE</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_DropsuitH"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>YP_ArmorE</li>
+					<li>RS_ArmorE</li>
+				</tags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_Strikesuit"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_Strikesuit"]/apparel/tags</xpath>
+			<value>
+				<li>YP_ArmorL</li>
+				<li>RS_ArmorL</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_Strikesuit"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>YP_ArmorL</li>
+					<li>RS_ArmorL</li>
+				</tags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_StrikesuitH"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_StrikesuitH"]/apparel/tags</xpath>
+			<value>
+				<li>YP_ArmorL</li>
+				<li>RS_ArmorL</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_StrikesuitH"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>YP_ArmorL</li>
+					<li>RS_ArmorL</li>
+				</tags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="YP_SeoLi"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="YP_SeoLi"]/weaponTags</xpath>
+			<value>
+				<li>YP_ShardRifle</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="YP_SeoLi"]</xpath>
+			<value>
+				<weaponTags>
+					<li>YP_ShardRifle</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="YP_SagPung"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="YP_SagPung"]/weaponTags</xpath>
+			<value>
+				<li>YP_Shotgun</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="YP_SagPung"]</xpath>
+			<value>
+				<weaponTags>
+					<li>YP_Shotgun</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="YP_BingJu"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="YP_BingJu"]/weaponTags</xpath>
+			<value>
+				<li>YP_Knife</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="YP_BingJu"]</xpath>
+			<value>
+				<weaponTags>
+					<li>YP_Knife</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="YP_BaegYa"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="YP_BaegYa"]/weaponTags</xpath>
+			<value>
+				<li>YP_Grenades</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="YP_BaegYa"]</xpath>
+			<value>
+				<weaponTags>
+					<li>YP_Grenades</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="YP_SangAe"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="YP_SangAe"]/weaponTags</xpath>
+			<value>
+				<li>YP_SpikeLance</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="YP_SangAe"]</xpath>
+			<value>
+				<weaponTags>
+					<li>YP_SpikeLance</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="YP_SeolHwa"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="YP_SeolHwa"]/weaponTags</xpath>
+			<value>
+				<li>YP_ShardPistols</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="YP_SeolHwa"]</xpath>
+			<value>
+				<weaponTags>
+					<li>YP_ShardPistols</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="YP_GeugGwang"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="YP_GeugGwang"]/weaponTags</xpath>
+			<value>
+				<li>YP_MicrowaveGun</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="YP_GeugGwang"]</xpath>
+			<value>
+				<weaponTags>
+					<li>YP_MicrowaveGun</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="YP_VectorShot"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="YP_VectorShot"]/weaponTags</xpath>
+			<value>
+				<li>YP_VectorShot</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="YP_VectorShot"]</xpath>
+			<value>
+				<weaponTags>
+					<li>YP_VectorShot</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
 </Patch>

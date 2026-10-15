@@ -1,0 +1,18 @@
+<Defs>
+	<ThingSetMakerDef>
+		<defName>RimsenalRaidLootMaker</defName>
+		<root Class="ThingSetMaker_MarketValue">
+			<fixedParams>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+						<li>MedicineIndustrial</li>
+						<li>ComponentIndustrial</li>
+						<li>MealSurvivalPack</li>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+			</fixedParams>
+		</root>
+	</ThingSetMakerDef>
+</Defs>

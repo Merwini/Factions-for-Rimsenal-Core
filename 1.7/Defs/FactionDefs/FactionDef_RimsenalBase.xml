@@ -1,0 +1,54 @@
+<Defs>
+	<FactionDef Name="RimsenalBase" ParentName="FactionBase" Abstract="True">
+		<autoFlee>false</autoFlee>
+		<permanentEnemy>false</permanentEnemy>
+		<canStageAttacks>true</canStageAttacks>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+		</disallowedMemes>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+		</requiredMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalVenerated</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NobleDespisedWeapons</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+		</disallowedPrecepts>
+		<raidLootValueFromPointsCurve>
+			<points>
+				<li>(35, 15)</li>
+				<li>(100, 120)</li>
+				<li>(1000, 500)</li>
+				<li>(2000, 800)</li>
+				<li>(4000, 1000)</li>
+			</points>
+		</raidLootValueFromPointsCurve>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Plasteel</li>
+				<li>Uranium</li>
+				<li>Synthread</li>
+				<li>Cloth</li>
+				<li>Hyperweave</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<allowedArrivalTemperatureRange>
+			<min>-50</min>
+			<max>50</max>
+		</allowedArrivalTemperatureRange>
+		<raidLootMaker>RimsenalRaidLootMaker</raidLootMaker>
+		<maxConfigurableAtWorldCreation>999</maxConfigurableAtWorldCreation>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+	</FactionDef>
+</Defs>

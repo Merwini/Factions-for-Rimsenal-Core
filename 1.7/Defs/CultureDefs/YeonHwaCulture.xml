@@ -1,0 +1,72 @@
+<Defs>
+	<RulePackDef>
+		<defName>NamerIdeoYeonHwa</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_ideoName->Kleptocracism</li>
+				<li>r_ideoAdjective->Kleptocratic</li>
+				<li>r_memberName->Klepto</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>NamerLeaderYeonHwa</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_leaderTitle(p=6)->acquisitions director</li>
+				<li>r_leaderTitle(p=3)->marketing director</li>
+				<li>r_leaderTitle(p=1)->advertising director</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<CultureDef>
+		<defName>Kleptocracism</defName>
+		<label>kleptocracism</label>
+		<description>All things are either wealth, or a resource that can be exploited for wealth. RimWorlds are just free real estate.</description>
+		<ideoNameMaker>NamerIdeoYeonHwa</ideoNameMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalKriminul</festivalNameMaker>
+		<leaderTitleMaker>NamerLeaderYeonHwa</leaderTitleMaker>
+		<allowedPlaceTags>
+			<li MayRequire="Ludeon.RimWorld.Ideology">OriginSpacer</li>
+		</allowedPlaceTags>
+		<iconPath>Things/YeonHwaIcon</iconPath>
+		<thingStyleCategories>
+			<li MayRequire="VanillaExpanded.VMemesE">
+				<category>VME_Corporate</category>
+				<priority>1</priority>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Techist</category>
+				<priority>2</priority>
+			</li>
+		</thingStyleCategories>
+		<preferredWeaponClasses>
+			<noble>Ultratech</noble>
+			<despised>Neolithic</despised>
+		</preferredWeaponClasses>
+		<styleItemTags>
+			<li>
+				<tag>Urban</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Punk</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardUrban</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+</Defs>

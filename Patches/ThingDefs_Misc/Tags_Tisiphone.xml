@@ -1,100 +1,229 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationSequence">
-			<operations>
 
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_ReflactorArmor"]/apparel/tags</xpath>
-					<value>
-						<li>TE_ArmorE</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_ReflactorArmorH"]/apparel/tags</xpath>
-					<value>
-						<li>TE_ArmorHE</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_HazardCarapace"]/apparel/tags</xpath>
-					<value>
-						<li>TE_ArmorL</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_HazardCarapaceH"]/apparel/tags</xpath>
-					<value>
-						<li>TE_ArmorHL</li>
-					</value>
-				</li>
-		
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/thingDef[defName="TE_KineticRifle"]/weaponTags</xpath>
-					<value>
-							<li>TE_KineticRifle</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/thingDef[defName="TE_KineticPistol"]/weaponTags</xpath>
-					<value>
-							<li>TE_KineticPistol</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/thingDef[defName="TE_ThuddGun"]</xpath>
-					<value>
-						<weaponTags>
-							<li>TE_ThuddGun</li>
-						</weaponTags>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/thingDef[defName="TE_StormCannon"]</xpath>
-					<value>
-						<weaponTags>
-							<li>TE_StormCannon</li>
-						</weaponTags>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/thingDef[defName="TE_KineticLance"]</xpath>
-					<value>
-						<weaponTags>
-							<li>TE_KineticLance</li>
-						</weaponTags>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/thingDef[defName="TE_KineticLongRifle"]</xpath>
-					<value>
-						<weaponTags>
-							<li>TE_KineticLongRifle</li>
-						</weaponTags>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="TE_Eris"]/weaponTags</xpath>
-					<value>
-							<li>TE_Eris</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="TE_Grief"]</xpath>
-					<value>
-						<weaponTags>
-							<li>TE_Grief</li>
-						</weaponTags>
-					</value>
-				</li>
-				
-			</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_ReflactorArmor"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_ReflactorArmor"]/apparel/tags</xpath>
+			<value>
+				<li>TE_ArmorE</li>
+				<li>RS_ArmorE</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_ReflactorArmor"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>TE_ArmorE</li>
+					<li>RS_ArmorE</li>
+				</tags>
+			</value>
+		</nomatch>
 	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_ReflactorArmorH"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_ReflactorArmorH"]/apparel/tags</xpath>
+			<value>
+				<li>TE_ArmorE</li>
+				<li>RS_ArmorE</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_ReflactorArmorH"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>TE_ArmorE</li>
+					<li>RS_ArmorE</li>
+				</tags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_HazardCarapace"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_HazardCarapace"]/apparel/tags</xpath>
+			<value>
+				<li>TE_ArmorL</li>
+				<li>RS_ArmorL</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_HazardCarapace"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>TE_ArmorL</li>
+					<li>RS_ArmorL</li>
+				</tags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_HazardCarapaceH"]/apparel/tags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_HazardCarapaceH"]/apparel/tags</xpath>
+			<value>
+				<li>TE_ArmorL</li>
+				<li>RS_ArmorL</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_HazardCarapaceH"]/apparel</xpath>
+			<value>
+				<tags>
+					<li>TE_ArmorL</li>
+					<li>RS_ArmorL</li>
+				</tags>
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="TE_KineticRifle"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="TE_KineticRifle"]/weaponTags</xpath>
+			<value>
+				<li>TE_KineticRifle</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="TE_KineticRifle"]</xpath>
+			<value>
+				<weaponTags>
+					<li>TE_KineticRifle</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="TE_KineticPistol"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="TE_KineticPistol"]/weaponTags</xpath>
+			<value>
+				<li>TE_KineticPistol</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="TE_KineticPistol"]</xpath>
+			<value>
+				<weaponTags>
+					<li>TE_KineticPistol</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="TE_ThuddGun"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="TE_ThuddGun"]/weaponTags</xpath>
+			<value>
+				<li>TE_ThuddGun</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="TE_ThuddGun"]</xpath>
+			<value>
+				<weaponTags>
+					<li>TE_ThuddGun</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="TE_StormCannon"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="TE_StormCannon"]/weaponTags</xpath>
+			<value>
+				<li>TE_StormCannon</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="TE_StormCannon"]</xpath>
+			<value>
+				<weaponTags>
+					<li>TE_StormCannon</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="TE_KineticLance"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="TE_KineticLance"]/weaponTags</xpath>
+			<value>
+				<li>TE_KineticLance</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="TE_KineticLance"]</xpath>
+			<value>
+				<weaponTags>
+					<li>TE_KineticLance</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="TE_KineticLongRifle"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="TE_KineticLongRifle"]/weaponTags</xpath>
+			<value>
+				<li>TE_KineticLongRifle</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="TE_KineticLongRifle"]</xpath>
+			<value>
+				<weaponTags>
+					<li>TE_KineticLongRifle</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="TE_Eris"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="TE_Eris"]/weaponTags</xpath>
+			<value>
+				<li>TE_Eris</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="TE_Eris"]</xpath>
+			<value>
+				<weaponTags>
+					<li>TE_Eris</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="TE_Grief"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="TE_Grief"]/weaponTags</xpath>
+			<value>
+				<li>TE_Grief</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="TE_Grief"]</xpath>
+			<value>
+				<weaponTags>
+					<li>TE_Grief</li>
+				</weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+
 </Patch>

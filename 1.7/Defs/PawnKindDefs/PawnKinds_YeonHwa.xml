@@ -1,0 +1,202 @@
+<Defs>
+	<PawnKindDef ParentName ="RCF_BasePawn" Name="YP_BasePawn" Abstract="True">
+		<defaultFactionType>YeonHwa_Precision</defaultFactionType>
+		<apparelTags>
+			<li>CO_Carbonsuit</li>
+		</apparelTags>
+		<weaponMoney>1500~5000</weaponMoney>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>7~11</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>6~10</range>
+			</li>
+		</skills>
+		<specificApparelRequirements>
+			<li>
+				<color>(164,164,255)</color>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName ="RCF_ElitePawn" Name="YP_ElitePawn" Abstract="True">
+		<defaultFactionType>YeonHwa_Precision</defaultFactionType>
+		<apparelTags>
+			<li>CO_Carbonsuit</li>
+		</apparelTags>
+		<weaponMoney>2000~7500</weaponMoney>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>8~14</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>8~11</range>
+			</li>
+		</skills>
+		<specificApparelRequirements>
+			<li>
+				<color>(164,164,255)</color>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="YP_BasePawn">
+		<defName>YP_Recruit</defName>
+		<label>kite</label>
+		<labelPlural>kites</labelPlural>
+		<combatPower>55</combatPower>
+		<weaponTags>
+			<li>YP_ShardPistols</li>
+			<li>YP_Knife</li>
+		</weaponTags>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<apparelRequired>
+			<li>Apparel_AdvancedHelmet</li>
+		</apparelRequired>
+		<apparelMoney>
+			<min>600</min>
+			<max>1000</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.45</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="YP_BasePawn">
+		<defName>YP_Melee</defName>
+		<label>strix</label>
+		<labelPlural>striges</labelPlural>
+		<combatPower>155</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<apparelMoney>
+			<min>3500</min>
+			<max>4500</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_CloseCombatArmor</li>
+			<li>Apparel_CloseCombatHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>YP_Knife</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="YP_BasePawn">
+		<defName>YP_Soldier</defName>
+		<label>falcon</label>
+		<labelPlural>falcons</labelPlural>
+		<combatPower>165</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<apparelMoney>
+			<min>3500</min>
+			<max>4500</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_Strikesuit</li>
+			<li>Apparel_StrikesuitH</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>YP_ShardRifle</li>
+			<li>YP_Shotgun</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="YP_ElitePawn">
+		<defName>YP_Elite</defName>
+		<label>hawk</label>
+		<labelPlural>hawks</labelPlural>
+		<combatPower>175</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>true</canBeSapper>
+		<apparelRequired>
+			<li>Apparel_Dropsuit</li>
+			<li>Apparel_DropsuitH</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>YP_SpikeLance</li>
+			<li>YP_VectorShot</li>
+			<li>YP_Grenades</li>
+			<li>YP_Seu</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>4500</min>
+			<max>5500</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="YP_ElitePawn">
+		<defName>YP_Microwave</defName>
+		<label>albatross</label>
+		<labelPlural>albatrosses</labelPlural>
+		<combatPower>185</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>true</canBeSapper>
+		<apparelRequired>
+			<li>Apparel_Strikesuit</li>
+			<li>Apparel_StrikesuitH</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>YP_MicrowaveGun</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>4500</min>
+			<max>5500</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="YP_ElitePawn">
+		<defName>YP_Officer</defName>
+		<label>eagle</label>
+		<labelPlural>eagles</labelPlural>
+		<combatPower>200</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<itemQuality Inherit="False" >Excellent</itemQuality>
+		<apparelRequired>
+			<li>Apparel_Dropsuit</li>
+			<li>Apparel_DropsuitH</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>YP_SpikeLance</li>
+			<li>YP_ShardRifle</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>5500</min>
+			<max>6500</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="YP_ElitePawn">
+		<defName>YP_Leader</defName>
+		<label>raptor</label>
+		<labelPlural>raptors</labelPlural>
+		<combatPower>350</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>false</canBeSapper>
+		<factionLeader>true</factionLeader>
+		<itemQuality Inherit="False" >Masterwork</itemQuality>
+		<apparelRequired>
+			<li>Apparel_Dropsuit</li>
+			<li>Apparel_DropsuitH</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>YP_SpikeLance</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>7500</min>
+			<max>9500</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+	</PawnKindDef>
+</Defs>
